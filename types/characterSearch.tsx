@@ -1,5 +1,17 @@
+export enum SERVER_LIST {
+  cain = "카인",
+  diregie = "디레지에",
+  siroco = "시로코",
+  prey = "프레이",
+  casillas = "카시야스",
+  hilder = "힐더",
+  anton = "안톤",
+  bakal = "바칼",
+}
+
+export type ServerKeyType = keyof typeof SERVER_LIST;
 export interface CharacterSearch {
-  serverId: string;
+  serverId: ServerKeyType;
   characterId: string;
   characterName: string;
   level: number;

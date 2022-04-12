@@ -9,10 +9,12 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const { serverSelect, characterName } = req.query;
-  console.log(req.query);
-  console.log(serverSelect);
-
-  const url = `https://api.neople.co.kr/df/servers/${serverSelect}/characters?characterName=${characterName}&limit=200&wordType=full&apikey=${api}`;
+  let url = "";
+  if (decodeURIComponent(characterName.toString()).length === 1) {
+    url = `https://api.neople.co.kr/df/servers/${serverSelect}/characters?characterName=${characterName}&limit=200&wordType=match&apikey=${api}`;
+  } else {
+    url = `https://api.neople.co.kr/df/servers/${serverSelect}/characters?characterName=${characterName}&limit=200&wordType=full&apikey=${api}`;
+  }
 
   const response = await fetch(url);
 
