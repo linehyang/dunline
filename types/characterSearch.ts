@@ -9,7 +9,9 @@ export enum SERVER_LIST {
   bakal = "바칼",
 }
 
+//객체들의 key만 뽑아오기 위해 keyof를 사용
 export type ServerKeyType = keyof typeof SERVER_LIST;
+
 export interface CharacterSearch {
   serverId: ServerKeyType;
   characterId: string;
