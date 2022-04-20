@@ -1,3 +1,4 @@
+//각 부위별 에픽 이름 저장
 export const EpicInfo = {
   top: {
     fdab01437e9eca7ce0ae660a78ca499a: "리버시블 레더 코트",
