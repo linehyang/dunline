@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import { CharacterSearch } from "../../types/characterSearch";
+import { CharacterSearch } from "../../interface/characterSearch";
 
 const API_KEY = process.env.NEXT_PUBLIC_DF_APIKEY;
 const ENDPOINT = "https://api.neople.co.kr/df";
