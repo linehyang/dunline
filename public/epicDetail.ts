@@ -1,3 +1,4 @@
+//모든 에픽장비 효과(옵션) 저장
 export const EpicDetail = {
   //상의
   fdab01437e9eca7ce0ae660a78ca499a: [

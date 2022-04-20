@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import SearchCharacter from "../components/SearchCharachter";
 import Header from "../components/Header";
-import EpickDetail from "../components/epicdetail";
 
 const Home: NextPage = () => {
   return (

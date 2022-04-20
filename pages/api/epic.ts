@@ -6,7 +6,8 @@ const ENDPOINT = "https://api.neople.co.kr/df";
 const API_KEY = process.env.NEXT_PUBLIC_DF_APIKEY;
 const EPIC_PART = "earrings";
 
-//에픽 정보를 가져오기 위한 api route
+//에픽 정보를 가져오기 위한 api route  Epic
+// EpicDetail.tsx 컴포넌트와 연동해서 사용가능
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
