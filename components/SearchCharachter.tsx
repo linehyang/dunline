@@ -6,7 +6,7 @@ import Image from "next/image";
 import useSWR from "swr";
 
 import SearchForm from "./SearchForm";
-import { CharacterSearch, SERVER_LIST } from "../types/characterSearch";
+import { CharacterSearch, SERVER_LIST } from "../interface/characterSearch";
 
 const SearchResultUl = styled.ul`
   display: flex;
