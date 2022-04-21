@@ -6,7 +6,7 @@ import Image from "next/image";
 import useSWR from "swr";
 
 import SearchForm from "./SearchForm";
-import { CharacterSearch, SERVER_LIST } from "../interface/characterSearch";
+import { CharacterSearch, SERVER_LIST } from "../../interface/characterSearch";
 
 const SearchResultUl = styled.ul`
   display: flex;
@@ -26,6 +26,7 @@ const SearchResultUl = styled.ul`
   }
 `;
 
+//캐릭터 검색을 위한 컴포넌트
 function SearchCharacter() {
   const [url, setUrl] = useState<string | null>(null);
 

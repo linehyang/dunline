@@ -4,7 +4,7 @@ import { EpicInfo } from "../../public/epicInfo";
 
 const ENDPOINT = "https://api.neople.co.kr/df";
 const API_KEY = process.env.NEXT_PUBLIC_DF_APIKEY;
-const EPIC_PART = "earrings";
+const EPIC_PART = "EARRING";
 
 //에픽 정보를 가져오기 위한 api route  Epic
 // EpicDetail.tsx 컴포넌트와 연동해서 사용가능

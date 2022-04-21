@@ -2,7 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import useSWR from "swr";
-import EpicConcept from "../components/EpicConcept";
+
+import UserEquipInfo from "../components/Setting/UserEquipInfo";
 
 function Setting() {
   const router = useRouter();
@@ -19,7 +20,7 @@ function Setting() {
         <title>DUNLINE</title>
       </Head>
       <main>
-        <EpicConcept />
+        <UserEquipInfo server={server} characterid={characterid} />
         <div>내가 먹은 에픽 현황</div>
         <div>{characterid}</div>
         <div>{server}</div>

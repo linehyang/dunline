@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import SearchCharacter from "../components/SearchCharachter";
+import SearchCharacter from "../components/Search/SearchCharachter";
 import Header from "../components/Header";
 
 const Home: NextPage = () => {
