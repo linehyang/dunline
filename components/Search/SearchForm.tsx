@@ -1,6 +1,6 @@
 import { Select, Input, Button, HStack, propNames } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
-import { SERVER_LIST } from "../interface/characterSearch";
+import { SERVER_LIST } from "../../interface/characterSearch";
 
 const initialFormValue = {
   serverName: "all",

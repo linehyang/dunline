@@ -1,6 +1,6 @@
 //각 부위별 에픽 이름 저장
 export const EpicInfo = {
-  top: {
+  JACKET: {
     fdab01437e9eca7ce0ae660a78ca499a: "리버시블 레더 코트",
     "362af4087d37fa14c438ecc930372100": "숲속의 마녀 상의",
     f3a8abced93c73351082e83600197d71: "탐험가의 노련한 코트",
@@ -24,7 +24,7 @@ export const EpicInfo = {
     "476df057a837cdca0b902c8f3bf86677": "고귀한 신의",
     "8608600ca434dd0031e448d74dfc32df": "옥화의 망령 흉갑",
   },
-  pants: {
+  PANTS: {
     "905c891027a6ab87706fdbe46e104316": "옥화의 망령 대퇴갑",
     "94121c838c65946bd8f69490ee10e3dd": "지치지 않는 여정의 하의",
     "195bf6d07ad2cf894b32dea8d0590a28": "숨쉬는 자연의 생명",
@@ -48,7 +48,7 @@ export const EpicInfo = {
     "2766b493412bd6d14191ee3471c3a8e3": "침식되는 이성",
     "1d2ca5dedaf23683398a34e5103a9c80": "숲속의 마녀 하의",
   },
-  shoulder: {
+  SHOULDER: {
     "59b756d84bf9478eaca58bed8f74762f": "데저트 컨실멘트 숄더",
     "818d02df7a254fb171ae5bd56cdea770": "근력 보강 숄더",
     "3ed3ad1a2b04b0e736f5660591e8a1b0": "자유를 수호하는 윙 숄더",
@@ -72,7 +72,7 @@ export const EpicInfo = {
     "4e162f544f731ce0189c46842eedafe4": "마그네틱 서치 스캔",
     ec277a8b157166fe3049e19f0eb2d001: "숲속의 마녀 망토",
   },
-  belt: {
+  WAIST: {
     "0d22229f6e5f7332a4be95f19a152b76": "파괴된 신념",
     e843f9a249b27252aacfacb962ee9a6d: "옭아메는 공포",
     "37fb801133d11aad5c465c31b89a7dbe": "익스펜션 서플라이 벨트",
@@ -96,7 +96,7 @@ export const EpicInfo = {
     "19776f2e9cd9be54e84609e4c0aa1105": "고고함의 백색 벨트",
     "1077ecd6be9f88f0274ddeb54c996a4d": "숲속의 마녀 벨트",
   },
-  shose: {
+  SHOES: {
     c7988333e83925f12e324eda25c51496: "움직이는 쇠약한 집착",
     "04e57598f0ca64f8fd687e528c8718d5": "순환하는 자연의 섭리",
     a8089b085883d0709efd4664b20acdc8: "폭주하는 육신",
@@ -120,7 +120,7 @@ export const EpicInfo = {
     "58dde62cb3223ed575dbdce5499f578d": "옥화의 망령 각갑",
     "20d7eb7c17183bff06758a2f6df63bb6": "숲속의 마녀 신발",
   },
-  bracelet: {
+  WRIST: {
     "7767981f839a0083a3d734199cb0deda": "아크 블라스터 소스",
     b08e68947d0bbd53e50d6c5165d22ff1: "전술 드론 콘트롤러 암릿",
     efc736cc907c60072bb92146ae006257: "생명이 담긴 가죽 토시",
@@ -144,7 +144,7 @@ export const EpicInfo = {
     "9e3029a34e4c0a4ec4b4a064cf1485e5": "엔트 정령의 팔찌",
     fd19e43acb9bf998f94df0db7729be06: "억제된 마력의 팔찌",
   },
-  necklace: {
+  AMULET: {
     "689669772092589ba47a7d6adbb10023": "냉혹한 현실의 목걸이",
     d4611183c02aaf2c96da65125778985f: "블루 베릴 네클레스",
     "53dff026d8600429a488ad25095b9692": "엔트 정령의 목걸이",
@@ -169,7 +169,7 @@ export const EpicInfo = {
     fd5ffa03827b83e0109a3eb1862798eb: "디젯 퓨즈 초크",
   },
 
-  rings: {
+  RING: {
     "4704c80a314a7ddf6942f961254bd51d": "개화하는 신비의 꽃",
     "61b11bf9de582675393ec342fac6b7b8": "블루 베릴 링",
     "71be2ffba89052de0994976e173030c0": "엔트 정령의 반지",
@@ -193,7 +193,7 @@ export const EpicInfo = {
     e30f4eaf0037b5b9f748213a14dc26f5: "전술 레이더망 링",
     "13ec4223a5649e83e09d95a87ab61cb4": "어댑터블 투톤 링",
   },
-  subEquipment: {
+  SUPPORT: {
     c8aedd82444ed4c34ed038df8a2673c7: "생명의 근원이 담긴 배낭",
     e2ab555a05e8de69133e0bfa4ab5bfd1: "블루 베릴 퍼퓸",
     "573399fba4997923936a56fe15d50d6f": "엔트 정령의 성배",
@@ -217,7 +217,7 @@ export const EpicInfo = {
     "698a56642e05d261f17bba5c87233cf4": "공중형 : 전술 프롭 드론",
     e9eeb7d5eee037dd736aa65a590d31aa: "홀로그램 콜",
   },
-  magicStone: {
+  MAGIC_STON: {
     "50e34031bfb458d7a43ed56d2a36db1d": "피어오르는 광기",
     "37522f61ef37c5b5251900c3345af96a": "자연에 녹아드는 이슬",
     a239e1e2c6d3074bc15bdb9bbac3abd1: "블루 베릴 젬스톤",
@@ -241,7 +241,7 @@ export const EpicInfo = {
     ae71fa231a05101bf87dec168c442ce0: "미지의 황금비석",
     "9ba8b68cf83caca35308e90dbadcfec0": "자정의 성역",
   },
-  earrings: {
+  EARRING: {
     d664db344fb2ab71bb13be9dd716cd42: "생명을 키우는 코발트 스틱",
     "43c511645914d15da2464c26ec863f27": "부스팅 펄스 튜브",
     "69e9b0361cbd23ad0bb17e2b25a2a1e2": "인력의 법칙",

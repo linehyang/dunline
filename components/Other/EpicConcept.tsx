@@ -1,4 +1,4 @@
-import { EpicDetail } from "../public/epicDetail";
+import { EpicDetail } from "../../public/epicDetail";
 
 type epic = typeof EpicDetail;
 
@@ -18,6 +18,7 @@ const filter = (epic: epic) => {
   return result;
 };
 
+//에픽 컨섭 필터링 해주는 컴포넌트
 export default function EpicConcept() {
   const result = filter(EpicDetail);
 
