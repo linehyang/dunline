@@ -1,4 +1,19 @@
 //각 부위별 에픽 이름 저장
+
+export const EpicInfoEquip = {
+  JACKET: "상",
+  PANTS: "하",
+  SHOULDER: "어",
+  WAIST: "벨",
+  SHOES: "신",
+  WRIST: "팔",
+  AMULET: "목",
+  RING: "반",
+  SUPPORT: "보",
+  MAGIC_STON: "법",
+  EARRING: "귀",
+};
+
 export const EpicInfo = {
   JACKET: {
     fdab01437e9eca7ce0ae660a78ca499a: "리버시블 레더 코트",
