@@ -1,4 +1,4 @@
-import { Select, Input, Button, HStack, propNames } from "@chakra-ui/react";
+import { Select, Input, Button, HStack } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import { SERVER_LIST } from "../../interface/characterSearch";
 

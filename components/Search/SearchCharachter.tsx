@@ -32,7 +32,7 @@ function SearchCharacter() {
 
   //data는 배열이며 배열속에 각각의 데이터가 객체로 담기기 때문에 이렇게 해둠
   const { data } = useSWR<CharacterSearch[]>(url);
-
+  console.log(data);
   return (
     <Box p="5rem">
       <SearchForm
@@ -55,7 +55,7 @@ function SearchCharacter() {
                     key={characterId}
                     onClick={() =>
                       Router.push(
-                        `/setting/?server=${serverId}&characterid=${characterId}`
+                        `/setting?server=${serverId}&characterid=${characterId}`
                       )
                     }
                   >

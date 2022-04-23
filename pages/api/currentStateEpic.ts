@@ -1,12 +1,13 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
+import { format } from "date-fns";
 
 const API_KEY = process.env.NEXT_PUBLIC_DF_APIKEY;
 const ENDPOINT = "https://api.neople.co.kr/df";
 const TIMELINE_LIMIT = 100;
 const TIMELINE_CODE = `504,505,509,515`;
 const START_DATA = "20220317T0000";
-const END_DATA = "20220419T0000";
+const END_DATA = format(new Date(), "yyyyMMdd'T'hhmm");
 
 //df api req timeline info url function
 const reqUrl = ({
@@ -71,7 +72,17 @@ export default async function handler(
       }
     }
 
-    return res.status(200).json(acquire);
+    //획득한 에픽 itemId만 가져오기
+    const array = acquire.map((el: any) => {
+      return `${el.data.itemId}`;
+    });
+
+    // 중복에픽 체크
+    const result = array.filter((el: string, idx: number) => {
+      return array.indexOf(el) === idx;
+    });
+
+    return res.status(200).json(result);
   } catch (e) {
     return res.status(500);
   }
