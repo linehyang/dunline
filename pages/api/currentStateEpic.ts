@@ -7,7 +7,7 @@ const ENDPOINT = "https://api.neople.co.kr/df";
 const TIMELINE_LIMIT = 100;
 const TIMELINE_CODE = `504,505,509,515`;
 const START_DATA = "20220317T0000";
-const END_DATA = format(new Date(), "yyyyMMdd'T'hhmm");
+const END_DATA = format(new Date(), "yyyyMMdd'T'HHmm");
 
 //df api req timeline info url function
 const reqUrl = ({
