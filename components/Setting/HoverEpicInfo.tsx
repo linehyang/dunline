@@ -1,21 +1,35 @@
 import { Box } from "@chakra-ui/react";
 
-import { EpicDetail } from "../../public/epicDetail";
+import { EpicItems } from "../../public/epic";
 
 interface Props {
   itemId: string;
 }
 
 export default function HoverEpicInfo({ itemId }: Props) {
-  let result = EpicDetail[itemId as keyof typeof EpicDetail];
+  let name = EpicItems.filter((item) => item.itemId === itemId).map(
+    ({ itemName }) => {
+      return itemName;
+    }
+  );
+
+  let option = EpicItems.filter((item) => item.itemId === itemId).map(
+    ({ options }) => {
+      return options;
+    }
+  );
 
   return (
     <>
-      <Box>{result[0]}</Box>
-      <Box>1옵션 : {result[1]}</Box>
-      <Box>2옵션 : {result[2]}</Box>
-      <Box>3옵션 : {result[3]}</Box>
-      <Box>4옵션 : {result[4]}</Box>
+      {name[0] && option && (
+        <>
+          <Box>{name.join()}</Box>
+          <Box>1옵션 : {option[0][0]}</Box>
+          <Box>2옵션 : {option[0][1]}</Box>
+          <Box>3옵션 : {option[0][2]}</Box>
+          <Box>4옵션 : {option[0][3]}</Box>
+        </>
+      )}
     </>
   );
 }

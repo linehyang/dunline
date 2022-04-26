@@ -1,7 +1,7 @@
 import { Tag, TagLabel, Box } from "@chakra-ui/react";
 
 import React from "react";
-import { EpicConcept } from "../../public/epicConcept";
+import { EpicConcept } from "../../public/epic";
 
 type EpicConceptKeyType = keyof typeof EpicConcept;
 

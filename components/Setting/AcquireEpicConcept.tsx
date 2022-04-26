@@ -3,10 +3,11 @@ import useSWR from "swr";
 import Image from "next/image";
 import { Box, Tooltip, Text } from "@chakra-ui/react";
 
-import { EpicConcept, EpicItems } from "../../public/epic";
+import { EpicConcept, EpicItems, EpicInfoEquip } from "../../public/epic";
 
 import HoverEpicInfo from "./HoverEpicInfo";
 import ConceptFilter from "./ConceptFilter";
+import WearItem from "./WearItem";
 
 type Props = {
   server: string | string[] | undefined;
@@ -14,6 +15,7 @@ type Props = {
 };
 
 type EpicConceptKeyType = keyof typeof EpicConcept;
+type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;
 
 export default function AcquireEpicConcept({ server, characterid }: Props) {
   const { data } = useSWR(
@@ -24,11 +26,26 @@ export default function AcquireEpicConcept({ server, characterid }: Props) {
   );
 
   const [concepts, setConcepts] = useState<EpicConceptKeyType[]>([]);
+  const [wearItem, setWearItem] = useState<
+    Record<EpicInfoEquipKeyType, string>
+  >({
+    JACKET: "",
+    PANTS: "",
+    SHOULDER: "",
+    WAIST: "",
+    SHOES: "",
+    WRIST: "",
+    AMULET: "",
+    RING: "",
+    SUPPORT: "",
+    MAGIC_STON: "",
+    EARRING: "",
+  });
 
   return (
     <>
       <Box>컨셉별 에픽 득템 현황</Box>
-      {data ? (
+      {data && (
         <ConceptFilter
           concepts={concepts}
           onClick={(key: EpicConceptKeyType) => {
@@ -39,43 +56,49 @@ export default function AcquireEpicConcept({ server, characterid }: Props) {
             }
           }}
         />
-      ) : null}
-      {data
-        ? concepts.map((concept) => (
-            <Box key={concept}>
-              <Text>{EpicConcept[concept]}</Text>
-              <Box display={"flex"} flexWrap={"wrap"}>
-                {EpicItems.filter((epicItem) =>
-                  epicItem.concepts?.includes(concept)
-                ).map(({ itemId, itemName, parts }) => (
-                  <Tooltip
-                    label={<HoverEpicInfo itemId={itemId} />}
-                    fontSize="md"
-                    key={`${EpicConcept[concept]}${itemName}`}
+      )}
+      {data &&
+        concepts.map((concept) => (
+          <Box key={concept}>
+            <Text>{EpicConcept[concept]}</Text>
+            <Box display={"flex"} flexWrap={"wrap"}>
+              {EpicItems.filter((epicItem) =>
+                epicItem.concepts?.includes(concept)
+              ).map(({ itemId, itemName, parts }) => (
+                <Tooltip
+                  label={<HoverEpicInfo itemId={itemId} />}
+                  fontSize="md"
+                  key={`${EpicConcept[concept]}${itemName}`}
+                >
+                  <Box
+                    filter={
+                      data.includes(itemId)
+                        ? "grayscale(0%)"
+                        : "grayscale(100%)"
+                    }
                   >
-                    <Box
-                      filter={
-                        data.includes(itemId)
-                          ? "grayscale(0%)"
-                          : "grayscale(100%)"
-                      }
-                    >
-                      <Box fontSize={"8px"} textAlign={"center"}>
-                        {parts}
-                      </Box>
-                      <Image
-                        src={`https://img-api.neople.co.kr/df/items/${itemId}`}
-                        alt={"에픽아이템"}
-                        width={"30px"}
-                        height={"30px"}
-                      />
+                    <Box fontSize={"8px"} textAlign={"center"}>
+                      {EpicInfoEquip[parts as EpicInfoEquipKeyType]}
                     </Box>
-                  </Tooltip>
-                ))}
-              </Box>
+                    <Image
+                      src={`https://img-api.neople.co.kr/df/items/${itemId}`}
+                      alt={"에픽아이템"}
+                      width={"30px"}
+                      height={"30px"}
+                      onClick={() => {
+                        setWearItem({
+                          ...wearItem,
+                          [parts]: itemId,
+                        });
+                      }}
+                    />
+                  </Box>
+                </Tooltip>
+              ))}
             </Box>
-          ))
-        : null}
+          </Box>
+        ))}
+      <WearItem wearItem={wearItem} />
     </>
   );
 }

@@ -3,6 +3,16 @@ import Head from "next/head";
 import SearchCharacter from "../components/Search/SearchCharachter";
 import Header from "../components/Header";
 
+import { EpicItems } from "../public/epic";
+
+console.log(EpicItems.length);
+
+console.log(
+  EpicItems.filter((el) => {
+    return !el.concepts;
+  })
+);
+
 const Home: NextPage = () => {
   return (
     <div>

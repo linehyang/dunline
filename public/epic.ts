@@ -25,6 +25,11 @@ export enum EpicConcept {
   Cube = "무색 큐브 소모",
   Leveling = "레벨링",
   Archon = "아칸",
+  SkillDamage = "스증,방무",
+  Nature = "자수",
+  Utill = "유틸",
+  Damage_Reduction = "뎀감",
+  Speed = "속도",
 }
 
 export enum EpicInfoEquip {
@@ -52,7 +57,7 @@ export const EpicItems = [
       "MP MAX +945",
     ],
     concepts: ["Overspending", "MpRecovery"],
-    parts: EpicInfoEquip.JACKET,
+    parts: "JACKET",
   },
   {
     itemId: "362af4087d37fa14c438ecc930372100",
@@ -63,7 +68,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.JACKET,
+    parts: "JACKET",
   },
   {
     itemId: "f3a8abced93c73351082e83600197d71",
@@ -74,7 +79,8 @@ export const EpicItems = [
       "이동 속도 +8%",
       "인벤토리 무게 한도 +5kg",
     ],
-    parts: EpicInfoEquip.JACKET,
+    concepts: ["Utill", "Speed"],
+    parts: "JACKET",
   },
   {
     itemId: "d3f31de6b1b52d9ca985ef9f5886e7f6",
@@ -85,7 +91,8 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
       "회피율 +8%",
     ],
-    parts: EpicInfoEquip.JACKET,
+    concepts: ["Utill"],
+    parts: "JACKET",
   },
   {
     itemId: "1a24550ae8abf2a7bf43c4083a87a4dd",
@@ -97,7 +104,7 @@ export const EpicItems = [
       "공격 시 MP 3500 회복",
     ],
     concepts: ["MpRecovery", "HpRecovery"],
-    parts: EpicInfoEquip.JACKET,
+    parts: "JACKET",
   },
   {
     itemId: "d8423c92900111bd1ebbd245928150d0",
@@ -109,7 +116,7 @@ export const EpicItems = [
       "HP MAX +600",
     ],
     concepts: ["HpRecovery", "CooldownTime"],
-    parts: EpicInfoEquip.JACKET,
+    parts: "JACKET",
   },
   {
     itemId: "073a49a592516fef6eb217c24fc85f75",
@@ -121,7 +128,7 @@ export const EpicItems = [
       "카운터 피격 시 받는 데미지 20% 감소",
     ],
     concepts: ["HpRecovery"],
-    parts: EpicInfoEquip.JACKET,
+    parts: "JACKET",
   },
   {
     itemId: "2a0117752954ccd96672e4003885803a",
@@ -133,7 +140,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Elemental_All"],
-    parts: EpicInfoEquip.JACKET,
+    parts: "JACKET",
   },
   {
     itemId: "91ff7b1e87520d0ed4f8b5adf31f9cb7",
@@ -145,7 +152,7 @@ export const EpicItems = [
       "500px 범위 내 화상 상태인 대상 하나 당 피해 증가 +356",
     ],
     concepts: ["Burn"],
-    parts: EpicInfoEquip.JACKET,
+    parts: "JACKET",
   },
   {
     itemId: "9173fd6ca34703a5b8872ee10bdf9a88",
@@ -156,8 +163,8 @@ export const EpicItems = [
       "화속성 강화 15 증가",
       "500px 범위 내 화상 상태인 대상 하나 당 피해 증가 +356",
     ],
-    concepts: ["Burn", "Elemental_Fire"],
-    parts: EpicInfoEquip.JACKET,
+    concepts: ["Burn", "Elemental_Fire", "Nature"],
+    parts: "JACKET",
   },
   {
     itemId: "01f668b6a225cfd1681a1ebfc40245fe",
@@ -169,7 +176,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Enchant"],
-    parts: EpicInfoEquip.JACKET,
+    parts: "JACKET",
   },
   {
     itemId: "fef28f7cbfb26551a39d7aea7cce3250",
@@ -181,7 +188,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Elemental_All"],
-    parts: EpicInfoEquip.JACKET,
+    parts: "JACKET",
   },
   {
     itemId: "3f8d161a783dbc8f6e47bc72365069f0",
@@ -192,8 +199,8 @@ export const EpicItems = [
       "HP MAX +600",
       "공격 시 HP 2200 회복",
     ],
-    concepts: ["HpRecovery"],
-    parts: EpicInfoEquip.JACKET,
+    concepts: ["HpRecovery", "Utill"],
+    parts: "JACKET",
   },
   {
     itemId: "8d0ee4dbbdd191587bfb613133941506",
@@ -204,7 +211,8 @@ export const EpicItems = [
       "스킬 MP 소모량 7% 감소",
       "HP MAX +600",
     ],
-    parts: EpicInfoEquip.JACKET,
+    concepts: ["Utill"],
+    parts: "JACKET",
   },
   {
     itemId: "a9c11f7134c3172d62c526bf01259f01",
@@ -216,7 +224,7 @@ export const EpicItems = [
       "500px 범위 내 저주 상태인 대상 하나 당 피해 증가 +385",
     ],
     concepts: ["Curse", "HpRecovery", "CooldownTime"],
-    parts: EpicInfoEquip.JACKET,
+    parts: "JACKET",
   },
   {
     itemId: "38a99d849177381f2192ab8fd57b6538",
@@ -227,7 +235,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.JACKET,
+    parts: "JACKET",
   },
   {
     itemId: "5558a7ce9f0eb06af4cf84a0e4c8ee0f",
@@ -238,7 +246,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.JACKET,
+    parts: "JACKET",
   },
   {
     itemId: "613433f75b3505b31937859a22127836",
@@ -249,7 +257,8 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
       "회피율 +8%",
     ],
-    parts: EpicInfoEquip.JACKET,
+    concepts: ["Utill"],
+    parts: "JACKET",
   },
   {
     itemId: "6f08f07510bd67ab0505c392e9805009",
@@ -260,7 +269,8 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
       "HP MAX +600",
     ],
-    parts: EpicInfoEquip.JACKET,
+    concepts: ["Utill"],
+    parts: "JACKET",
   },
   {
     itemId: "08f0e19b36c8d5e4c4a9bd9f153c9deb",
@@ -272,7 +282,7 @@ export const EpicItems = [
       "카운터 피격 시 받는 데미지 20% 감소",
     ],
     concepts: ["Sleep"],
-    parts: EpicInfoEquip.JACKET,
+    parts: "JACKET",
   },
   {
     itemId: "476df057a837cdca0b902c8f3bf86677",
@@ -283,7 +293,8 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
       "비 카운터 피격 시 받는 데미지 20% 감소",
     ],
-    parts: EpicInfoEquip.JACKET,
+    concepts: ["Utill"],
+    parts: "JACKET",
   },
   {
     itemId: "8608600ca434dd0031e448d74dfc32df",
@@ -294,7 +305,8 @@ export const EpicItems = [
       "이동 속도 +8%",
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
     ],
-    parts: EpicInfoEquip.JACKET,
+    concepts: ["Utill"],
+    parts: "JACKET",
   },
   {
     itemId: "905c891027a6ab87706fdbe46e104316",
@@ -306,7 +318,7 @@ export const EpicItems = [
       "이동 속도 +8%",
     ],
     concepts: ["CooldownTime"],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "94121c838c65946bd8f69490ee10e3dd",
@@ -317,7 +329,8 @@ export const EpicItems = [
       "HP MAX +600",
       "이동 속도 +8%",
     ],
-    parts: EpicInfoEquip.PANTS,
+    concepts: ["Utill", "Speed"],
+    parts: "PANTS",
   },
   {
     itemId: "195bf6d07ad2cf894b32dea8d0590a28",
@@ -328,8 +341,8 @@ export const EpicItems = [
       "500px 범위 내 화상 상태인 대상 하나 당 피해 증가 +356",
       "적중률 +10%",
     ],
-    concepts: ["Burn"],
-    parts: EpicInfoEquip.PANTS,
+    concepts: ["Burn", "Nature"],
+    parts: "PANTS",
   },
   {
     itemId: "3a90df330ecc42b3aa3ceca52c5b94cd",
@@ -340,7 +353,8 @@ export const EpicItems = [
       "회피율 +8%",
       "이동 속도 +8%",
     ],
-    parts: EpicInfoEquip.PANTS,
+    concepts: ["Utill"],
+    parts: "PANTS",
   },
   {
     itemId: "bba14a8f1a473d5a432311e72f49ff3a",
@@ -352,7 +366,7 @@ export const EpicItems = [
       "명속성 피격 시 10초 동안 명속성 저항 20 증가",
     ],
     concepts: ["Elemental_Right"],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "8b49cff9b6c5f00dd6ae1ef2291b43d2",
@@ -364,7 +378,7 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
     ],
     concepts: ["Archon"],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "fbbb8352e20a3c0bc96ab4143df3a000",
@@ -375,7 +389,8 @@ export const EpicItems = [
       "적중률 +10%",
       "회피율 +8%",
     ],
-    parts: EpicInfoEquip.PANTS,
+    concepts: ["Damage_Reduction"],
+    parts: "PANTS",
   },
   {
     itemId: "0a14a9ba60a35c72d29e84df2dea0c89",
@@ -386,8 +401,8 @@ export const EpicItems = [
       "HP MAX +600",
       "스킬 MP 소모량 7% 감소",
     ],
-    concepts: ["MpRecovery"],
-    parts: EpicInfoEquip.PANTS,
+    concepts: ["MpRecovery", "Utill"],
+    parts: "PANTS",
   },
   {
     itemId: "39429c89ffc72260381d75db915d6144",
@@ -399,7 +414,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["Elemental_Right"],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "d94c86e549c6e8feb6a39a6040f183c3",
@@ -411,7 +426,7 @@ export const EpicItems = [
       "500px 범위 내 중독 상태인 대상 하나 당 피해 증가 +356",
     ],
     concepts: ["Poison"],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "202f6f24610ec2eaf3fbc1e2ca2fb606",
@@ -423,7 +438,7 @@ export const EpicItems = [
       "암속성 피격 시 10초 동안 암속성 저항 20 증가",
     ],
     concepts: ["Elemental_Dark"],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "ce1ffdf1a13e5b8a827164af9471fb88",
@@ -434,7 +449,8 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
       "카운터 피격 시 받는 데미지 20% 감소",
     ],
-    parts: EpicInfoEquip.PANTS,
+    concepts: ["Utill"],
+    parts: "PANTS",
   },
   {
     itemId: "252e944381ed054025d0c18fcdc9dd65",
@@ -446,7 +462,7 @@ export const EpicItems = [
       "화속성 저항 10 증가",
     ],
     concepts: ["Burn", "Elemental_Fire"],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "7d345c37052899ddaa75a8451850d04b",
@@ -458,7 +474,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["AutoAttack_BasicSkill"],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "4a3100f32c0eb8ed71eac2d81228b91f",
@@ -469,7 +485,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "345db641b1bb3c2a9e41015db23e7d4f",
@@ -480,7 +496,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "137e00b2550a315e44eb5cf7d119aa0e",
@@ -492,7 +508,7 @@ export const EpicItems = [
       "적중률 +10%",
     ],
     concepts: ["HpRecovery"],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "3fc237c9ffba962859f5f988ee21d6e4",
@@ -504,7 +520,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Enchant"],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "44c35b2563e55de97d8f765062fd5f65",
@@ -516,7 +532,7 @@ export const EpicItems = [
       "회피율 +8%",
     ],
     concepts: ["Curse", "CooldownTime"],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "0df27e01e5151bc1d62185ff804a5bf8",
@@ -528,7 +544,7 @@ export const EpicItems = [
       "수속성 피격 시 10초 동안 수속성 저항 20 증가",
     ],
     concepts: ["Elemental_Water"],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "2766b493412bd6d14191ee3471c3a8e3",
@@ -540,7 +556,7 @@ export const EpicItems = [
       "화속성 피격 시 10초 동안 화속성 저항 20 증가",
     ],
     concepts: ["Elemental_Fire"],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "1d2ca5dedaf23683398a34e5103a9c80",
@@ -551,7 +567,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.PANTS,
+    parts: "PANTS",
   },
   {
     itemId: "59b756d84bf9478eaca58bed8f74762f",
@@ -563,7 +579,7 @@ export const EpicItems = [
       "HP 1분당 460.2 회복",
     ],
     concepts: ["Burn"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "818d02df7a254fb171ae5bd56cdea770",
@@ -574,7 +590,8 @@ export const EpicItems = [
       "인벤토리 무게 한도 +5kg",
       "MP 1분당 348 회복",
     ],
-    parts: EpicInfoEquip.SHOULDER,
+    concepts: ["Utill"],
+    parts: "SHOULDER",
   },
   {
     itemId: "3ed3ad1a2b04b0e736f5660591e8a1b0",
@@ -586,7 +603,7 @@ export const EpicItems = [
       "화속성 강화 15 증가",
     ],
     concepts: ["Burn", "Elemental_Fire"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "0d445b2c0c1767b021230836a64075f8",
@@ -598,7 +615,7 @@ export const EpicItems = [
       "HP MAX +600",
     ],
     concepts: ["HpRecovery"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "702b9cf1cffd766dca27a6048db3b6a8",
@@ -610,7 +627,7 @@ export const EpicItems = [
       "500px 범위 내 출혈 상태인 대상 하나 당 피해 증가 +356",
     ],
     concepts: ["Bleeding", "HpRecovery"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "f05fb6c5679d1791f5a45c1ac37f09e7",
@@ -621,8 +638,8 @@ export const EpicItems = [
       "수속성 강화 15 증가",
       "500px 범위 내 빙결 상태인 대상 하나 당 피해 증가 +385",
     ],
-    concepts: ["Freezing", "Elemental_Water"],
-    parts: EpicInfoEquip.SHOULDER,
+    concepts: ["Freezing", "Elemental_Water", "Nature"],
+    parts: "SHOULDER",
   },
   {
     itemId: "630d6c93e1652b76d34e9aba482fdf6d",
@@ -634,7 +651,7 @@ export const EpicItems = [
       "회피율 +8%",
     ],
     concepts: ["Overspending"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "70150f8ae432790a7142ebcff8b9f58b",
@@ -646,7 +663,7 @@ export const EpicItems = [
       "적중률 +10%",
     ],
     concepts: ["AutoAttack_BasicSkill"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "6de69cc379bcafdc904edba19cdea495",
@@ -658,7 +675,7 @@ export const EpicItems = [
       "HP 1분당 460.2 회복",
     ],
     concepts: ["Bleeding"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "0288215d10faa4a1f3797cc2dc7b7bc3",
@@ -670,7 +687,7 @@ export const EpicItems = [
       "HP 1분당 460.2 회복",
     ],
     concepts: ["Poison"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "561de2a9165833cff09d768a6987a0e6",
@@ -682,7 +699,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Enchant"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "d1fa4ae15e8788db667684d6333f9384",
@@ -694,7 +711,7 @@ export const EpicItems = [
       "적중률 +10%",
     ],
     concepts: ["CooldownTime"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "085c8667c566a941357da1b63df23786",
@@ -706,7 +723,7 @@ export const EpicItems = [
       "이동 속도 +8%",
     ],
     concepts: ["HpRecovery"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "8c03664cec0610ee73520d7afc9a58cf",
@@ -718,7 +735,7 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
     ],
     concepts: ["ElectricShock", "Bleeding", "Burn", "Poison"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "9ff0e3c1d81691de5b7064d7b53e5236",
@@ -729,7 +746,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "dc6914c3adf64eee7b794746de0f2423",
@@ -740,7 +757,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "80e068333e2e0250e3052f15fd9cb045",
@@ -752,7 +769,7 @@ export const EpicItems = [
       "회피율 +8%",
     ],
     concepts: ["MpRecovery", "HpRecovery"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "b4a9a10bfb696995fde05ffeb15c2cfd",
@@ -764,7 +781,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["Petrification"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "6d439d109db01c881ab48b87901f25d1",
@@ -776,7 +793,7 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
     ],
     concepts: ["HpRecovery", "Archon"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "82e9dd8fb1c6810d06fdf15288238f72",
@@ -788,7 +805,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["Elemental_Fire"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "4e162f544f731ce0189c46842eedafe4",
@@ -800,7 +817,7 @@ export const EpicItems = [
       "HP 1분당 460.2 회복",
     ],
     concepts: ["ElectricShock"],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "ec277a8b157166fe3049e19f0eb2d001",
@@ -811,7 +828,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.SHOULDER,
+    parts: "SHOULDER",
   },
   {
     itemId: "0d22229f6e5f7332a4be95f19a152b76",
@@ -823,7 +840,7 @@ export const EpicItems = [
       "HP MAX +600",
     ],
     concepts: ["Bleeding"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "e843f9a249b27252aacfacb962ee9a6d",
@@ -835,7 +852,7 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
     ],
     concepts: ["AutoAttack_BasicSkill", "Cube"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "37fb801133d11aad5c465c31b89a7dbe",
@@ -847,7 +864,7 @@ export const EpicItems = [
       "화속성 피격 시 10초 동안 화속성 저항 20 증가",
     ],
     concepts: ["CooldownTime"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "e9daa5cecab3a0800ce9e43a59ba61a0",
@@ -859,7 +876,7 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
     ],
     concepts: ["HpRecovery"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "81a70f87faf1aec2c3d6e8bbe8ba27c5",
@@ -871,7 +888,7 @@ export const EpicItems = [
       "명속성 강화 15 증가",
     ],
     concepts: ["ElectricShock", "Elemental_Right"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "deb8f8db1b5b99888e84f551f2737bf4",
@@ -883,7 +900,7 @@ export const EpicItems = [
       "적중률 +10%",
     ],
     concepts: ["AutoAttack_BasicSkill", "MpRecovery"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "02465c3bbbf1757e04d79122a4703f2b",
@@ -894,8 +911,8 @@ export const EpicItems = [
       "명속성 강화 15 증가",
       "500px 범위 내 감전 상태인 대상 하나 당 피해 증가 +356",
     ],
-    concepts: ["ElectricShock", "Elemental_Right"],
-    parts: EpicInfoEquip.WAIST,
+    concepts: ["ElectricShock", "Elemental_Right", "Nature"],
+    parts: "WAIST",
   },
   {
     itemId: "efeb610c5ca567a41bce3d1ebe0ddb50",
@@ -907,7 +924,7 @@ export const EpicItems = [
       "모든 속성 강화 15 증가 모든 속성 저항 10 감소",
     ],
     concepts: ["Petrification", "Elemental_All"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "3e347b620769264fa27c3f2b403ea051",
@@ -918,7 +935,8 @@ export const EpicItems = [
       "HP 1분당 460.2 회복",
       "HP MAX +600",
     ],
-    parts: EpicInfoEquip.WAIST,
+    concepts: ["Damage_Reduction"],
+    parts: "WAIST",
   },
   {
     itemId: "3a41efcbfef0e112276c723115063a92",
@@ -930,7 +948,7 @@ export const EpicItems = [
       "500px 범위 내 감전 상태인 대상 하나 당 피해 증가 +356",
     ],
     concepts: ["ElectricShock"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "65e6abbf70d47599a62a7efa614d86f2",
@@ -941,7 +959,8 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
       "이동 속도 +8%",
     ],
-    parts: EpicInfoEquip.WAIST,
+    concepts: ["Damage_Reduction"],
+    parts: "WAIST",
   },
   {
     itemId: "1751cf4529331916565fffaef9d9c2d7",
@@ -953,7 +972,7 @@ export const EpicItems = [
       "적중률 +10%",
     ],
     concepts: ["Elemental_All"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "1de39f4a48b3524cf768479c8f4c7b19",
@@ -964,7 +983,8 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
       "이동 속도 +8%",
     ],
-    parts: EpicInfoEquip.WAIST,
+    concepts: ["Utill"],
+    parts: "WAIST",
   },
   {
     itemId: "e6b5fe95db3502a8f239494707b9b1f7",
@@ -975,7 +995,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "c06812f2bf6992fd1b2c696bf76bb840",
@@ -986,7 +1006,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "12fde00e523a6e1e3a389a27d08b1655",
@@ -998,7 +1018,7 @@ export const EpicItems = [
       "공격 시 MP 3500 회복",
     ],
     concepts: ["Overspending", "MpRecovery"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "569e11a6a182a8af8034b37130b5bdcd",
@@ -1009,7 +1029,8 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
       "HP MAX +600",
     ],
-    parts: EpicInfoEquip.WAIST,
+    concepts: ["Utill"],
+    parts: "WAIST",
   },
   {
     itemId: "b68c316198c9eab07d977d87d2d49c72",
@@ -1021,7 +1042,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["Elemental_Water"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "58a6ff806f124df0900a14b1d16db647",
@@ -1033,7 +1054,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["Cube"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "a0a111aea1e5d504dd92d791581557f8",
@@ -1045,7 +1066,7 @@ export const EpicItems = [
       "500px 범위 내 중독 상태인 대상 하나 당 피해 증가 +356",
     ],
     concepts: ["Poison", "CooldownTime"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "19776f2e9cd9be54e84609e4c0aa1105",
@@ -1057,7 +1078,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Enchant"],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "1077ecd6be9f88f0274ddeb54c996a4d",
@@ -1068,7 +1089,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.WAIST,
+    parts: "WAIST",
   },
   {
     itemId: "c7988333e83925f12e324eda25c51496",
@@ -1080,7 +1101,7 @@ export const EpicItems = [
       "이동 속도 +8%",
     ],
     concepts: ["ElectricShock", "CooldownTime", "Elemental_All"],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "04e57598f0ca64f8fd687e528c8718d5",
@@ -1091,8 +1112,8 @@ export const EpicItems = [
       "암속성 강화 15 증가",
       "500px 범위 내 암흑 상태인 대상 하나 당 피해 증가 +385",
     ],
-    concepts: ["Dark", "Elemental_Dark"],
-    parts: EpicInfoEquip.SHOES,
+    concepts: ["Dark", "Elemental_Dark", "Nature"],
+    parts: "SHOES",
   },
   {
     itemId: "a8089b085883d0709efd4664b20acdc8",
@@ -1115,7 +1136,7 @@ export const EpicItems = [
       "Stun",
       "Curse",
     ],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "62ce0161bd947bf034dfe128fdbd305a",
@@ -1127,7 +1148,7 @@ export const EpicItems = [
       "회피율 +8%",
     ],
     concepts: ["Archon"],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "813efaeefe91694d4fe48d2ed069b415",
@@ -1139,7 +1160,7 @@ export const EpicItems = [
       "물리 크리티컬 히트 +7% 마법 크리티컬 히트 +7% 모든 상태 이상 내성 10% 감소",
     ],
     concepts: ["ElectricShock"],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "857de672c4e6a5265b6d3b632f43abe6",
@@ -1151,7 +1172,7 @@ export const EpicItems = [
       "HP MAX +600",
     ],
     concepts: ["AutoAttack_BasicSkill"],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "5ca4abb2f37eac3c8e78adf8e5c34b62",
@@ -1163,7 +1184,7 @@ export const EpicItems = [
       "공격 시 MP 3500 회복",
     ],
     concepts: ["Overspending", "MpRecovery", "CooldownTime"],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "c078600a175d734afe9c8910f19e5888",
@@ -1175,7 +1196,7 @@ export const EpicItems = [
       "모든 속성 강화 15 증가 모든 속성 저항 10 감소",
     ],
     concepts: ["Command", "Elemental_All"],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "fc9a49a7af5709126b6a52fc745f71bc",
@@ -1187,7 +1208,7 @@ export const EpicItems = [
       "이동 속도 +8%",
     ],
     concepts: ["Leveling"],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "279bd2467bc32917733ac934a41ebddc",
@@ -1199,7 +1220,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["Elemental_Dark"],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "7dce66a44d3a8b82e95fe0e5d186080e",
@@ -1210,8 +1231,8 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
       "이동 속도 +8%",
     ],
-    concepts: ["Stun"],
-    parts: EpicInfoEquip.SHOES,
+    concepts: ["Stun", "Utill"],
+    parts: "SHOES",
   },
   {
     itemId: "6fecf9b7a33a3fd674194700b73cd2d8",
@@ -1222,7 +1243,8 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
       "이동 속도 +8%",
     ],
-    parts: EpicInfoEquip.SHOES,
+    concepts: ["Utill"],
+    parts: "SHOES",
   },
   {
     itemId: "daa1fcbc1e4a75242d0ac716391f6033",
@@ -1234,7 +1256,7 @@ export const EpicItems = [
       "500px 범위 내 석화 상태인 대상 하나 당 피해 증가 +385",
     ],
     concepts: ["Petrification", "CooldownTime"],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "370f6b09c57e68bc02850026255ddd97",
@@ -1245,7 +1267,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "6ddc12ba86e14aaa9620cfc0eec38c57",
@@ -1256,7 +1278,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "5fc5efd565cdd61e59361fe71ed5f6e1",
@@ -1268,7 +1290,7 @@ export const EpicItems = [
       "MP MAX +945",
     ],
     concepts: ["Overspending"],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "8e1ab829b097de0bb3cf46795dbffd27",
@@ -1280,7 +1302,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Enchant"],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "6e589c923e2a27dc9421729e1226715f",
@@ -1292,7 +1314,7 @@ export const EpicItems = [
       "화속성 강화 15 증가",
     ],
     concepts: ["Burn", "Elemental_Fire"],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "76f3ed92f30075894277e257c95670b9",
@@ -1303,7 +1325,8 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
       "이동 속도 +8%",
     ],
-    parts: EpicInfoEquip.SHOES,
+    concepts: ["Utill"],
+    parts: "SHOES",
   },
   {
     itemId: "84d6a783973aa3de16aee7eceba5df2c",
@@ -1315,7 +1338,7 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
     ],
     concepts: ["Poison", "CooldownTime"],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "58dde62cb3223ed575dbdce5499f578d",
@@ -1326,7 +1349,8 @@ export const EpicItems = [
       "회피율 +8%",
       "이동 속도 +8%",
     ],
-    parts: EpicInfoEquip.SHOES,
+    concepts: ["Utill"],
+    parts: "SHOES",
   },
   {
     itemId: "20d7eb7c17183bff06758a2f6df63bb6",
@@ -1337,7 +1361,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.SHOES,
+    parts: "SHOES",
   },
   {
     itemId: "7767981f839a0083a3d734199cb0deda",
@@ -1349,7 +1373,7 @@ export const EpicItems = [
       "석화 상태 적 공격 시 스킬 공격력 15% 증가",
     ],
     concepts: ["Petrification"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "b08e68947d0bbd53e50d6c5165d22ff1",
@@ -1361,7 +1385,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["CooldownTime"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "efc736cc907c60072bb92146ae006257",
@@ -1373,7 +1397,7 @@ export const EpicItems = [
       "감전 데미지 10% 증가",
     ],
     concepts: ["ElectricShock"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "fbd0ead8da84de2d9200184d3139f9af",
@@ -1384,8 +1408,8 @@ export const EpicItems = [
       "HP MAX +600",
       "MP MAX +945",
     ],
-    concepts: ["HpRecovery"],
-    parts: EpicInfoEquip.WRIST,
+    concepts: ["HpRecovery", "Utill"],
+    parts: "WRIST",
   },
   {
     itemId: "2727b58be5152b2fba6d5a8c80337d5e",
@@ -1396,7 +1420,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "8ead84aa6b74d38b4a851a001d28a0c9",
@@ -1408,7 +1432,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Enchant"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "2dc6d6233b142a632d4808a452f4c636",
@@ -1420,7 +1444,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Overspending", "CooldownTime"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "26384ca42de8c7b3487729d3d9e9868c",
@@ -1432,7 +1456,7 @@ export const EpicItems = [
       "적중률 +10%",
     ],
     concepts: ["AutoAttack_BasicSkill"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "5e221b9892f817f3cbaa14f730d7ec3f",
@@ -1444,7 +1468,7 @@ export const EpicItems = [
       "자신이 거는 기절 지속 시간 2초 증가",
     ],
     concepts: ["ElectricShock", "Stun"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "5ca915f03d8a5a625465366e58bdc67f",
@@ -1456,7 +1480,7 @@ export const EpicItems = [
       "출혈 데미지 10% 증가",
     ],
     concepts: ["Bleeding"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "c3755118b4e3b8ee50a3bfc6f8c027c9",
@@ -1468,7 +1492,7 @@ export const EpicItems = [
       "물리 크리티컬 히트 +7% 마법 크리티컬 히트 +7% 모든 상태 이상 내성 10% 감소",
     ],
     concepts: ["Elemental_All", "Cube"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "d93969035f2f366e4bac3beffb260c02",
@@ -1480,7 +1504,7 @@ export const EpicItems = [
       "HP MAX +600",
     ],
     concepts: ["ElectricShock", "Bleeding", "Burn", "Poison"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "96ebf9909c2782f9469c246ae87da26d",
@@ -1492,7 +1516,7 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
     ],
     concepts: ["Elemental_All", "Leveling"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "e762baddf99f8501ef911af68eea533a",
@@ -1504,7 +1528,7 @@ export const EpicItems = [
       "화상 데미지 10% 증가",
     ],
     concepts: ["Burn"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "f7bfda17172325889c99158880f1702a",
@@ -1516,7 +1540,7 @@ export const EpicItems = [
       "중독 데미지 10% 증가",
     ],
     concepts: ["Poison"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "cbd037a31b281da9b5064c9bae6df1c4",
@@ -1528,7 +1552,7 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
     ],
     concepts: ["Burn", "Elemental_All"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "474be2a11a50893461caddd14d383f1f",
@@ -1539,7 +1563,8 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
       "이동 속도 +8%",
     ],
-    parts: EpicInfoEquip.WRIST,
+    concepts: ["Utill"],
+    parts: "WRIST",
   },
   {
     itemId: "75e882cdd821aa67748eb24ff1f5be59",
@@ -1551,7 +1576,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["CooldownTime"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "df1ce86a441d7f8bd313c4ee3a720f2a",
@@ -1562,7 +1587,8 @@ export const EpicItems = [
       "적중률 +10%",
       "회피율 +8%",
     ],
-    parts: EpicInfoEquip.WRIST,
+    concepts: ["Utill"],
+    parts: "WRIST",
   },
   {
     itemId: "a4d57b6413617409456b7fae42ba8023",
@@ -1573,7 +1599,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "9e3029a34e4c0a4ec4b4a064cf1485e5",
@@ -1584,7 +1610,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "fd19e43acb9bf998f94df0db7729be06",
@@ -1596,7 +1622,7 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
     ],
     concepts: ["Overspending", "Archon"],
-    parts: EpicInfoEquip.WRIST,
+    parts: "WRIST",
   },
   {
     itemId: "689669772092589ba47a7d6adbb10023",
@@ -1608,7 +1634,7 @@ export const EpicItems = [
       "화속성 저항 10 증가",
     ],
     concepts: ["Elemental_Fire"],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "d4611183c02aaf2c96da65125778985f",
@@ -1619,7 +1645,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "53dff026d8600429a488ad25095b9692",
@@ -1630,7 +1656,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "967e5d84f11c310b316f075c92316cd5",
@@ -1641,8 +1667,8 @@ export const EpicItems = [
       "MP 1분당 348 회복",
       "모든 속성 강화 15 증가 모든 속성 저항 10 감소",
     ],
-    concepts: ["Elemental_All"],
-    parts: EpicInfoEquip.AMULET,
+    concepts: ["Elemental_All", "SkillDamage"],
+    parts: "AMULET",
   },
   {
     itemId: "b81947e0883e69054da2c3cc02b7eebd",
@@ -1654,7 +1680,7 @@ export const EpicItems = [
       "수속성 저항 10 증가",
     ],
     concepts: ["Elemental_Water"],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "88fce89d89665d2948dde039042c91bc",
@@ -1665,7 +1691,8 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
       "적중률 +10%",
     ],
-    parts: EpicInfoEquip.AMULET,
+    concepts: ["Speed", "SkillDamage"],
+    parts: "AMULET",
   },
   {
     itemId: "2238cdafe92a638f92eadb691d2256c2",
@@ -1677,7 +1704,7 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
     ],
     concepts: ["Elemental_All", "Leveling"],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "91e668c19b5b1957befc8f4ca4dd5098",
@@ -1688,8 +1715,8 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
-    concepts: ["Counter"],
-    parts: EpicInfoEquip.AMULET,
+    concepts: ["Counter", "SkillDamage"],
+    parts: "AMULET",
   },
   {
     itemId: "14a424fbc1bbd0b45e39732bbc065572",
@@ -1700,7 +1727,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "9f86e896dc473690eaa072bd093325f5",
@@ -1711,7 +1738,8 @@ export const EpicItems = [
       "점프력 20 증가 점프 시 이동 속도 30% 증가",
       "이동 속도 +8%",
     ],
-    parts: EpicInfoEquip.AMULET,
+    concepts: ["Utill"],
+    parts: "AMULET",
   },
   {
     itemId: "426bf11b7f8aa69b2565da4be9b59de1",
@@ -1723,7 +1751,7 @@ export const EpicItems = [
       "물리 크리티컬 히트 +7% 마법 크리티컬 히트 +7% 모든 상태 이상 내성 10% 감소",
     ],
     concepts: ["CooldownTime", "Command", "Elemental_All"],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "d860eff0b483a562e0b6886a93f09ec8",
@@ -1735,7 +1763,7 @@ export const EpicItems = [
       "화속성 저항 10 증가",
     ],
     concepts: ["Burn", "CooldownTime", "Elemental_Fire"],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "d6fd0607a7a56808824dfcd65267862c",
@@ -1746,8 +1774,8 @@ export const EpicItems = [
       "모든 속성 강화 15 증가 모든 속성 저항 10 감소",
       "물리 크리티컬 히트 +7% 마법 크리티컬 히트 +7% 모든 상태 이상 내성 10% 감소",
     ],
-    concepts: ["Elemental_All"],
-    parts: EpicInfoEquip.AMULET,
+    concepts: ["Elemental_All", "SkillDamage"],
+    parts: "AMULET",
   },
   {
     itemId: "2df3b394f3d4b03153524b2d22502c78",
@@ -1759,7 +1787,7 @@ export const EpicItems = [
       "암속성 저항 10 증가",
     ],
     concepts: ["Elemental_Dark"],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "bbd070d70a5168fabecaef168427487d",
@@ -1771,7 +1799,7 @@ export const EpicItems = [
       "모든 속성 강화 15 증가 모든 속성 저항 10 감소",
     ],
     concepts: ["Elemental_All", "Archon"],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "4a2a60d8d9277044476939a0322f3d53",
@@ -1783,7 +1811,7 @@ export const EpicItems = [
       "명속성 저항 10 증가",
     ],
     concepts: ["Elemental_Right"],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "76497fb8b232f1a56e96de7511ed2b0d",
@@ -1795,7 +1823,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Enchant"],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "44dfc7da6982301231dcd9ee9c22e979",
@@ -1807,7 +1835,7 @@ export const EpicItems = [
       "수속성 저항 10 증가",
     ],
     concepts: ["Burn", "Freezing", "Elemental_Water"],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "b3b32a1eb7a209958c7835c8b42b0e34",
@@ -1819,7 +1847,7 @@ export const EpicItems = [
       "모든 속성 강화 15 증가 모든 속성 저항 10 감소",
     ],
     concepts: ["Overspending", "MpRecovery", "Elemental_All"],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "403dcc99cc1fb678bd7e191597e6ca0c",
@@ -1830,7 +1858,8 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
     ],
-    parts: EpicInfoEquip.AMULET,
+    concepts: ["Utill"],
+    parts: "AMULET",
   },
   {
     itemId: "9e6946fd3d88ef7d33f1c5d983064929",
@@ -1842,7 +1871,7 @@ export const EpicItems = [
       "HP MAX +600",
     ],
     concepts: ["Sleep"],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "fd5ffa03827b83e0109a3eb1862798eb",
@@ -1865,7 +1894,7 @@ export const EpicItems = [
       "Stun",
       "Curse",
     ],
-    parts: EpicInfoEquip.AMULET,
+    parts: "AMULET",
   },
   {
     itemId: "4704c80a314a7ddf6942f961254bd51d",
@@ -1877,7 +1906,7 @@ export const EpicItems = [
       "암흑 상태 적 공격 시 스킬 공격력 10% 증가",
     ],
     concepts: ["Dark", "Elemental_Dark"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "61b11bf9de582675393ec342fac6b7b8",
@@ -1888,7 +1917,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "71be2ffba89052de0994976e173030c0",
@@ -1899,7 +1928,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "49ff8f4240b7f3ec42d6989f4fc57f09",
@@ -1910,7 +1939,8 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
       "회피율 +8%",
     ],
-    parts: EpicInfoEquip.RING,
+    concepts: ["Utill"],
+    parts: "RING",
   },
   {
     itemId: "3987cd6773aa22eb97957dbf1de92285",
@@ -1922,7 +1952,7 @@ export const EpicItems = [
       "기절 상태 적 공격 시 스킬 공격력 15% 증가",
     ],
     concepts: ["Stun", "Elemental_All"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "b92733a01bd3e559a2ed7c61306f2946",
@@ -1934,7 +1964,7 @@ export const EpicItems = [
       "모든 속성 강화 15 증가 모든 속성 저항 10 감소",
     ],
     concepts: ["Elemental_All", "Counter"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "b6df9f390bc57f5bcb2fd49a6065c536",
@@ -1946,7 +1976,7 @@ export const EpicItems = [
       "적중률 +10%",
     ],
     concepts: ["MpRecovery", "Elemental_All"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "86e492eb2c66b42f490f73a8fcd193dc",
@@ -1958,7 +1988,7 @@ export const EpicItems = [
       "HP 1분당 460.2 회복",
     ],
     concepts: ["HpRecovery", "Archon"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "a6b0fdcae5a5021307ed340c71a788e9",
@@ -1969,7 +1999,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "1a17f4ecc09e755ede2b92d8ad399654",
@@ -1981,7 +2011,7 @@ export const EpicItems = [
       "출혈 데미지 10% 증가",
     ],
     concepts: ["Bleeding"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "c9aaffefbd086af9cb9e54ffef487051",
@@ -1993,7 +2023,7 @@ export const EpicItems = [
       "감전 상태 적 공격 시 스킬 공격력 5% 증가",
     ],
     concepts: ["ElectricShock", "Elemental_Right"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "1160d523e09c57173a62f1b337eb6b67",
@@ -2005,7 +2035,7 @@ export const EpicItems = [
       "빙결 상태 적 공격 시 스킬 공격력 15% 증가",
     ],
     concepts: ["Freezing", "Elemental_Water"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "001b114bde67db7c3f0dc31c69df6119",
@@ -2017,7 +2047,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["Overspending"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "639dedaa8b9218023da86ff44f80662f",
@@ -2040,7 +2070,7 @@ export const EpicItems = [
       "Stun",
       "Curse",
     ],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "b9e6fd403736597f1260662dc808121a",
@@ -2052,7 +2082,7 @@ export const EpicItems = [
       "화상 상태 적 공격 시 스킬 공격력 5% 증가",
     ],
     concepts: ["Burn", "Elemental_Fire"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "509508d2bdb68a333a7e095ab6f86011",
@@ -2064,7 +2094,7 @@ export const EpicItems = [
       "MP MAX +945",
     ],
     concepts: ["MpRecovery", "HpRecovery"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "f245d1893a0380a456edd0844c332fb5",
@@ -2076,7 +2106,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Enchant"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "1d31aaae6d692a76a6da48a79c66a3f9",
@@ -2088,7 +2118,7 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
     ],
     concepts: ["Elemental_All", "Leveling"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "61276b1795ab47f1e8813b8600c01b5a",
@@ -2100,7 +2130,7 @@ export const EpicItems = [
       "MP MAX +945",
     ],
     concepts: ["Burn", "Freezing"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "bf82008ceba94e2933928b6460865370",
@@ -2112,7 +2142,7 @@ export const EpicItems = [
       "HP 1분당 460.2 회복",
     ],
     concepts: ["Bleeding", "CooldownTime"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "e30f4eaf0037b5b9f748213a14dc26f5",
@@ -2124,7 +2154,7 @@ export const EpicItems = [
       "MP MAX +945",
     ],
     concepts: ["CooldownTime"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "13ec4223a5649e83e09d95a87ab61cb4",
@@ -2136,7 +2166,7 @@ export const EpicItems = [
       "이동 속도 +8%",
     ],
     concepts: ["CooldownTime"],
-    parts: EpicInfoEquip.RING,
+    parts: "RING",
   },
   {
     itemId: "c8aedd82444ed4c34ed038df8a2673c7",
@@ -2148,7 +2178,7 @@ export const EpicItems = [
       "HP MAX +600",
     ],
     concepts: ["Elemental_Right"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "e2ab555a05e8de69133e0bfa4ab5bfd1",
@@ -2159,7 +2189,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "573399fba4997923936a56fe15d50d6f",
@@ -2170,7 +2200,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "3bab4b93da1f7d2fcc6da6c98015eae1",
@@ -2181,7 +2211,8 @@ export const EpicItems = [
       "HP 1분당 460.2 회복",
       "MP 1분당 348 회복",
     ],
-    parts: EpicInfoEquip.SUPPORT,
+    concepts: ["SkillDamage"],
+    parts: "SUPPORT",
   },
   {
     itemId: "c622f49d9f7ab3f96f910ef2cea43613",
@@ -2193,7 +2224,7 @@ export const EpicItems = [
       "HP MAX +600",
     ],
     concepts: ["Elemental_Dark"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "64396f744a9abc7f125d85e384c07b9a",
@@ -2205,7 +2236,7 @@ export const EpicItems = [
       "회피율 +8%",
     ],
     concepts: ["Command"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "fb7a79e708279d7a5cfbad71b2f5c618",
@@ -2217,7 +2248,7 @@ export const EpicItems = [
       "공격 시 50% 확률로 적을 감전 상태로 만듦",
     ],
     concepts: ["ElectricShock", "CooldownTime"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "8590a244ae403f30491ed6e62563e7ba",
@@ -2229,7 +2260,7 @@ export const EpicItems = [
       "이동 속도 +8%",
     ],
     concepts: ["Elemental_All"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "be6c1e5923222563027a392c859ae995",
@@ -2240,7 +2271,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "4ebe756da29721b7a93c7752320de8a9",
@@ -2251,7 +2282,8 @@ export const EpicItems = [
       "점프력 20 증가 점프 시 이동 속도 30% 증가",
       "이동 속도 +8%",
     ],
-    parts: EpicInfoEquip.SUPPORT,
+    concepts: ["Utill"],
+    parts: "SUPPORT",
   },
   {
     itemId: "72e6886ad80d5ae4e6576105da6e03c0",
@@ -2263,7 +2295,7 @@ export const EpicItems = [
       "HP MAX +600",
     ],
     concepts: ["Elemental_Water"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "a10fb66fa4ac53012cdce77fb3cbbeee",
@@ -2275,7 +2307,7 @@ export const EpicItems = [
       "HP MAX +600",
     ],
     concepts: ["Elemental_Fire"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "5ba03f421362470ea60f590418d7ce6e",
@@ -2286,7 +2318,8 @@ export const EpicItems = [
       "점프력 20 증가 점프 시 이동 속도 30% 증가",
       "이동 속도 +8%",
     ],
-    parts: EpicInfoEquip.SUPPORT,
+    concepts: ["Utill"],
+    parts: "SUPPORT",
   },
   {
     itemId: "0d416780271ff2281e5e8d023c8deafe",
@@ -2298,7 +2331,7 @@ export const EpicItems = [
       "HP MAX +600",
     ],
     concepts: ["Burn"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "7f807013fd7ffcb5cd7cfd82bf984c52",
@@ -2310,7 +2343,7 @@ export const EpicItems = [
       "적중률 +10%",
     ],
     concepts: ["Archon"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "148b87e4558b32884365ac2566cb2c6e",
@@ -2322,7 +2355,7 @@ export const EpicItems = [
       "HP MAX +600",
     ],
     concepts: ["Sleep", "CooldownTime"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "9bf4445165a20d7e5a2466b0dc6aec57",
@@ -2334,7 +2367,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Enchant"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "a16a3c99ec8fa5222816a51bf4bc6ef9",
@@ -2346,7 +2379,7 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
     ],
     concepts: ["Elemental_All", "Leveling"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "19324f712cecd5acf393a66395cecfc7",
@@ -2358,7 +2391,7 @@ export const EpicItems = [
       "HP MAX +600",
     ],
     concepts: ["Freezing"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "9a66757f985f48fc84a8199f1855445f",
@@ -2378,7 +2411,7 @@ export const EpicItems = [
       "Curse",
       "CooldownTime",
     ],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "698a56642e05d261f17bba5c87233cf4",
@@ -2390,7 +2423,7 @@ export const EpicItems = [
       "MP MAX +945",
     ],
     concepts: ["MpRecovery", "HpRecovery"],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "e9eeb7d5eee037dd736aa65a590d31aa",
@@ -2409,7 +2442,7 @@ export const EpicItems = [
       "AutoAttack_BasicSkill",
       "CooldownTime",
     ],
-    parts: EpicInfoEquip.SUPPORT,
+    parts: "SUPPORT",
   },
   {
     itemId: "50e34031bfb458d7a43ed56d2a36db1d",
@@ -2433,7 +2466,7 @@ export const EpicItems = [
       "Curse",
       "CooldownTime",
     ],
-    parts: EpicInfoEquip.MAGIC_STON,
+    parts: "MAGIC_STON",
   },
   {
     itemId: "37522f61ef37c5b5251900c3345af96a",
@@ -2444,7 +2477,8 @@ export const EpicItems = [
       "암속성 저항 10 증가",
       "HP MAX +600",
     ],
-    parts: EpicInfoEquip.MAGIC_STON,
+    concepts: ["HpRecovery"],
+    parts: "MAGIC_STON",
   },
   {
     itemId: "a239e1e2c6d3074bc15bdb9bbac3abd1",
@@ -2455,7 +2489,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.MAGIC_STON,
+    parts: "MAGIC_STON",
   },
   {
     itemId: "a18edcc238802a9f6b3e494ea30ef1ca",
@@ -2466,7 +2500,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.MAGIC_STON,
+    parts: "MAGIC_STON",
   },
   {
     itemId: "2da044e940cf61a4d178790399ed478a",
@@ -2477,7 +2511,8 @@ export const EpicItems = [
       "HP 1분당 460.2 회복",
       "회피율 +8%",
     ],
-    parts: EpicInfoEquip.MAGIC_STON,
+    concepts: ["Speed"],
+    parts: "MAGIC_STON",
   },
   {
     itemId: "bb36704c7fcdf607177c80b28267cf41",
@@ -2489,7 +2524,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["AutoAttack_BasicSkill", "CooldownTime"],
-    parts: EpicInfoEquip.MAGIC_STON,
+    parts: "MAGIC_STON",
   },
   {
     itemId: "55c669c5fb7a64523cd22273e1e1581a",
@@ -2500,7 +2535,8 @@ export const EpicItems = [
       "적중률 +10%",
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
     ],
-    parts: EpicInfoEquip.MAGIC_STON,
+    concepts: ["SkillDamage"],
+    parts: "MAGIC_STON",
   },
   {
     itemId: "09db8d8812162f16cc31df0903af3ed4",
@@ -2512,7 +2548,7 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
     ],
     concepts: ["Elemental_All", "Leveling"],
-    parts: EpicInfoEquip.MAGIC_STON,
+    parts: "MAGIC_STON",
   },
   {
     itemId: "46059223889628399c07dbb53ec4f3a1",
@@ -2523,8 +2559,8 @@ export const EpicItems = [
       "HP MAX +600",
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
-    concepts: ["Counter"],
-    parts: EpicInfoEquip.MAGIC_STON,
+    concepts: ["Counter", "Utill"],
+    parts: "MAGIC_STON",
   },
   {
     itemId: "f53f14f757d1389fcdc2213f146e488b",
@@ -2535,7 +2571,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.MAGIC_STON,
+    parts: "MAGIC_STON",
   },
   {
     itemId: "2ed40a5e4bc69485f9acd316fc5891af",
@@ -2547,7 +2583,7 @@ export const EpicItems = [
       "HP 1분당 460.2 회복",
     ],
     concepts: ["Stun", "CooldownTime"],
-    parts: EpicInfoEquip.MAGIC_STON,
+    parts: "MAGIC_STON",
   },
   {
     itemId: "62ef7d57f74415849dc809a02916cc69",
@@ -2558,7 +2594,8 @@ export const EpicItems = [
       "명속성 저항 10 증가",
       "HP MAX +600",
     ],
-    parts: EpicInfoEquip.MAGIC_STON,
+    concepts: ["HpRecovery"],
+    parts: "MAGIC_STON",
   },
   {
     itemId: "56417dbb8db44ae21eba15ed38cee28f",
@@ -2569,7 +2606,9 @@ export const EpicItems = [
       "수속성 저항 10 증가",
       "HP MAX +600",
     ],
-    parts: EpicInfoEquip.MAGIC_STON,
+    concepts: ["HpRecovery"],
+
+    parts: "MAGIC_STON",
   },
   {
     itemId: "751c0ba167e2704956176b72e63fe89d",
@@ -2581,7 +2620,7 @@ export const EpicItems = [
       "회피율 +8%",
     ],
     concepts: ["Overspending"],
-    parts: EpicInfoEquip.MAGIC_STON,
+    parts: "MAGIC_STON",
   },
   {
     itemId: "9f30cf8ea43c6090797cb210d0d7723c",
@@ -2592,7 +2631,8 @@ export const EpicItems = [
       "화속성 저항 10 증가",
       "HP MAX +600",
     ],
-    parts: EpicInfoEquip.MAGIC_STON,
+    concepts: ["HpRecovery"],
+    parts: "MAGIC_STON",
   },
   {
     itemId: "ee401af5ff045eb29da3a5f6794bbdbb",
@@ -2603,7 +2643,8 @@ export const EpicItems = [
       "MP MAX +945",
       "MP 1분당 348 회복",
     ],
-    parts: EpicInfoEquip.MAGIC_STON,
+    concepts: ["Speed"],
+    parts: "MAGIC_STON",
   },
   {
     itemId: "bfffff3faa424f90a6b674b4689bbd0a",
@@ -2615,7 +2656,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Enchant"],
-    parts: EpicInfoEquip.MAGIC_STON,
+    parts: "MAGIC_STON",
   },
   {
     itemId: "1e7ade53a86f1d3589082304002ce4bc",
@@ -2627,7 +2668,7 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
     ],
     concepts: ["Sleep"],
-    parts: EpicInfoEquip.MAGIC_STON,
+    parts: "MAGIC_STON",
   },
   {
     itemId: "05528a5369db4309b9b6791780c07a97",
@@ -2639,7 +2680,7 @@ export const EpicItems = [
       "이동 속도 +8%",
     ],
     concepts: ["CooldownTime"],
-    parts: EpicInfoEquip.MAGIC_STON,
+    parts: "MAGIC_STON",
   },
   {
     itemId: "5e082f686e62f05d6630303ddc92d955",
@@ -2651,7 +2692,7 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
     ],
     concepts: ["Bleeding", "HpRecovery"],
-    parts: EpicInfoEquip.MAGIC_STON,
+    parts: "MAGIC_STON",
   },
   {
     itemId: "ae71fa231a05101bf87dec168c442ce0",
@@ -2662,7 +2703,8 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
-    parts: EpicInfoEquip.MAGIC_STON,
+    concepts: ["Utill"],
+    parts: "MAGIC_STON",
   },
   {
     itemId: "9ba8b68cf83caca35308e90dbadcfec0",
@@ -2674,7 +2716,7 @@ export const EpicItems = [
       "적중률 +10%",
     ],
     concepts: ["CooldownTime", "Cube"],
-    parts: EpicInfoEquip.MAGIC_STON,
+    parts: "MAGIC_STON",
   },
   {
     itemId: "d664db344fb2ab71bb13be9dd716cd42",
@@ -2686,7 +2728,7 @@ export const EpicItems = [
       "명속성 저항 10 증가",
     ],
     concepts: ["Elemental_Fire", "Elemental_Right"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "43c511645914d15da2464c26ec863f27",
@@ -2698,7 +2740,7 @@ export const EpicItems = [
       "물리 크리티컬 히트 +5% 마법 크리티컬 히트 +5%",
     ],
     concepts: ["Overspending"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "69e9b0361cbd23ad0bb17e2b25a2a1e2",
@@ -2709,7 +2751,8 @@ export const EpicItems = [
       "회피율 +8%",
       "이동 속도 +8%",
     ],
-    parts: EpicInfoEquip.EARRING,
+    concepts: ["Utill"],
+    parts: "EARRING",
   },
   {
     itemId: "e3b71bb48ef6f9d0b9f6c6d084a6bbd9",
@@ -2721,7 +2764,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Stun"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "089aa9cba8ce4d68f3101c827f3daa38",
@@ -2732,7 +2775,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "ce1cf7f9b7c8a799800af70201d0d04c",
@@ -2744,7 +2787,7 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
     ],
     concepts: ["Bleeding", "CooldownTime"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "48543193774f538d227a61381acd329e",
@@ -2756,7 +2799,7 @@ export const EpicItems = [
       "화속성 저항 10 증가",
     ],
     concepts: ["Elemental_Fire", "Elemental_Right"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "b16348f86d01e99a541a2af2a21a015b",
@@ -2768,7 +2811,7 @@ export const EpicItems = [
       "MP MAX +945",
     ],
     concepts: ["Cube"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "fbd153de08e38753316ba906bcd0a180",
@@ -2780,7 +2823,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["AutoAttack_BasicSkill", "CooldownTime"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "5670a44246fc1610b6d1fef45f9041ac",
@@ -2792,7 +2835,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["CooldownTime"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "3fc32317db0aa13b835cc2d598cbd57b",
@@ -2803,7 +2846,8 @@ export const EpicItems = [
       "이동 속도 +8%",
       "MP 1분당 348 회복",
     ],
-    parts: EpicInfoEquip.EARRING,
+    concepts: ["Speed"],
+    parts: "EARRING",
   },
   {
     itemId: "e65dbf7aff427f7714696a2b3cf01417",
@@ -2815,7 +2859,7 @@ export const EpicItems = [
       "암속성 저항 10 증가",
     ],
     concepts: ["Elemental_Water", "Elemental_Dark"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "922575ac85da5f999815024b6b2ec2a7",
@@ -2827,7 +2871,7 @@ export const EpicItems = [
       "MP 1분당 348 회복",
     ],
     concepts: ["Enchant"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "f8399898174aa69bff247d87cea6a140",
@@ -2839,7 +2883,7 @@ export const EpicItems = [
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
     ],
     concepts: ["Freezing", "HpRecovery"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "193e16cf78fb893d6d1942e9c2b53f93",
@@ -2851,7 +2895,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["Petrification"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "0f63eccb7d33ad89e615c2da1239c874",
@@ -2862,7 +2906,8 @@ export const EpicItems = [
       "회피율 +8%",
       "물리 방어력 7000 증가 마법 방어력 7000 증가",
     ],
-    parts: EpicInfoEquip.EARRING,
+    concepts: ["Utill"],
+    parts: "EARRING",
   },
   {
     itemId: "7b590f832a97ee8eacc17a54e3fe2d4a",
@@ -2874,7 +2919,7 @@ export const EpicItems = [
       "공격 속도 +8% 캐스팅 속도 +12%",
     ],
     concepts: ["Elemental_All"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "50f6813155b213d33ce36306c911b34f",
@@ -2886,7 +2931,7 @@ export const EpicItems = [
       "출혈 상태 적 공격 시 스킬 공격력 5% 증가",
     ],
     concepts: ["Bleeding"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "dd57a830c1b71e58aa9a33feae415f8f",
@@ -2898,7 +2943,7 @@ export const EpicItems = [
       "수속성 저항 10 증가",
     ],
     concepts: ["Elemental_Water", "Elemental_Dark"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "13784e929edd0cb8cfdcb38d629cfc79",
@@ -2909,7 +2954,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "2e1b235fd35aa26bda52427c07e795ec",
@@ -2920,7 +2965,7 @@ export const EpicItems = [
       "장비를 획득 및 백과사전에서 확인",
       "장비를 획득 및 백과사전에서 확인",
     ],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
   {
     itemId: "c0ef77f4ab5c758765326bf5a8b8f23f",
@@ -2932,6 +2977,6 @@ export const EpicItems = [
       "회피율 +8%",
     ],
     concepts: ["MpRecovery"],
-    parts: EpicInfoEquip.EARRING,
+    parts: "EARRING",
   },
 ];
