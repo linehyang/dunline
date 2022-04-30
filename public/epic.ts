@@ -46,6 +46,19 @@ export enum EpicInfoEquip {
   EARRING = "귀걸이",
 }
 
+export enum Dungeon {
+  NoblessCode = "노블레스 코드",
+  DestroyedCastle = "파괴된 죽은 자의 성",
+  LandofWhite = "백색의 땅",
+  Vericollis = "베리콜리스",
+  CanyonHills = "캐니언 힐",
+  QueenFallt = "퀸 팔트",
+  NasauForest = "나사우 삼림",
+  EternalFlameLaboratory = "이터널 플레임 연구소",
+  AltarofHeblon = "헤블론의 예언소",
+  KingsCradle = "왕의 요람",
+}
+
 export const EpicItems = [
   {
     itemId: "fdab01437e9eca7ce0ae660a78ca499a",

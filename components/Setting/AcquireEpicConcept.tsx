@@ -6,18 +6,25 @@ import { Box, Tooltip, Text } from "@chakra-ui/react";
 import { EpicConcept, EpicItems, EpicInfoEquip } from "../../public/epic";
 
 import HoverEpicInfo from "./HoverEpicInfo";
-import ConceptFilter from "./ConceptFilter";
 import WearItem from "./WearItem";
+
+import EpicItemToolTip from "./EpicItemToolTip";
+
+type EpicConceptKeyType = keyof typeof EpicConcept;
+type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;
+type OptionValue = { value: EpicConceptKeyType; label: string };
 
 type Props = {
   server: string | string[] | undefined;
   characterid: string | string[] | undefined;
+  selectedConcept: OptionValue[];
 };
 
-type EpicConceptKeyType = keyof typeof EpicConcept;
-type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;
-
-export default function AcquireEpicConcept({ server, characterid }: Props) {
+export default function AcquireEpicConcept({
+  server,
+  characterid,
+  selectedConcept,
+}: Props) {
   const { data } = useSWR(
     () =>
       server &&
@@ -25,7 +32,6 @@ export default function AcquireEpicConcept({ server, characterid }: Props) {
       "/api/currentStateEpic?server=" + server + "&characterid=" + characterid
   );
 
-  const [concepts, setConcepts] = useState<EpicConceptKeyType[]>([]);
   const [wearItem, setWearItem] = useState<
     Record<EpicInfoEquipKeyType, string>
   >({
@@ -44,61 +50,50 @@ export default function AcquireEpicConcept({ server, characterid }: Props) {
 
   return (
     <>
-      <Box>컨셉별 에픽 득템 현황</Box>
-      {data && (
-        <ConceptFilter
-          concepts={concepts}
-          onClick={(key: EpicConceptKeyType) => {
-            if (concepts.includes(key)) {
-              setConcepts(concepts.filter((concept) => concept !== key));
-            } else {
-              setConcepts([...concepts, key]);
-            }
-          }}
-        />
-      )}
-      {data &&
-        concepts.map((concept) => (
-          <Box key={concept}>
-            <Text>{EpicConcept[concept]}</Text>
-            <Box display={"flex"} flexWrap={"wrap"}>
-              {EpicItems.filter((epicItem) =>
-                epicItem.concepts?.includes(concept)
-              ).map(({ itemId, itemName, parts }) => (
-                <Tooltip
-                  label={<HoverEpicInfo itemId={itemId} />}
-                  fontSize="md"
-                  key={`${EpicConcept[concept]}${itemName}`}
-                >
-                  <Box
-                    filter={
-                      data.includes(itemId)
-                        ? "grayscale(0%)"
-                        : "grayscale(100%)"
-                    }
-                  >
-                    <Box fontSize={"8px"} textAlign={"center"}>
-                      {EpicInfoEquip[parts as EpicInfoEquipKeyType]}
-                    </Box>
-                    <Image
-                      src={`https://img-api.neople.co.kr/df/items/${itemId}`}
-                      alt={"에픽아이템"}
-                      width={"30px"}
-                      height={"30px"}
-                      onClick={() => {
-                        setWearItem({
-                          ...wearItem,
-                          [parts]: itemId,
-                        });
-                      }}
-                    />
-                  </Box>
-                </Tooltip>
-              ))}
-            </Box>
-          </Box>
-        ))}
       <WearItem wearItem={wearItem} />
+      <Box>컨셉별 에픽 득템 현황</Box>
+      {data &&
+        selectedConcept.map(({ value }) => {
+          return (
+            <Box key={value}>
+              <Text>{EpicConcept[value]}</Text>
+              <Box display={"flex"} flexWrap={"wrap"}>
+                {EpicItems.filter((epicItem) =>
+                  epicItem.concepts?.includes(value)
+                ).map(({ itemId, itemName, parts }) => (
+                  <EpicItemToolTip
+                    key={`${EpicConcept[value]}${itemName}`}
+                    itemName={itemName}
+                  >
+                    <Box
+                      filter={
+                        data.includes(itemId)
+                          ? "grayscale(0%)"
+                          : "grayscale(100%)"
+                      }
+                    >
+                      <Box fontSize={"8px"} textAlign={"center"}>
+                        {EpicInfoEquip[parts as EpicInfoEquipKeyType]}
+                      </Box>
+                      <Image
+                        src={`https://img-api.neople.co.kr/df/items/${itemId}`}
+                        alt={"에픽아이템"}
+                        width={"30px"}
+                        height={"30px"}
+                        onClick={() => {
+                          setWearItem({
+                            ...wearItem,
+                            [parts]: itemId,
+                          });
+                        }}
+                      />
+                    </Box>
+                  </EpicItemToolTip>
+                ))}
+              </Box>
+            </Box>
+          );
+        })}
     </>
   );
 }
