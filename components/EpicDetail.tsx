@@ -19,6 +19,7 @@ export default function EpicDetail() {
                   {el[1].options[2].explain}&#39;,&#39;
                   {el[1].options[3].explain}&#39;,&#93; ,
                 </div>
+                <div>{el[3]}</div>
               </div>
             );
           })

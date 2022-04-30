@@ -29,7 +29,12 @@ export default async function handler(
       }
 
       const data = await response.json();
-      result.push([data.itemName, data.growInfo, data.itemId]);
+      result.push([
+        data.itemName,
+        data.growInfo,
+        data.itemId,
+        data.itemObtainInfo,
+      ]);
     }
 
     return res.status(200).json(result);

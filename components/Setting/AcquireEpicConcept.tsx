@@ -3,19 +3,28 @@ import useSWR from "swr";
 import Image from "next/image";
 import { Box, Tooltip, Text } from "@chakra-ui/react";
 
-import { EpicConcept, EpicItems } from "../../public/epic";
+import { EpicConcept, EpicItems, EpicInfoEquip } from "../../public/epic";
 
 import HoverEpicInfo from "./HoverEpicInfo";
-import ConceptFilter from "./ConceptFilter";
+import WearItem from "./WearItem";
+
+import EpicItemToolTip from "./EpicItemToolTip";
+
+type EpicConceptKeyType = keyof typeof EpicConcept;
+type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;
+type OptionValue = { value: EpicConceptKeyType; label: string };
 
 type Props = {
   server: string | string[] | undefined;
   characterid: string | string[] | undefined;
+  selectedConcept: OptionValue[];
 };
 
-type EpicConceptKeyType = keyof typeof EpicConcept;
-
-export default function AcquireEpicConcept({ server, characterid }: Props) {
+export default function AcquireEpicConcept({
+  server,
+  characterid,
+  selectedConcept,
+}: Props) {
   const { data } = useSWR(
     () =>
       server &&
@@ -23,35 +32,38 @@ export default function AcquireEpicConcept({ server, characterid }: Props) {
       "/api/currentStateEpic?server=" + server + "&characterid=" + characterid
   );
 
-  const [concepts, setConcepts] = useState<EpicConceptKeyType[]>([]);
+  const [wearItem, setWearItem] = useState<
+    Record<EpicInfoEquipKeyType, string>
+  >({
+    JACKET: "",
+    PANTS: "",
+    SHOULDER: "",
+    WAIST: "",
+    SHOES: "",
+    WRIST: "",
+    AMULET: "",
+    RING: "",
+    SUPPORT: "",
+    MAGIC_STON: "",
+    EARRING: "",
+  });
 
   return (
     <>
+      <WearItem wearItem={wearItem} />
       <Box>컨셉별 에픽 득템 현황</Box>
-      {data ? (
-        <ConceptFilter
-          concepts={concepts}
-          onClick={(key: EpicConceptKeyType) => {
-            if (concepts.includes(key)) {
-              setConcepts(concepts.filter((concept) => concept !== key));
-            } else {
-              setConcepts([...concepts, key]);
-            }
-          }}
-        />
-      ) : null}
-      {data
-        ? concepts.map((concept) => (
-            <Box key={concept}>
-              <Text>{EpicConcept[concept]}</Text>
+      {data &&
+        selectedConcept.map(({ value }) => {
+          return (
+            <Box key={value}>
+              <Text>{EpicConcept[value]}</Text>
               <Box display={"flex"} flexWrap={"wrap"}>
                 {EpicItems.filter((epicItem) =>
-                  epicItem.concepts?.includes(concept)
+                  epicItem.concepts?.includes(value)
                 ).map(({ itemId, itemName, parts }) => (
-                  <Tooltip
-                    label={<HoverEpicInfo itemId={itemId} />}
-                    fontSize="md"
-                    key={`${EpicConcept[concept]}${itemName}`}
+                  <EpicItemToolTip
+                    key={`${EpicConcept[value]}${itemName}`}
+                    itemName={itemName}
                   >
                     <Box
                       filter={
@@ -61,21 +73,27 @@ export default function AcquireEpicConcept({ server, characterid }: Props) {
                       }
                     >
                       <Box fontSize={"8px"} textAlign={"center"}>
-                        {parts}
+                        {EpicInfoEquip[parts as EpicInfoEquipKeyType]}
                       </Box>
                       <Image
                         src={`https://img-api.neople.co.kr/df/items/${itemId}`}
                         alt={"에픽아이템"}
                         width={"30px"}
                         height={"30px"}
+                        onClick={() => {
+                          setWearItem({
+                            ...wearItem,
+                            [parts]: itemId,
+                          });
+                        }}
                       />
                     </Box>
-                  </Tooltip>
+                  </EpicItemToolTip>
                 ))}
               </Box>
             </Box>
-          ))
-        : null}
+          );
+        })}
     </>
   );
 }
