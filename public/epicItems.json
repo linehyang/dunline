@@ -1,0 +1,5106 @@
+[
+  {
+    "itemId": "081d9219035a3fe5912c4e3735508142",
+    "itemName": "대제사장의 예복",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "천 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 29% 증가\n\n제사장의 신성한 의식이 발동되어 하늘의 은총 효과 발동 \n\n대제사장의 신성한 의식으로 하늘의 은총 효과 강화",
+    "itemExplainDetail": "스킬 공격력 29% 증가\n\n제사장의 신성한 의식이 발동되어 하늘의 은총 효과 발동 \n- 히트 리커버리 100 증가\n\n대제사장의 신성한 의식으로 하늘의 은총 효과 강화\n- 하늘의 은총 효과의 슈퍼아머의 피격 제한 횟수가 삭제되고, 히트리커버리, 속성저항, 공격속도, 이동속도, 캐스팅속도, 회피율, 피해감소, HP MAX 증가량 50% 증가",
+    "itemFlavorText": "간절히 섬기는 자에겐 더 큰 은총이 있을지니,",
+    "setItemId": "becf9e010bf546f6970d64b34786b81a",
+    "setItemName": "고대 제사장의 신성한 의식 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 1637
+      },
+      {
+        "name": "힘",
+        "value": 100
+      },
+      {
+        "name": "체력",
+        "value": 100
+      },
+      {
+        "name": "지능",
+        "value": 163
+      },
+      {
+        "name": "정신력",
+        "value": 163
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 26
+      },
+      {
+        "name": "무게",
+        "value": "1.4kg"
+      },
+      {
+        "name": "내구도",
+        "value": 28
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "공격 시 10% 추가 데미지",
+          "explainDetail": "공격 시 10% 추가 데미지 (2%~10%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 10% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 10% 증가 (2%~10%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 10% 증가",
+          "explainDetail": "힘, 지능 10% 증가 (1%~10%)",
+          "buffExplain": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +12",
+          "buffExplainDetail": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +12 (3~12)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 11% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 11% 증가 (1%~11%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 150 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 150 증가 (50~150, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "파티원에게 적용되는 하늘의 은총 효과 50% 증가\n\n특정 스킬 시전 시 자신을 제외한 파티원에게 하늘의 은총 효과 적용\n- 보호의 징표, 수호의 축복, 편애 시전 시 히트 리커버리 50 증가",
+      "explainDetail": "파티원에게 적용되는 하늘의 은총 효과 50% 증가\n\n특정 스킬 시전 시 자신을 제외한 파티원에게 하늘의 은총 효과 적용\n- 보호의 징표, 수호의 축복, 편애 시전 시 히트 리커버리 50 증가",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "a114f11a376f8def22de8cd8d4397f7c",
+    "itemName": "대 마법사 [???]의 로브",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "천 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 29% 증가\n\n공격 및 캐스팅 시 60초간 마력 집중 발동",
+    "itemExplainDetail": "스킬 공격력 29% 증가\n\n공격 및 캐스팅 시 60초간 마력 집중 발동(쿨타임 10초, 최대 1중첩)\n\n마력 집중 상태 일 때\n- 30초당 MP 1% 감소\n- 모든 직업 1~45 레벨 모든 스킬 Lv +1\n- 스킬 MP 소모량 20% 감소\n(장착 해제 시 모든 옵션이 해제 됩니다.)",
+    "itemFlavorText": "마법이란 인간의 마음을 탐구하는 학문이다.",
+    "setItemId": "e4f55f814f2bf0fdbc452c811e992c9c",
+    "setItemName": "잊혀진 마법사의 유산 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 1637
+      },
+      {
+        "name": "힘",
+        "value": 100
+      },
+      {
+        "name": "체력",
+        "value": 100
+      },
+      {
+        "name": "지능",
+        "value": 163
+      },
+      {
+        "name": "정신력",
+        "value": 163
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "무게",
+        "value": "1.4kg"
+      },
+      {
+        "name": "내구도",
+        "value": 28
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "공격 시 데미지 증가량 11% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 11% 추가 증가 (1%~11%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 11% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 11% 증가 (1%~11%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 직업 1~45레벨 모든 스킬Lv +1",
+          "explainDetail": "모든 직업 1~45레벨 모든 스킬Lv +1 (5~45)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 90 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 90 증가 (10~90, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 12% 증가",
+          "explainDetail": "힘, 지능 12% 증가 (3%~12%)",
+          "buffExplain": "수호의 은총 체력, 정신력 200 증가\n계시 : 아리아, 퍼페티어 지능 200 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 200 증가 (20~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 200 증가 (20~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 11
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "3872c16434aed8e7bbb010280ede0850",
+    "itemName": "낭만적인 선율의 왈츠",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "천 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 31% 증가\n\n장착 시 하모니 파워 발동\n\n던전 입장 시 하모니 파워 MAX\n하모니 파워가 50 이상 일 때\n모든 직업 1~45 레벨 모든 스킬 쿨타임 10% 감소\n\n스킬 시전 시 하모니 파워 5 상승\n시간이 지나도 하모니 파워가 감소하지 않음",
+    "itemExplainDetail": "스킬 공격력 31% 증가\n\n장착 시 하모니 파워 발동\n(하모니 파워는 스킬 시전 시 게이지가 상승하며, 피격되거나 시간이 지날 수록 서서히 감소 합니다. 하모니 파워가 일정치 이상이 되면 다양한 효과가 발동됩니다.)\n던전 입장 시 하모니 파워 MAX\n하모니 파워가 50 이상 일 때 \n모든 직업 1~45 레벨 모든 스킬 쿨타임 10% 감소\n\n스킬 시전 시 하모니 파워 5 상승 (최대 하모니 파워 100)\n시간이 지나도 하모니 파워가 감소하지 않음",
+    "itemFlavorText": "저와 함께 춤추시겠어요?",
+    "setItemId": "5af1f46328a43dd4b3871a3d9d488966",
+    "setItemName": "천상의 무희 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 1637
+      },
+      {
+        "name": "힘",
+        "value": 100
+      },
+      {
+        "name": "체력",
+        "value": 100
+      },
+      {
+        "name": "지능",
+        "value": 163
+      },
+      {
+        "name": "정신력",
+        "value": 163
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "무게",
+        "value": "1.4kg"
+      },
+      {
+        "name": "내구도",
+        "value": 28
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "물리, 마법, 독립 공격력 3% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 3% 증가 (1%~3%)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 160 증가\n신실한 열정, 소악마 힘, 지능 증가량 140 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 160 증가 (120~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 140 증가 (100~140, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 공격력 10% 증가",
+          "explainDetail": "모든 공격력 10% 증가 (1%~10%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 100 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 100 증가 (10~100, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 데미지 증가량 8% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 8% 추가 증가 (1%~8%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 8% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 8% 증가 (1%~8%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 속성 강화 +24",
+          "explainDetail": "모든 속성 강화 +24 (12~24, 해당 옵션 수치는 4의 배수로만 나옵니다.)",
+          "buffExplain": "수호의 은총 체력, 정신력 140 증가\n계시 : 아리아, 퍼페티어 지능 140 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 140 증가 (80~140, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 140 증가 (80~140, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "0b5668da99c6dd6207887f336e523e71",
+    "itemName": "고대 심연의 로브",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "천 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 19% 증가\n암속성 저항 5당 모든 공격력 1% 증가 (최대 5% 증가)",
+    "itemExplainDetail": "스킬 공격력 19% 증가\n암속성 저항 5당 모든 공격력 1% 증가 (최대 5% 증가)",
+    "itemFlavorText": "심연에 빠지게 되면 영원히 벗어나지 못하지..",
+    "setItemId": "d675cb6e153e02388e2e0a7ab188acde",
+    "setItemName": "심연을 엿보는 자 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 1637
+      },
+      {
+        "name": "힘",
+        "value": 100
+      },
+      {
+        "name": "체력",
+        "value": 100
+      },
+      {
+        "name": "지능",
+        "value": 163
+      },
+      {
+        "name": "정신력",
+        "value": 163
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "암속성저항",
+        "value": 10
+      },
+      {
+        "name": "무게",
+        "value": "1.4kg"
+      },
+      {
+        "name": "내구도",
+        "value": 28
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "모든 직업 5~100레벨 모든 스킬Lv +1",
+          "explainDetail": "모든 직업 5~100레벨 모든 스킬Lv +1 (10~100)",
+          "buffExplain": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +17",
+          "buffExplainDetail": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +17 (1~17)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 7% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 7% 증가 (1%~7%)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 160 증가\n신실한 열정, 소악마 힘, 지능 증가량 140 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 160 증가 (40~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 140 증가 (20~140, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 80 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 80 증가 (10~80, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "buffExplain": "수호의 은총 체력, 정신력 200 증가\n계시 : 아리아, 퍼페티어 지능 200 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 200 증가 (60~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 200 증가 (60~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "3d3161f248ef5e6ed2d1eeb9b5446d28",
+    "itemName": "생사를 다스리는 그림자의 재킷",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "가죽 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 30% 증가\n\n공격 시 9% 확률로 그림자 장판 생성\n스킬 시전 시 15% 확률로 그림자 장판 생성\n\n그림자 장판 위에 있을 경우 물리, 마법, 독립 공격력 4% 증가\n\n그림자 장판에서 벗어날 경우 그림자 장판 즉시 삭제\n그림자 장판에서 벗어날 경우 4초동안 그림자 장판 버프 유지\n\n그림자 장판 생성 확률 2% 추가 증가\n생사를 다스리는 그림자의 재킷 효과와 [3]세트 효과 중 그림자 장판 버프 유지 시간 6초 추가 증가",
+    "itemExplainDetail": "스킬 공격력 30% 증가\n\n공격 시 9% 확률로 그림자 장판 생성\n스킬 시전 시 15% 확률로 그림자 장판 생성\n\n그림자 장판 위에 있을 경우 물리, 마법, 독립 공격력 4% 증가 (스킬 동작으로 인해 그림자 장판을 벗어날경우 스킬 동작 중에는 해당 옵션이 유지됩니다.)\n\n그림자 장판에서 벗어날 경우 그림자 장판 즉시 삭제\n그림자 장판에서 벗어날 경우 4초동안 그림자 장판 버프 유지(스킬 동작으로 인해 그림자 장판을 벗어날 경우 스킬 동작이 끝난 후 부터 4초동안 버프가 유지됩니다. [3]세트 효과와 중첩되지 않습니다.)\n\n그림자 장판 생성 확률 2% 추가 증가\n생사를 다스리는 그림자의 재킷 효과와 [3]세트 효과 중 그림자 장판 버프 유지 시간 6초 추가 증가\n\n(그림자 장판은 최대 1개까지만 생성됩니다.)",
+    "itemFlavorText": "죽음마저 초월하여 생사를 다스리는 자의 상징.",
+    "setItemId": "9e2dfe08239d635abc415ae02f79cad2",
+    "setItemName": "죽음을 자아내는 그림자 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 3274
+      },
+      {
+        "name": "힘",
+        "value": 152
+      },
+      {
+        "name": "체력",
+        "value": 100
+      },
+      {
+        "name": "지능",
+        "value": 152
+      },
+      {
+        "name": "정신력",
+        "value": 157
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 18
+      },
+      {
+        "name": "무게",
+        "value": "1.9kg"
+      },
+      {
+        "name": "내구도",
+        "value": 33
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "힘, 지능 10% 증가",
+          "explainDetail": "힘, 지능 10% 증가 (1%~10%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 100 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 100 증가 (10~100, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 10% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 10% 추가 증가 (1%~10%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 10% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 10% 증가 (1%~10%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 170 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 170 증가 (80~170, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 300 증가\n신실한 열정, 소악마 힘, 지능 증가량 280 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 300 증가 (120~300, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 280 증가 (100~280, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "그림자 장판 위에 있을 경우 추가 옵션 적용",
+      "explainDetail": "그림자 장판 위에 있을 경우 아래 효과 추가 적용\n- 슬로우 힐, 치유의 기도, 꼼꼼한 바느질 회복량 2% 증가",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 11
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "f496b895505ea6302d990a9869530103",
+    "itemName": "수석 집행관의 코트",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "가죽 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 29% 증가\n\n집행 선고 확률 10% 추가 증가, 쿨타임 10초 감소",
+    "itemExplainDetail": "스킬 공격력 29% 증가\n\n집행 선고 확률 10% 추가 증가, 쿨타임 10초 감소",
+    "itemFlavorText": "이 코트를 목격한 자. 영원한 침묵만이 뒤따를 것이다.",
+    "setItemId": "b4b9eacde3cdb1f9abc97fc0bd594c7b",
+    "setItemName": "황실 직속 집행자의 선고 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 3274
+      },
+      {
+        "name": "힘",
+        "value": 152
+      },
+      {
+        "name": "체력",
+        "value": 100
+      },
+      {
+        "name": "지능",
+        "value": 152
+      },
+      {
+        "name": "정신력",
+        "value": 157
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 28
+      },
+      {
+        "name": "무게",
+        "value": "1.9kg"
+      },
+      {
+        "name": "내구도",
+        "value": 33
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 7% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 7% 추가 증가 (1%~7%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 8% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 8% 증가 (2%~8%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 데미지 증가량 5% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 5% 추가 증가 (1%~5%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 5% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 5% 증가 (1%~5%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 6% 추가 데미지",
+          "explainDetail": "공격 시 6% 추가 데미지 (1%~6%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 60 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 60 증가 (10~60, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 공격력 5% 증가",
+          "explainDetail": "모든 공격력 5% 증가 (1%~5%)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 300 증가\n신실한 열정, 소악마 힘, 지능 증가량 280 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 300 증가 (220~300, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 280 증가 (200~280, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 11
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "c40d2977d03a7656fe858579c2530a04",
+    "itemName": "최후의 전술",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "가죽 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 30% 증가\n\n야전 전술 효과가 숙련 등급에 상관 없이 최대 효과로 적용",
+    "itemExplainDetail": "스킬 공격력 30% 증가\n\n야전 전술 효과가 숙련 등급에 상관 없이 최대 효과로 적용",
+    "itemFlavorText": "어떠한 전략전술도 그에게는 통하지가 않는다.",
+    "setItemId": "10c2cee96ec4093136d041f7f40b7bff",
+    "setItemName": "베테랑 군인의 정복 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 3274
+      },
+      {
+        "name": "힘",
+        "value": 152
+      },
+      {
+        "name": "체력",
+        "value": 100
+      },
+      {
+        "name": "지능",
+        "value": 152
+      },
+      {
+        "name": "정신력",
+        "value": 157
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 26
+      },
+      {
+        "name": "무게",
+        "value": "1.9kg"
+      },
+      {
+        "name": "내구도",
+        "value": 33
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "공격 시 데미지 증가량 4% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 4% 추가 증가 (1%~4%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 4% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 4% 증가 (1%~4%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 3% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 3% 증가 (1%~3%)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 160 증가\n신실한 열정, 소악마 힘, 지능 증가량 140 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 160 증가 (120~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 140 증가 (100~140, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 10% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 10% 추가 증가 (1%~10%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 10% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 10% 증가 (1%~10%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 8% 증가",
+          "explainDetail": "힘, 지능 8% 증가 (1%~8%)",
+          "buffExplain": "수호의 은총 체력, 정신력 200 증가\n계시 : 아리아, 퍼페티어 지능 200 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 200 증가 (60~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 200 증가 (60~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 11
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "4e28aa6397e262a21b385e4e17eb0863",
+    "itemName": "길 방랑자의 물소 코트",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "가죽 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 27% 증가\n물리, 마법, 독립 공격력 7% 증가\n\n피격 시 슈퍼아머 적용\n공격 시 10% 확률로 슈퍼아머 적용",
+    "itemExplainDetail": "스킬 공격력 27% 증가\n물리, 마법, 독립 공격력 7% 증가\n\n피격 시 5초 동안 슈퍼아머가 적용됩니다.\n공격 시 10% 확률로 5초 동안 슈퍼아머가 적용됩니다.\n(쿨타임 7초, 최대 1중첩)",
+    "itemFlavorText": "이제 이 코트보다 편한건 못찾겠어",
+    "setItemId": "b5bb71953bc709c84137b0cad5d14e4e",
+    "setItemName": "황혼의 여행자 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 3274
+      },
+      {
+        "name": "힘",
+        "value": 152
+      },
+      {
+        "name": "체력",
+        "value": 100
+      },
+      {
+        "name": "지능",
+        "value": 152
+      },
+      {
+        "name": "정신력",
+        "value": 157
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "무게",
+        "value": "1.9kg"
+      },
+      {
+        "name": "내구도",
+        "value": 33
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "모든 속성 강화 +40",
+          "explainDetail": "모든 속성 강화 +40 (4~40, 해당 옵션 수치는 4의 배수로만 나옵니다.)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 220 증가\n신실한 열정, 소악마 힘, 지능 증가량 200 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 220 증가 (40~220, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 200 증가 (20~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 데미지 증가량 10% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 10% 추가 증가 (1%~10%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 10% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 10% 증가 (1%~10%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 10% 추가 데미지",
+          "explainDetail": "공격 시 10% 추가 데미지 (1%~10%)",
+          "buffExplain": "수호의 은총 체력, 정신력 240 증가\n계시 : 아리아, 퍼페티어 지능 240 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 240 증가 (60~240, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 240 증가 (60~240, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 11
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "ec3983c86e084fd38f7551153450dfbf",
+    "itemName": "작열하는 대지의 용맹",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "경갑 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 30% 증가\n\n스킬 퀵슬롯에 빈 슬롯 1개당 공격 시 데미지 증가량 1% 추가 증가\n\n15초마다 해당 장비의 슈퍼아머 피격 횟수 1 회복\n사막의 축복 쿨타임 15초 감소",
+    "itemExplainDetail": "스킬 공격력 30% 증가\n\n스킬 퀵슬롯에 빈 슬롯 1개당 공격 시 데미지 증가량 1% 추가 증가 (최대 6% 증가)\n\n15초마다 해당 장비의 슈퍼아머 피격 횟수 1 회복\n사막의 축복 쿨타임 15초 감소",
+    "itemFlavorText": "비록 척박하고 버림받았을지라도 포기하지 않고, 살아남는 것이야 말로 우리에게 이어진 유산이다.",
+    "setItemId": "0ff0e427a3746948c27de4af1d943109",
+    "setItemName": "메마른 사막의 유산 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 4910
+      },
+      {
+        "name": "힘",
+        "value": 163
+      },
+      {
+        "name": "체력",
+        "value": 100
+      },
+      {
+        "name": "지능",
+        "value": 142
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 29
+      },
+      {
+        "name": "무게",
+        "value": "3.1kg"
+      },
+      {
+        "name": "내구도",
+        "value": 38
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "물리, 마법, 독립 공격력 8% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 8% 증가 (1%~8%)",
+          "buffExplain": "수호의 은총 체력, 정신력 240 증가\n계시 : 아리아, 퍼페티어 지능 240 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 240 증가 (100~240, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 240 증가 (100~240, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 8% 증가",
+          "explainDetail": "힘, 지능 8% 증가 (1%~8%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 8% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 8% 증가 (1%~8%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 15% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 15% 추가 증가 (1%~15%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 150 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 150 증가 (10~150, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 9
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "a4610bc3ab02d64af5f38b7d7dd45e0b",
+    "itemName": "트로피카 : 드레이크",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "경갑 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 34% 증가\n\n공격 시 3% 확률로 20초 동안 드레이크 프레임 효과 발생",
+    "itemExplainDetail": "스킬 공격력 34% 증가\n\n공격 시 3% 확률로 20초 동안 드레이크 프레임 효과가 발생하여 아래의 효과가 적용됩니다. (쿨타임 20초, 최대 1중첩)\n- 공격속도 15% 증가\n\n세트 옵션의 트로피카 : 두리안 효과를 제거 합니다.",
+    "itemFlavorText": "이 맛... 멈출 수가 없어!",
+    "setItemId": "25f94ec65bfb7fe250744c3ef186a25f",
+    "setItemName": "열대의 트로피카 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 4910
+      },
+      {
+        "name": "힘",
+        "value": 163
+      },
+      {
+        "name": "체력",
+        "value": 100
+      },
+      {
+        "name": "지능",
+        "value": 142
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 22
+      },
+      {
+        "name": "무게",
+        "value": "3.1kg"
+      },
+      {
+        "name": "내구도",
+        "value": 38
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "모든 공격력 10% 증가",
+          "explainDetail": "모든 공격력 10% 증가 (1%~10%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 10% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 10% 증가 (1%~10%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 8% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 8% 추가 증가 (1%~8%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 80 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 80 증가 (10~80, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 데미지 증가량 4% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 4% 추가 증가 (1%~4%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 4% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 4% 증가 (1%~4%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 3% 증가",
+          "explainDetail": "힘, 지능 3% 증가 (1%~3%)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 220 증가\n신실한 열정, 소악마 힘, 지능 증가량 200 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 220 증가 (180~220, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 200 증가 (160~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "공격 시 3% 확률로 10초 동안 드레이크 오라 생성",
+      "explainDetail": "공격 시 3% 확률로 10초 동안 드레이크 오라를 생성하여 자신을 제외한 400PX 범위 내 파티원들을 강화 시킵니다. (쿨타임 20초, 최대 1중첩)\n- 공격속도 10% 증가\n- 캐스팅속도 15% 증가",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 11
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "2f5acdd7a1496c8f96e29293280962ed",
+    "itemName": "웨어러블 아크 팩",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "경갑 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 25% 증가\n\n모든 직업 45 레벨, 웜홀 스킬 시전 시 30초 동안 3회 피격 시 파괴되는 슈퍼 아머 시전\n\n과충전 지속 시간 10초 추가 증가\n과부하 상태가 발생하지 않음",
+    "itemExplainDetail": "스킬 공격력 25% 증가\n\n모든 직업 45 레벨, 웜홀 스킬 시전 시 30초 동안 3회 피격 시 파괴되는 슈퍼 아머 시전 (쿨타임 100초)\n\n과충전 지속 시간 10초 추가 증가\n과부하 상태가 발생하지 않음",
+    "itemFlavorText": "이것은 그들의 기술이나\n그들의 힘은 아닌 것",
+    "setItemId": "d8bda4019fb641308811a690bad75dde",
+    "setItemName": "A.D. P 슈트 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 4910
+      },
+      {
+        "name": "힘",
+        "value": 163
+      },
+      {
+        "name": "체력",
+        "value": 100
+      },
+      {
+        "name": "지능",
+        "value": 142
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 23
+      },
+      {
+        "name": "무게",
+        "value": "3.1kg"
+      },
+      {
+        "name": "내구도",
+        "value": 38
+      }
+    ],
+    "itemReinforceSkill": [
+      {
+        "jobName": "크리에이터",
+        "jobId": "b522a95d819a5559b775deb9a490e49a",
+        "skills": [
+          {
+            "skillId": "dec8961c485edb02036ba00c789010f0",
+            "name": "웜홀",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "jobName": "공통",
+        "jobId": null,
+        "levelRange": [
+          {
+            "minLevel": 45,
+            "maxLevel": 45,
+            "value": 2
+          }
+        ]
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "스킬 공격력 4% 증가",
+          "explainDetail": "스킬 공격력 4% 증가 (1%~4%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 4% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 4% 증가 (1%~4%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 공격력 4% 증가",
+          "explainDetail": "모든 공격력 4% 증가 (1%~4%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 4% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 4% 증가 (1%~4%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 데미지 증가량 9% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 9% 추가 증가 (1%~9%)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 260 증가\n신실한 열정, 소악마 힘, 지능 증가량 240 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 260 증가 (100~260, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 240 증가 (80~240, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 7% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 7% 추가 증가 (1%~7%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 7% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 7% 증가 (1%~7%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 13
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 13
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 13
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "26cd8c6f3296bb4335604c1ea02582cd",
+    "itemName": "종말의 역전",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "경갑 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 35% 증가\n\n'비통한 자의 목걸이'와 '비운의 유물' 장착 시 효과 발동",
+    "itemExplainDetail": "스킬 공격력 35% 증가\n\n'비통한 자의 목걸이' 장착 시 다음 효과가 적용됩니다.\n- 물리, 마법, 독립 공격력 10% 감소\n- 공격 시 10% 추가 데미지\n\n'비운의 유물' 장착 시 다음 효과가 적용됩니다.\n- 물리, 마법, 독립 공격력 10% 감소\n- 공격 시 10% 추가 데미지",
+    "itemFlavorText": "역전의 서막이다!",
+    "setItemId": "33348fff4c17d204c4655ee50e2c6bdc",
+    "setItemName": "기구한 운명 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 4910
+      },
+      {
+        "name": "힘",
+        "value": 163
+      },
+      {
+        "name": "체력",
+        "value": 100
+      },
+      {
+        "name": "지능",
+        "value": 142
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "공격속도",
+        "value": "6%"
+      },
+      {
+        "name": "이동속도",
+        "value": "6%"
+      },
+      {
+        "name": "캐스트속도",
+        "value": "9%"
+      },
+      {
+        "name": "무게",
+        "value": "3.1kg"
+      },
+      {
+        "name": "내구도",
+        "value": 38
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "모든 직업 1~48레벨 모든 스킬Lv +1",
+          "explainDetail": "모든 직업 1~48레벨 모든 스킬Lv +1 (35~48)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 4% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 4% 증가 (1%~4%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 70 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 70 증가 (10~70, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "buffExplain": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +7",
+          "buffExplainDetail": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +7 (1~7)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 공격력 5% 증가",
+          "explainDetail": "모든 공격력 5% 증가 (1%~5%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 5% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 5% 증가 (1%~5%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 160 증가",
+          "explainDetail": "힘, 지능 160 증가 (40~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "buffExplain": "수호의 은총 체력, 정신력 160 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 160 증가 (40~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "생명의 원천 쿨타임 10% 감소, 지속시간 10% 증가\n천상의 멜로디, 수호의 축복, 편애 HP, MP Max 증가율 3% 증가\n\n'비통한 자의 목걸이'와 '비운의 유물' 옵션 변경",
+      "explainDetail": "생명의 원천 쿨타임 10% 감소, 지속시간 10% 증가\n천상의 멜로디, 수호의 축복, 편애 HP, MP Max 증가율 3% 증가\n\n'비통한 자의 목걸이'와 '비운의 유물' 옵션이 다음과 같이 변경됩니다.\n- 생명의 원천 쿨타임 5%, 지속시간 5% 증가 삭제\n- 생명의 원천 사망 후 HP 회복량 10% 증가 추가",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 1
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "e6c950d0d494055b207c1eed7593b51e",
+    "itemName": "사탄 : 분노의 군주",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "중갑 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 34% 증가\n\nHP 초당 0.1% 감소\n\n피격 시 받은 데미지의 666%를 적에게 되돌려 줍니다. \n\nHP 10% 이상일 때 죽음에 달하는 데미지를 받을 경우 HP가 666 이하로 떨어지지 않으며 2초간 무적",
+    "itemExplainDetail": "스킬 공격력 34% 증가\n\nHP 초당 0.1% 감소(해당 옵션으로 HP가 666미만으로 떨어지지 않음)\n\n피격 시 받은 데미지의 666%를 적에게 되돌려 줍니다. (HP보다 높은 피해를 받을 경우 현재 HP를 기준으로 적용됩니다.)\n\nHP 10% 이상일 때 죽음에 달하는 데미지를 받을 경우 HP가 666 이하로 떨어지지 않으며 2초간 무적\n(쿨타임 300초)",
+    "itemFlavorText": "- 더욱 더 분노 해라!\n\n- 으아아아아!",
+    "setItemId": "33f89dbea5d71ee8a5ee76bb621b1615",
+    "setItemName": "개악 : 지옥의 길 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 6547
+      },
+      {
+        "name": "힘",
+        "value": 157
+      },
+      {
+        "name": "체력",
+        "value": 152
+      },
+      {
+        "name": "지능",
+        "value": 142
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 20
+      },
+      {
+        "name": "무게",
+        "value": "3.6kg"
+      },
+      {
+        "name": "내구도",
+        "value": 40
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "공격 시 적에게 입힌 피해의 5% 만큼 3초동안 지속피해 발생",
+          "explainDetail": "공격 시 적에게 입힌 피해의 5% 만큼 3초동안 지속피해 발생 (2%~5%)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 220 증가\n신실한 열정, 소악마 힘, 지능 증가량 200 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 220 증가 (160~220, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 200 증가 (140~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 7% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 7% 추가 증가 (1%~7%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 7% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 7% 증가 (1%~7%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 4% 추가 데미지",
+          "explainDetail": "공격 시 4% 추가 데미지 (1%~4%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 50 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 50 증가 (20~50, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 데미지 증가량 9% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 9% 추가 증가 (1%~9%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 9% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 9% 증가 (1%~9%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 11
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "3c894436df9672f92477f3de78ae9cbc",
+    "itemName": "천상의 날개",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "중갑 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 24% 증가\n\n대쉬 상태일 때 천사의 정수 효과가 발생\n\n모든 직업 1~80 레벨 모든 스킬 쿨타임 13% 감소 (50레벨 제외)",
+    "itemExplainDetail": "스킬 공격력 24% 증가\n\n대쉬 상태일 때 천사의 정수 효과가 발생하여 10초 동안 아래의 효과가 적용됩니다. (쿨타임 20초)\n- 슈퍼아머 시전\n- X축 이동속도 50% 증가, Y축 이동속도 20% 증가\n\n모든 직업 1~80 레벨 모든 스킬 쿨타임 13% 감소 (50레벨 제외)",
+    "itemFlavorText": "전설로만 존재하던 천사의 힘이 깃들어 있다고 한다.",
+    "setItemId": "8035fa3d74a3fd4a340de3fb3cc71fe8",
+    "setItemName": "전설의 대장장이 - 역작 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 6547
+      },
+      {
+        "name": "힘",
+        "value": 157
+      },
+      {
+        "name": "체력",
+        "value": 152
+      },
+      {
+        "name": "지능",
+        "value": 142
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 22
+      },
+      {
+        "name": "무게",
+        "value": "3.6kg"
+      },
+      {
+        "name": "내구도",
+        "value": 40
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "공격 시 9% 추가 데미지",
+          "explainDetail": "공격 시 9% 추가 데미지 (1%~9%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 90 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 90 증가 (10~90, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 4% 증가",
+          "explainDetail": "힘, 지능 4% 증가 (1%~4%)",
+          "buffExplain": "수호의 은총 체력, 정신력 200 증가\n계시 : 아리아, 퍼페티어 지능 200 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 200 증가 (140~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 200 증가 (140~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 공격력 4% 증가",
+          "explainDetail": "모든 공격력 4% 증가 (1%~4%)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 200 증가\n신실한 열정, 소악마 힘, 지능 증가량 180 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 200 증가 (140~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 180 증가 (120~180, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 7% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 7% 증가 (1%~7%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 7% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 7% 증가 (1%~7%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "e4df5f151f39112fbf6b9d816c642f2f",
+    "itemName": "결속의 체인 플레이트",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "중갑 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 30% 증가\n모든 속성 저항 10 감소\n\n장착 시 결속된 구속의 효과가 강화된다.\n- 지속시간 10초 증가\n- 캐스팅속도 5% 추가 증가\n- 이동 속도 12% 추가 증가",
+    "itemExplainDetail": "스킬 공격력 30% 증가\n모든 속성 저항 10 감소\n\n장착 시 결속된 구속의 효과가 강화된다.\n- 지속시간 10초 증가\n- 캐스팅속도 5% 추가 증가\n- 이동 속도 12% 추가 증가",
+    "itemFlavorText": "강하게 조여올수록 내 분노는 너를 향한다.",
+    "setItemId": "b81dc402a6b561d037ca24efe0878027",
+    "setItemName": "구속의 가시덩굴 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 6547
+      },
+      {
+        "name": "힘",
+        "value": 157
+      },
+      {
+        "name": "체력",
+        "value": 152
+      },
+      {
+        "name": "지능",
+        "value": 142
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 29
+      },
+      {
+        "name": "무게",
+        "value": "3.6kg"
+      },
+      {
+        "name": "내구도",
+        "value": 40
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 10% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 10% 추가 증가 (1%~10%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 11% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 11% 증가 (2%~11%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 10% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 10% 증가 (1%~10%)",
+          "buffExplain": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +10",
+          "buffExplainDetail": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +10 (1~10)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 10% 추가 데미지",
+          "explainDetail": "공격 시 10% 추가 데미지 (1%~10%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 12% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 12% 증가 (3%~12%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 6
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "8f833c773b16a1236d31a0c6a3f09cff",
+    "itemName": "세상을 삼키는 분노",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "중갑 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 23% 증가\n공격 시 5% 추가 데미지\n\n공격 시 HP 0.5% 회복\n\n광기 버프 효과 1.5배\n[3] 세트 옵션의 스킬로 인한 HP 회복 효과 감소량 30%, 포션으로 인한 HP 회복 효과 감소량 20% 감소",
+    "itemExplainDetail": "스킬 공격력 23% 증가\n공격 시 5% 추가 데미지\n\n공격 시 HP 0.5% 회복 (쿨타임 1.5초)\n\n광기 버프 효과 1.5배\n[3] 세트 옵션의 스킬로 인한 HP 회복 효과 감소량 30%, 포션으로 인한 HP 회복 효과 감소량 20% 감소",
+    "itemFlavorText": "과연 무너진 영웅은 세상을 증오했을까?",
+    "setItemId": "ae4e5f8c339b667f2af12db2505f6ece",
+    "setItemName": "삼켜진 분노 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 6547
+      },
+      {
+        "name": "힘",
+        "value": 157
+      },
+      {
+        "name": "체력",
+        "value": 152
+      },
+      {
+        "name": "지능",
+        "value": 142
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 31
+      },
+      {
+        "name": "무게",
+        "value": "3.6kg"
+      },
+      {
+        "name": "내구도",
+        "value": 40
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "모든 공격력 4% 증가",
+          "explainDetail": "모든 공격력 4% 증가 (1%~4%)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 160 증가\n신실한 열정, 소악마 힘, 지능 증가량 140 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 160 증가 (100~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 140 증가 (80~140, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 13% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 13% 증가 (1%~13%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 13% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 13% 증가 (1%~13%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 4% 증가",
+          "explainDetail": "힘, 지능 4% 증가 (1%~4%)",
+          "buffExplain": "수호의 은총 체력, 정신력 200 증가\n계시 : 아리아, 퍼페티어 지능 200 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 200 증가 (140~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 200 증가 (140~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "스킬 공격력 5% 증가",
+          "explainDetail": "스킬 공격력 5% 증가 (1%~5%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 50 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 50 증가 (10~50, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 11
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "882e8164dd6711c1895526d030200250",
+    "itemName": "영명한 세상의 순환",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "판금 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 25% 증가\n\n모든 직업 45Lv 스킬 공격력 30% 감소\n모든 직업 45Lv 스킬 쿨타임 회복 속도 100% 증가\n\n웜홀 스킬 공격력 30% 감소\n웜홀 스킬 게이지 회복속도 100% 증가\n\n스킬 시전 시 1 ~ 45Lv 스킬 중 랜덤한 스킬 쿨타임 1초 감소",
+    "itemExplainDetail": "스킬 공격력 25% 증가\n\n모든 직업 45Lv 스킬 공격력 30% 감소\n모든 직업 45Lv 스킬 쿨타임 회복 속도 100% 증가\n\n웜홀 스킬 공격력 30% 감소\n웜홀 스킬 게이지 회복속도 100% 증가\n\n스킬 시전 시 1 ~ 45Lv 스킬 중 랜덤한 스킬 쿨타임 1초 감소 (쿨타임 1초, 동일 스킬은 연속으로 적용되지 않습니다.)",
+    "itemFlavorText": "세상에는 끝이란 없으니, 끝으로 느껴질 지라도 그 뜻과 의지는 다음으로 이어져 영원한 세월동안 흘러간다.",
+    "setItemId": "d69db0f43a2c9250ee020e5cd38a18f6",
+    "setItemName": "영원한 흐름의 길 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 8184
+      },
+      {
+        "name": "힘",
+        "value": 152
+      },
+      {
+        "name": "체력",
+        "value": 157
+      },
+      {
+        "name": "지능",
+        "value": 152
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 14
+      },
+      {
+        "name": "무게",
+        "value": "5kg"
+      },
+      {
+        "name": "내구도",
+        "value": 60
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "모든 직업 1~45레벨 모든 스킬Lv +1",
+          "explainDetail": "모든 직업 1~45레벨 모든 스킬Lv +1 (30~45)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 6% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 6% 증가 (3%~6%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 5% 추가 데미지",
+          "explainDetail": "공격 시 5% 추가 데미지 (1%~5%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 60 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 60 증가 (20~60, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 8% 증가",
+          "explainDetail": "힘, 지능 8% 증가 (1%~8%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 9% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 9% 증가 (2%~9%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 공격력 6% 증가",
+          "explainDetail": "모든 공격력 6% 증가 (1%~6%)",
+          "buffExplain": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +6",
+          "buffExplainDetail": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +6 (1~6)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "힐윈드 HP, MP 회복량 30% 감소\n재생의 아리아 지속시간 50% 감소",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 1
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "b281ed888094e708d5cbf30f71a34c74",
+    "itemName": "선택이익",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "판금 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "받는 피해 10% 감소\nHP가 30% 이하일 경우 받는 피해 15% 감소\n\n스킬 공격력 33% 증가",
+    "itemExplainDetail": "받는 피해 10% 감소\nHP가 30% 이하일 경우 받는 피해 15% 감소\n\n스킬 공격력 33% 증가",
+    "itemFlavorText": "이 정도는 돼야 살아남지 않겠어?",
+    "setItemId": "861e52afdbbcbcc015188a5d77f30dc1",
+    "setItemName": "선택의 기로 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 8184
+      },
+      {
+        "name": "힘",
+        "value": 152
+      },
+      {
+        "name": "체력",
+        "value": 157
+      },
+      {
+        "name": "지능",
+        "value": 152
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 23
+      },
+      {
+        "name": "무게",
+        "value": "5kg"
+      },
+      {
+        "name": "내구도",
+        "value": 60
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "공격 시 데미지 증가량 5% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 5% 추가 증가 (1%~5%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 5% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 5% 증가 (1%~5%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 7% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 7% 추가 증가 (1%~7%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 7% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 7% 증가 (1%~7%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 공격력 6% 증가",
+          "explainDetail": "모든 공격력 6% 증가 (1%~6%)",
+          "buffExplain": "수호의 은총 체력, 정신력 200 증가\n계시 : 아리아, 퍼페티어 지능 200 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 200 증가 (100~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 200 증가 (100~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 5% 추가 데미지",
+          "explainDetail": "공격 시 5% 추가 데미지 (1%~5%)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 220 증가\n신실한 열정, 소악마 힘, 지능 증가량 200 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 220 증가 (140~220, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 200 증가 (120~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "보호의 징표 : 아군 피해 감소량 5% 추가 증가\n수호의 축복 : 아군 피해 감소량 5% 추가 증가\n편애 : 파티원 받는 데미지 감소율 5% 추가 증가\n\n크루세이더의 받는 피해 5% 감소\n\n[5] 세트 옵션의 [본인만 적용] 효과 선택 시의 아포칼립스, 크럭스 오브 빅토리아, 마리오네트 스킬의 버프 효과 및 지속시간 감소율 80%로 변경",
+      "explainDetail": "보호의 징표 : 아군 피해 감소량 5% 추가 증가\n수호의 축복 : 아군 피해 감소량 5% 추가 증가\n편애 : 파티원 받는 데미지 감소율 5% 추가 증가\n\n크루세이더의 받는 피해 5% 감소\n\n[5] 세트 옵션의 [본인만 적용] 효과 선택 시의 아포칼립스, 크럭스 오브 빅토리아, 마리오네트 스킬의 버프 효과 및 지속시간 감소율 80%로 변경",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "baf124579507400a603b2a4c746482b5",
+    "itemName": "원시 태동의 대지",
+    "itemRarity": "신화",
+    "itemType": "방어구",
+    "itemTypeDetail": "판금 상의",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 30% 증가\n피격 시 15% 확률로 자신의 최대 체력의 10% 회복\n\n공격 성공 시 30초 동안 태동의 산물 효과 발생",
+    "itemExplainDetail": "스킬 공격력 30% 증가\n피격 시 15% 확률로 자신의 최대 체력의 10% 회복 (쿨타임 20초)\n\n공격 성공 시 30초 동안 태동의 산물 효과가 발생하여 아래의 효과가 적용됩니다. (쿨타임 10초, 최대 1중첩)\n- 모든 속성 강화 +24",
+    "itemFlavorText": "고동치는 생명의 의지가",
+    "setItemId": "f1076d938f10a593c757c377bc84af03",
+    "setItemName": "대자연의 숨결 세트",
+    "itemStatus": [
+      {
+        "name": "물리 방어력",
+        "value": 8184
+      },
+      {
+        "name": "힘",
+        "value": 152
+      },
+      {
+        "name": "체력",
+        "value": 157
+      },
+      {
+        "name": "지능",
+        "value": 152
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "적중률",
+        "value": "5%"
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 6
+      },
+      {
+        "name": "무게",
+        "value": "5kg"
+      },
+      {
+        "name": "내구도",
+        "value": 60
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "힘, 지능 12% 증가",
+          "explainDetail": "힘, 지능 12% 증가 (1%~12%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 13% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 13% 증가 (2%~13%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 데미지 증가량 9% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 9% 추가 증가 (1%~9%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 10% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 10% 증가 (2%~10%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 공격력 9% 증가",
+          "explainDetail": "모든 공격력 9% 증가 (1%~9%)",
+          "buffExplain": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +10",
+          "buffExplainDetail": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +10 (2~10)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "677f0a5c7d742933ddff42b935377705",
+    "itemName": "라이도 : 질서의 창조자",
+    "itemRarity": "신화",
+    "itemType": "액세서리",
+    "itemTypeDetail": "팔찌",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 25% 증가\n공격 시 6% 추가 데미지\n\n스킬 시전 시 10% 확률로 30초동안 라이도 룬 문자가 활성화되며 룬의 축복 버프 발생\n\n라이도, 케나즈, 게보 룬 문자가 활성화된 상태일때 채팅으로 '페후' 입력 시 120초동안 룬의 진리 버프 발동",
+    "itemExplainDetail": "스킬 공격력 25% 증가\n공격 시 6% 추가 데미지\n\n스킬 시전 시 10% 확률로 30초동안 라이도 룬 문자가 활성화되며 룬의 축복 버프 발생 (쿨타임 10초, 최대 1중첩)\n- 이동속도 10% 증가\n\n라이도, 케나즈, 게보 룬 문자가 활성화된 상태일때 채팅으로 '페후' 입력 시 120초동안 룬의 진리 버프를 발동한다. (쿨타임 10초, 최대 1중첩. 룬의 원리를 이해한 상태에서 사용 가능합니다.)\n- 공격속도 10%, 캐스팅속도 15% 증가\n- 룬의 힘 쿨타임 15초 감소",
+    "itemFlavorText": "고대에서 남겨진 유산은 그 힘과 근원을 알 수 없으나, 이 세상에 큰 영향을 미친다.",
+    "setItemId": "f19e9a71b2cd4f077998309cea838b93",
+    "setItemName": "고대의 술식 세트",
+    "itemStatus": [
+      {
+        "name": "마법 방어력",
+        "value": 6600
+      },
+      {
+        "name": "힘",
+        "value": 151
+      },
+      {
+        "name": "체력",
+        "value": 226
+      },
+      {
+        "name": "지능",
+        "value": 100
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 25
+      },
+      {
+        "name": "무게",
+        "value": "0.4kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "물리, 마법, 독립 공격력 3% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 3% 증가 (1%~3%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 60 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 60 증가 (40~60, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "스킬 공격력 6% 증가",
+          "explainDetail": "스킬 공격력 6% 증가 (1%~6%)",
+          "buffExplain": "수호의 은총 체력, 정신력 200 증가\n계시 : 아리아, 퍼페티어 지능 200 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 200 증가 (100~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 200 증가 (100~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 9% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 9% 추가 증가 (1%~9%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 9% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 9% 증가 (1%~9%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 6% 증가",
+          "explainDetail": "힘, 지능 6% 증가 (1%~6%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 7% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 7% 증가 (2%~7%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "룬의 축복 버프 발생 시 버프 추가 적용",
+      "explainDetail": "라이도 룬 문자가 활성화된 상태일 때 다음의 효과 추가 적용 (최대 1중첩)\n- 자신을 제외한 모든 파티원 이동속도 10% 증가",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "f765a2c6d5a352eea26c930b4ac002dc",
+    "itemName": "새벽을 녹이는 따스함",
+    "itemRarity": "신화",
+    "itemType": "액세서리",
+    "itemTypeDetail": "팔찌",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 16% 증가\n\n강화/증폭 수치가 1 증가할 때 마다 스킬 공격력 1% 추가 증가\n\n공격 및 캐스팅 시 30초 동안 새벽의 따스함 버프 발동\n\n장착한 장비의 강화/증폭/개조 수치 합이 6 증가할 때 마다 아래의 효과 추가 증가\n- 물리 크리티컬 히트 +0.5%\n- 마법 크리티컬 히트 +0.5%\n- 공격속도 0.8% 증가 \n- 이동속도 0.8% 증가 \n- 캐스팅속도 1.2% 증가",
+    "itemExplainDetail": "스킬 공격력 16% 증가\n\n강화/증폭 수치가 1 증가할 때 마다 스킬 공격력 1% 추가 증가(최대 13까지 증가)\n\n공격 및 캐스팅 시 30초 동안 새벽의 따스함 버프 발동(쿨타임 10초)\n- 모든 직업 15~30 레벨 모든 스킬 쿨타임 회복 속도 30% 증가\n- 모든 직업 1~48 레벨 모든 스킬 Lv +1\n\n장착한 장비의 강화/증폭/개조 수치 합이 6 증가할 때 마다 아래의 효과 추가 증가 (최대 150까지 증가)\n- 물리 크리티컬 히트 +0.5%\n- 마법 크리티컬 히트 +0.5%\n- 공격속도 0.8% 증가\n- 이동속도 0.8% 증가\n- 캐스팅 속도 1.2% 증가",
+    "itemFlavorText": "그리움이 묻어나는 스산한 저녁 바람에",
+    "setItemId": "2d228dcdcab18d2ab425dae8a2781df9",
+    "setItemName": "먼동 틀 무렵 세트",
+    "itemStatus": [
+      {
+        "name": "마법 방어력",
+        "value": 6600
+      },
+      {
+        "name": "힘",
+        "value": 151
+      },
+      {
+        "name": "체력",
+        "value": 226
+      },
+      {
+        "name": "지능",
+        "value": 100
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 16
+      },
+      {
+        "name": "무게",
+        "value": "0.4kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "물리, 마법, 독립 공격력 110 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 110 증가 (30~110, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 9% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 9% 증가 (1%~9%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 10% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 10% 추가 증가 (1%~10%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 10% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 10% 증가 (1%~10%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 데미지 증가량 11% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 11% 추가 증가 (1%~11%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 11% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 11% 증가 (1%~11%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "강화/증폭 수치가 1 증가할 때 마다\n보호의 징표 물리, 마법 방어력 1.2% 추가 증가\n수호의 축복 물리, 마법 방어력 1.2% 추가 증가\n편애 파티원 물리, 마법 방어력 1.2% 추가 증가",
+      "explainDetail": "강화/증폭 수치가 1 증가할 때 마다\n보호의 징표 물리, 마법 방어력 1.2% 추가 증가(최대 13 까지 증가)\n수호의 축복 물리, 마법 방어력 1.2% 추가 증가(최대 13 까지 증가)\n편애 파티원 물리, 마법 방어력 1.2% 추가 증가(최대 13 까지 증가)",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 13
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 13
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 13
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "488b6c2c54f029ff2fd88d875c0bf2e8",
+    "itemName": "가네샤의 영원한 가호",
+    "itemRarity": "신화",
+    "itemType": "액세서리",
+    "itemTypeDetail": "팔찌",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "공격 시 7% 추가 데미지\n스킬 공격력 30% 증가\n\n스킬 시전 시 77% 확률로 77초 동안 공격속도, 이동속도, 캐스팅 속도 7% 증가",
+    "itemExplainDetail": "공격 시 7% 추가 데미지\n스킬 공격력 30% 증가\n\n스킬 시전 시 77% 확률로 77초 동안 공격속도, 이동속도, 캐스팅 속도 7% 증가 (쿨타임 7초, 최대 1중첩)",
+    "itemFlavorText": "Abracadabra",
+    "setItemId": "9b2a1398222c5ead60edc99cf959338a",
+    "setItemName": "행운의 트라이앵글 세트",
+    "itemStatus": [
+      {
+        "name": "마법 방어력",
+        "value": 6600
+      },
+      {
+        "name": "힘",
+        "value": 151
+      },
+      {
+        "name": "체력",
+        "value": 226
+      },
+      {
+        "name": "지능",
+        "value": 100
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 32
+      },
+      {
+        "name": "무게",
+        "value": "0.4kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 4% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 4% 추가 증가 (1%~4%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 50 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 50 증가 (20~50, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 10% 증가",
+          "explainDetail": "힘, 지능 10% 증가 (1%~10%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 10% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 10% 증가 (1%~10%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 데미지 증가량 3% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 3% 추가 증가 (1%~3%)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 160 증가\n신실한 열정, 소악마 힘, 지능 증가량 140 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 160 증가 (120~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 140 증가 (100~140, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 8% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 8% 증가 (1%~8%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 9% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 9% 증가 (2%~9%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 7
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "2478dbd8b9d68e651df67bc9a1f3c8fa",
+    "itemName": "지고의 화염 - 이프리트",
+    "itemRarity": "신화",
+    "itemType": "액세서리",
+    "itemTypeDetail": "팔찌",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "공격 시 8% 추가 데미지\n스킬 공격력 27% 증가\n\n공격 적중 시 적에게 지고의 화염을 부여하여 3600초 동안 적이 불타오름\n\n불타는 적이 있는 경우 버프 발생",
+    "itemExplainDetail": "공격 시 8% 추가 데미지\n스킬 공격력 27% 증가\n\n공격 적중 시 적에게 지고의 화염을 부여하여 3600초 동안 적이 불타오름\n\n불타는 적이 있는 경우 버프 발생\n - 불타는 적 한 마리 당 분당 HP 회복속도 100% 상승, 피해감소 5% (최대 5중첩)",
+    "itemFlavorText": "존재 자체를 불태울 수 있는 불의 정령왕의 힘이 깃들어 있다.",
+    "setItemId": "f999962c227725c02d4b8626f46f58c7",
+    "setItemName": "정령사의 장신구 세트",
+    "itemStatus": [
+      {
+        "name": "마법 방어력",
+        "value": 6600
+      },
+      {
+        "name": "힘",
+        "value": 151
+      },
+      {
+        "name": "체력",
+        "value": 226
+      },
+      {
+        "name": "지능",
+        "value": 100
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 35
+      },
+      {
+        "name": "무게",
+        "value": "0.4kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "힘, 지능 160 증가",
+          "explainDetail": "힘, 지능 160 증가 (40~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "buffExplain": "수호의 은총 체력, 정신력 160 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 160 증가 (40~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 공격력 12% 증가",
+          "explainDetail": "모든 공격력 12% 증가 (1%~12%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 120 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 120 증가 (10~120, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 12% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 12% 증가 (1%~12%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 12% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 12% 증가 (1%~12%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 1
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 8
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "96f8258abe5a61b45cd95aeb75e7296b",
+    "itemName": "영원히 끝나지 않는 탐구",
+    "itemRarity": "신화",
+    "itemType": "액세서리",
+    "itemTypeDetail": "팔찌",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 30% 증가\n암속성 저항 9당 모든 속성 강화 9 증가 (최대 36 증가)",
+    "itemExplainDetail": "스킬 공격력 30% 증가\n암속성 저항 9당 모든 속성 강화 9 증가 (최대 36 증가)",
+    "itemFlavorText": "죽음에 이르러도 흑마술사의 탐구심은 멈추지 않는다.",
+    "setItemId": "1d4ed1e13b380593c889feef9ec2f62d",
+    "setItemName": "흑마술의 탐구자 세트",
+    "itemStatus": [
+      {
+        "name": "마법 방어력",
+        "value": 6600
+      },
+      {
+        "name": "힘",
+        "value": 151
+      },
+      {
+        "name": "체력",
+        "value": 226
+      },
+      {
+        "name": "지능",
+        "value": 100
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "암속성저항",
+        "value": 10
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 5
+      },
+      {
+        "name": "무게",
+        "value": "0.4kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "힘, 지능 240 증가",
+          "explainDetail": "힘, 지능 240 증가 (20~240, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "buffExplain": "수호의 은총 체력, 정신력 240 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 240 증가 (20~240, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 7% 추가 데미지",
+          "explainDetail": "공격 시 7% 추가 데미지 (1%~7%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 10% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 10% 증가 (4%~10%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 12% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 12% 증가 (1%~12%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 120 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 120 증가 (10~120, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 1
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "2663b5e40549791e69a2a8a024943efb",
+    "itemName": "시간을 거스르는 자침",
+    "itemRarity": "신화",
+    "itemType": "액세서리",
+    "itemTypeDetail": "팔찌",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "힘, 지능 8% 증가\n스킬 공격력 32% 증가\n모든 직업 50레벨 모든 스킬 쿨타임 15% 감소\n모든 직업 85레벨 모든 스킬 쿨타임 15% 감소\n\n공격 시 3% 확률로 시간 왜곡 발생",
+    "itemExplainDetail": "힘, 지능 8% 증가\n스킬 공격력 30% 증가\n모든 직업 50레벨 모든 스킬 쿨타임 15% 감소\n모든 직업 85레벨 모든 스킬 쿨타임 15% 감소\n\n\n[시간 왜곡 효과] 공격 시 3% 확률로 사용한 스킬 중 쿨타임 40초 이내의 스킬을 랜덤하게 초기화 (쿨타임 20초)\n\n스킬 초기화 시 10초 동안 공격 속도 15% 증가 및 캐스팅 속도 20% 증가 (최대 1중첩)",
+    "itemFlavorText": "내가 가는 그곳이 내가 원하는 그곳",
+    "setItemId": "2faa0b8988b5baa7216f0330b2a9e1ae",
+    "setItemName": "시간의 여행자 세트",
+    "itemStatus": [
+      {
+        "name": "마법 방어력",
+        "value": 6600
+      },
+      {
+        "name": "힘",
+        "value": 151
+      },
+      {
+        "name": "체력",
+        "value": 226
+      },
+      {
+        "name": "지능",
+        "value": 100
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 5
+      },
+      {
+        "name": "무게",
+        "value": "0.4kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "힘, 지능 4% 증가",
+          "explainDetail": "힘, 지능 4% 증가 (1%~4%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 4% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 4% 증가 (1%~4%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 속성 강화 +20",
+          "explainDetail": "모든 속성 강화 +20 (12~20, 해당 옵션 수치는 4의 배수로만 나옵니다.)",
+          "buffExplain": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +5",
+          "buffExplainDetail": "수호의 은총, 계시 : 아리아, 퍼페티어 스킬Lv +5 (3~5)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 100 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 100 증가 (10~100, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 110 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 110 증가 (20~110, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 공격력 8% 증가",
+          "explainDetail": "모든 공격력 8% 증가 (1%~8%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 10% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 10% 증가 (3%~10%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 1
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 11
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "dd8fb29cc2d99113e208efc67474b52e",
+    "itemName": "천지에 울려퍼지는 포효",
+    "itemRarity": "신화",
+    "itemType": "액세서리",
+    "itemTypeDetail": "팔찌",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "20초마다 포효하여 30초동안 버프 발생\n- 모든 공격력 5% 증가\n- 스킬 공격력 25% 증가\n\n고양 효과 강화\n\n광기 효과 강화",
+    "itemExplainDetail": "20초마다 포효하여 30초동안 버프 발생 (최대 1중첩, 본인만 적용)\n- 모든 공격력 5% 증가\n- 스킬 공격력 25% 증가\n\n고양 효과 강화\n- MP 회복량 50% 증가\n- 공격속도, 이동속도, 캐스팅속도 증가치 및 지속시간 100% 증가\n\n광기 효과 강화\n- 피격 시 받는 데미지 감소량 100% 증가\n- 슈퍼아머 지속시간 100% 증가\n- 슈퍼아머 피격 제한 수 200% 증가",
+    "itemFlavorText": "나의 용맹함이 천지를 울릴지니, 승전의 함성을 준비하여라!",
+    "setItemId": "5bc36d6fb20ea5007422608f9a18e586",
+    "setItemName": "운명을 가르는 함성 세트",
+    "itemStatus": [
+      {
+        "name": "마법 방어력",
+        "value": 6600
+      },
+      {
+        "name": "힘",
+        "value": 151
+      },
+      {
+        "name": "체력",
+        "value": 226
+      },
+      {
+        "name": "지능",
+        "value": 100
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 31
+      },
+      {
+        "name": "무게",
+        "value": "0.4kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "스킬 공격력 3% 증가",
+          "explainDetail": "스킬 공격력 3% 증가 (1%~3%)",
+          "buffExplain": "수호의 은총 체력, 정신력 160 증가\n계시 : 아리아, 퍼페티어 지능 160 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 160 증가 (120~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 160 증가 (120~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 4% 추가 데미지",
+          "explainDetail": "공격 시 4% 추가 데미지 (1%~4%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 4% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 4% 증가 (1%~4%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 7% 증가",
+          "explainDetail": "힘, 지능 7% 증가 (1%~7%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 7% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 7% 증가 (1%~7%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 12% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 12% 증가 (1%~12%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 12% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 12% 증가 (1%~12%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "고양 효과 강화\n- 50Lv 액티브 스킬의 공격, 이동속도 증가율 100% 증가\n\n광기 효과 강화\n- 50Lv 액티브 스킬의 물리, 마법 방어력 증가율 100% 증가",
+      "explainDetail": "고양 효과 강화\n- 50Lv 액티브 스킬의 공격, 이동속도 증가율 100% 증가\n\n광기 효과 강화\n- 50Lv 액티브 스킬의 물리, 마법 방어력 증가율 100% 증가",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 4
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "486f00eae262f4afc4a47d8187e368c2",
+    "itemName": "숙명을 뒤엎는 광란",
+    "itemRarity": "신화",
+    "itemType": "액세서리",
+    "itemTypeDetail": "팔찌",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "힘, 지능 11% 증가\n\n적 공격 시 광란의 기운 1 증가\n광란의 기운이 10 이상일 때 스킬 공격력 29% 증가\n\n적이 맵 안에 있는 상태에서 콤보가 1미만일 때 3초마다 광란의 기운 2 감소\n총 HP의 5% 이상 데미지를 받는 경우 광란의 기운 3 감소\n\n장착 시 광란의 기운 100 증가\n장착 시 30초동안 광란의 기운 감소가 적용되지 않음",
+    "itemExplainDetail": "힘, 지능 11% 증가\n\n적 공격 시 광란의 기운 1 증가 (쿨타임 0.5초, 최대 100)\n광란의 기운이 10 이상일 때 스킬 공격력 29% 증가\n\n적이 맵 안에 있는 상태에서 콤보가 1미만일 때 3초마다 광란의 기운 2 감소\n총 HP의 5% 이상 데미지를 받는 경우 광란의 기운 3 감소 (쿨타임 1초)\n\n장착 시 광란의 기운 100 증가 (던전 내에서 1회만 적용되며 부활 시 초기화됩니다.)\n장착 시 30초동안 광란의 기운 감소가 적용되지 않음 (던전 내에서 1회만 적용되며 부활 시 초기화됩니다.)",
+    "itemFlavorText": "품은 광란의 기운은 그 자신의 숙명마저 바꿀 수 있을지도 모른다.",
+    "setItemId": "4409ac3fd335adeea84fe227fcbe0fa9",
+    "setItemName": "광란의 추종자 세트",
+    "itemStatus": [
+      {
+        "name": "마법 방어력",
+        "value": 6600
+      },
+      {
+        "name": "힘",
+        "value": 151
+      },
+      {
+        "name": "체력",
+        "value": 226
+      },
+      {
+        "name": "지능",
+        "value": 100
+      },
+      {
+        "name": "정신력",
+        "value": 100
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 2
+      },
+      {
+        "name": "무게",
+        "value": "0.4kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "공격 시 데미지 증가량 10% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 10% 추가 증가 (1%~10%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 110 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 110 증가 (20~110, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 속성 강화 +32",
+          "explainDetail": "모든 속성 강화 +32 (4~32, 해당 옵션 수치는 4의 배수로만 나옵니다.)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 8% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 8% 증가 (1%~8%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 12% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 12% 추가 증가 (1%~12%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 12% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 12% 증가 (1%~12%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "광란의 기운이 10 이상일 때 보호의 징표, 수호의 축복, 편애 물리, 마법 방어력 증가량 2% 증가",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "e98db581d86ffc2098c66049b019cf83",
+    "itemName": "군신의 마지막 갈망",
+    "itemRarity": "신화",
+    "itemType": "추가장비",
+    "itemTypeDetail": "귀걸이",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "모든 공격력 5% 증가\n스킬 공격력 30% 증가",
+    "itemExplainDetail": "모든 공격력 5% 증가\n스킬 공격력 30% 증가",
+    "itemFlavorText": "군신이 그토록 갈망했지만, 생전 얻지 못한 귀걸이",
+    "setItemId": "0d7fa7e5f82d8ec524d1b8202b31497f",
+    "setItemName": "군신의 숨겨진 유산 세트",
+    "itemStatus": [
+      {
+        "name": "힘",
+        "value": 174
+      },
+      {
+        "name": "체력",
+        "value": 174
+      },
+      {
+        "name": "지능",
+        "value": 174
+      },
+      {
+        "name": "정신력",
+        "value": 174
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "이동속도",
+        "value": "15%"
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 25
+      },
+      {
+        "name": "무게",
+        "value": "0.3kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "공격 시 4% 추가 데미지",
+          "explainDetail": "공격 시 4% 추가 데미지 (1%~4%)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 220 증가\n신실한 열정, 소악마 힘, 지능 증가량 200 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 220 증가 (160~220, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 200 증가 (140~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "물리, 마법, 독립 공격력 9% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 9% 증가 (1%~9%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 90 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 90 증가 (10~90, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "스킬 공격력 4% 증가",
+          "explainDetail": "스킬 공격력 4% 증가 (1%~4%)",
+          "buffExplain": "수호의 은총 체력, 정신력 160 증가\n계시 : 아리아, 퍼페티어 지능 160 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 160 증가 (100~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 160 증가 (100~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 공격력 7% 증가",
+          "explainDetail": "모든 공격력 7% 증가 (1%~7%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 7% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 7% 증가 (1%~7%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "캐스트속도 +22.5%",
+      "explainDetail": "캐스트속도 +22.5%",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 8
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "a540a3704f3015701c046575f21950d1",
+    "itemName": "영원을 새긴 바다",
+    "itemRarity": "신화",
+    "itemType": "추가장비",
+    "itemTypeDetail": "귀걸이",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 27% 증가\n\n스킬 시전 시 30초 동안 바다의 영보 버프 발동\n\n공격 및 캐스팅 시 30초동안 영롱한 바다의 영보 버프 발동\n\n영보 : 세상의 진리 장비의 버프 지속시간 30초 증가",
+    "itemExplainDetail": "스킬 공격력 27% 증가\n\n스킬 시전 시 30초 동안 바다의 영보 버프 발동(쿨타임 1초)\n- 공격속도 5% 증가\n- 이동속도 5% 증가\n- 캐스팅속도 15% 증가\n- 모든 속성 강화 +12\n\n공격 및 캐스팅 시 30초동안 영롱한 바다의 영보 버프 발동(쿨타임 1초)\n- 공격속도 10% 증가 \n- 이동속도 10% 증가 \n- 캐스팅속도 22.5% 증가\n\n영보 : 세상의 진리 장비의 버프 지속시간 30초 증가",
+    "itemFlavorText": "우주의 진리가 저 깊은 바다에도 존재하는 것 같아",
+    "setItemId": "236b7169ff3612b54fb09f9753c138c1",
+    "setItemName": "영보 : 세상의 진리 세트",
+    "itemStatus": [
+      {
+        "name": "힘",
+        "value": 174
+      },
+      {
+        "name": "체력",
+        "value": 174
+      },
+      {
+        "name": "지능",
+        "value": 174
+      },
+      {
+        "name": "정신력",
+        "value": 174
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "무게",
+        "value": "0.3kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "모든 속성 강화 +40",
+          "explainDetail": "모든 속성 강화 +40 (20~40, 해당 옵션 수치는 4의 배수로만 나옵니다.)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 6% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 6% 증가 (1%~6%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 공격력 8% 증가",
+          "explainDetail": "모든 공격력 8% 증가 (1%~8%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 80 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 80 증가 (10~80, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 5% 증가",
+          "explainDetail": "힘, 지능 5% 증가 (1%~5%)",
+          "buffExplain": "수호의 은총 체력, 정신력 300 증가\n계시 : 아리아, 퍼페티어 지능 300 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 300 증가 (220~300, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 300 증가 (220~300, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 데미지 증가량 4% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 4% 추가 증가 (1%~4%)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 160 증가\n신실한 열정, 소악마 힘, 지능 증가량 140 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 160 증가 (100~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 140 증가 (80~140, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 7
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "28532be7516724b79a6825aaf0a03235",
+    "itemName": "또다른 시간의 흐름",
+    "itemRarity": "신화",
+    "itemType": "추가장비",
+    "itemTypeDetail": "귀걸이",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "공격 시 데미지 증가량 5% 추가 증가\n스킬 공격력 25% 증가\n\n피격 시 20초간 분신 생성\n분신이 있는 상태에서 백스텝 시전 시 분신의 위치로 순간이동\n\n뒤틀린 시간의 흐름 쿨타임 100초 감소\n뒤틀린 시간의 흐름에 휩싸여 행동 불가 상태 동안 HP 50% 회복, 스킬 쿨타임 15% 즉시 회복",
+    "itemExplainDetail": "공격 시 데미지 증가량 5% 추가 증가\n스킬 공격력 25% 증가\n\n피격 시 20초간 분신 생성(쿨타임 20초)\n분신이 있는 상태에서 백스텝 시전 시 분신의 위치로 순간이동\n\n뒤틀린 시간의 흐름 쿨타임 100초 감소\n뒤틀린 시간의 흐름에 휩싸여 행동 불가 상태 동안 HP 50% 회복, 스킬 쿨타임 15% 즉시 회복",
+    "itemFlavorText": "사라진 시간은 시간 자신에 의해 점차 회복된다.",
+    "setItemId": "0cd4fb46aa92d65d242ca44d34a3f27a",
+    "setItemName": "시간전쟁의 잔해 세트",
+    "itemStatus": [
+      {
+        "name": "힘",
+        "value": 174
+      },
+      {
+        "name": "체력",
+        "value": 174
+      },
+      {
+        "name": "지능",
+        "value": 174
+      },
+      {
+        "name": "정신력",
+        "value": 174
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 39
+      },
+      {
+        "name": "무게",
+        "value": "0.3kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "물리, 마법, 독립 공격력 6% 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 6% 증가 (1%~6%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 70 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 70 증가 (20~70, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "스킬 공격력 4% 증가",
+          "explainDetail": "스킬 공격력 4% 증가 (1%~4%)",
+          "buffExplain": "수호의 은총 체력, 정신력 200 증가\n계시 : 아리아, 퍼페티어 지능 200 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 200 증가 (140~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 200 증가 (140~200, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 8% 추가 데미지",
+          "explainDetail": "공격 시 8% 추가 데미지 (1%~8%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 11% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 11% 증가 (4%~11%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 5% 증가",
+          "explainDetail": "힘, 지능 5% 증가 (1%~5%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 6% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 6% 증가 (2%~6%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 11
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "297a7f90713900aeb6804f39b4df02ef",
+    "itemName": "플라즈마 초 진공관",
+    "itemRarity": "신화",
+    "itemType": "추가장비",
+    "itemTypeDetail": "귀걸이",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "공격 시 5% 추가 데미지\n스킬 공격력 30% 증가\n모든 속성 강화 30 증가\n\n응축된 플라즈마 에너지로 추가 장비 장착 시 효과 발생",
+    "itemExplainDetail": "공격 시 5% 추가 데미지\n스킬 공격력 30% 증가\n모든 속성 강화 30 증가\n\n응축된 플라즈마 에너지로 추가 장비 장착 시 효과가 발생하여 아래의 효과가 적용됩니다.\n- 제어 회로 모듈 : 이동 속도 10% 증가\n- 에너지 분배 제어기 : 모든 속성 저항 20 증가",
+    "itemFlavorText": "이 수치가 가능한건가? 한계가 어디지?",
+    "setItemId": "cff2e64e3f4fb0669d77b11743d0cc6b",
+    "setItemName": "노멀라이즈 싱크로 세트",
+    "itemStatus": [
+      {
+        "name": "힘",
+        "value": 174
+      },
+      {
+        "name": "체력",
+        "value": 174
+      },
+      {
+        "name": "지능",
+        "value": 174
+      },
+      {
+        "name": "정신력",
+        "value": 174
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "무게",
+        "value": "0.3kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "공격 시 데미지 증가량 12% 추가 증가",
+          "explainDetail": "공격 시 데미지 증가량 12% 추가 증가 (1%~12%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 12% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 12% 증가 (1%~12%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 220 증가",
+          "explainDetail": "힘, 지능 220 증가 (100~220, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "buffExplain": "수호의 은총 체력, 정신력 220 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 220 증가 (100~220, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 12% 추가 데미지",
+          "explainDetail": "공격 시 12% 추가 데미지 (1%~12%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 120 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 120 증가 (10~120, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 1
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 9
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "dca766f2875f2ca7df989f32394679c1",
+    "itemName": "영원한 나락의 다크버스",
+    "itemRarity": "신화",
+    "itemType": "추가장비",
+    "itemTypeDetail": "귀걸이",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 30% 증가\n암속성 저항 3당 모든 공격력 1% 증가 (최대 6% 증가)",
+    "itemExplainDetail": "스킬 공격력 30% 증가\n암속성 저항 3당 모든 공격력 1% 증가 (최대 6% 증가)",
+    "itemFlavorText": "모든 암흑은 나락에서 흘러나와 나락으로 돌아간다",
+    "setItemId": "f51b430435a8383b3cf6d34407c4a553",
+    "setItemName": "나락의 구도자 세트",
+    "itemStatus": [
+      {
+        "name": "힘",
+        "value": 174
+      },
+      {
+        "name": "체력",
+        "value": 174
+      },
+      {
+        "name": "지능",
+        "value": 174
+      },
+      {
+        "name": "정신력",
+        "value": 174
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "암속성저항",
+        "value": 10
+      },
+      {
+        "name": "무게",
+        "value": "0.3kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "모든 공격력 12% 증가",
+          "explainDetail": "모든 공격력 12% 증가 (1%~12%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 12% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 12% 증가 (1%~12%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 속성 강화 +40",
+          "explainDetail": "모든 속성 강화 +40 (8~40, 해당 옵션 수치는 4의 배수로만 나옵니다.)",
+          "buffExplain": "수호의 은총 체력, 정신력 240 증가\n계시 : 아리아, 퍼페티어 지능 240 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 240 증가 (80~240, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n계시 : 아리아, 퍼페티어 지능 240 증가 (80~240, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 9% 추가 데미지",
+          "explainDetail": "공격 시 9% 추가 데미지 (1%~9%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 90 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 90 증가 (10~90, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 2
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 2
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 11
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "5d1784fa174f6ccd6bc21a0f85a8d74a",
+    "itemName": "차원을 관통하는 초신성",
+    "itemRarity": "신화",
+    "itemType": "추가장비",
+    "itemTypeDetail": "귀걸이",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 19% 증가\n모든 공격력 10% 증가\n\n[차원 전자기장 효과]\n20초 마다 무색 큐브 조각 1개를 소모하여 차원 전자기장 발생",
+    "itemExplainDetail": "스킬 공격력 19% 증가\n모든 공격력 10% 증가\n\n[차원 전자기장 효과]\n20초 마다 무색 큐브 조각 1개를 소모하여, 20초 동안 지속되는 차원 전자기장이 발생하여 아래 효과가 적용됩니다. (최대 1중첩)\n- 공격 속도 15% 증가\n- 모든 직업 50레벨 모든 스킬 Lv +1\n- 모든 직업 85레벨 모든 스킬 Lv +1\n- 모든 직업 100레벨 모든 스킬 Lv +1",
+    "itemFlavorText": "모든 것을 넘어가지 못하는 곳은 없지",
+    "setItemId": "bcd72f6c009738cb256b13403fc84b8c",
+    "setItemName": "차원의 여행자 세트",
+    "itemStatus": [
+      {
+        "name": "힘",
+        "value": 174
+      },
+      {
+        "name": "체력",
+        "value": 174
+      },
+      {
+        "name": "지능",
+        "value": 174
+      },
+      {
+        "name": "정신력",
+        "value": 174
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "무게",
+        "value": "0.3kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "힘, 지능 300 증가",
+          "explainDetail": "힘, 지능 300 증가 (20~300, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "buffExplain": "수호의 은총 체력, 정신력 300 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 300 증가 (20~300, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 11% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 11% 추가 증가 (1%~11%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 110 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 110 증가 (10~110, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 직업 60~100레벨 모든 스킬Lv +1",
+          "explainDetail": "모든 직업 60~100레벨 모든 스킬Lv +1 (70~100)",
+          "buffExplain": "신념의 오라 체력, 정신력 증가량 160 증가\n신실한 열정, 소악마 힘, 지능 증가량 140 증가",
+          "buffExplainDetail": "신념의 오라 체력, 정신력 증가량 160 증가 (60~160, 해당 옵션 수치는 20의 배수로만 나옵니다.)\n신실한 열정, 소악마 힘, 지능 증가량 140 증가 (40~140, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "88186ce9a9fc02dfb274f225acd406b4",
+    "itemName": "운명을 거스르는 자",
+    "itemRarity": "신화",
+    "itemType": "추가장비",
+    "itemTypeDetail": "귀걸이",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 27% 증가\n\n\n던전 입장 시 20초마다 주사위를 굴림\n\n주사위눈이 5이하일 경우, 20초동안 모든 공격력 5% 증가\n주사위눈이 6일 경우, 20초동안 모든 공격력 30% 증가 \n\n주사위눈이 1이 나오면, 즉시 주사위를 다시 굴린다.",
+    "itemExplainDetail": "스킬 공격력 27% 증가\n\n던전 입장 시 20초마다 주사위를 굴림\n\n주사위눈이 5이하일 경우, 20초동안 모든 공격력 5% 증가 (최대 1중첩)\n주사위눈이 6일 경우, 20초동안 모든 공격력 30% 증가 (최대 1중첩)\n\n주사위눈이 1이 나오면, 즉시 주사위를 다시 굴린다.",
+    "itemFlavorText": "납득할 수 없군. 다시 시작하지.",
+    "setItemId": "5742ec75674086d001067005f43f0da4",
+    "setItemName": "운명의 주사위 세트",
+    "itemStatus": [
+      {
+        "name": "힘",
+        "value": 174
+      },
+      {
+        "name": "체력",
+        "value": 174
+      },
+      {
+        "name": "지능",
+        "value": 174
+      },
+      {
+        "name": "정신력",
+        "value": 174
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 10
+      },
+      {
+        "name": "무게",
+        "value": "0.3kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "물리, 마법, 독립 공격력 120 증가",
+          "explainDetail": "물리, 마법, 독립 공격력 120 증가 (40~120, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 90 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 90 증가 (10~90, 해당 옵션 수치는 10의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "모든 직업 1~45레벨 모든 스킬Lv +1",
+          "explainDetail": "모든 직업 1~45레벨 모든 스킬Lv +1 (30~45)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 4% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 4% 증가 (1%~4%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 4% 증가",
+          "explainDetail": "힘, 지능 4% 증가 (1%~4%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 4% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 4% 증가 (1%~4%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 7% 추가 데미지",
+          "explainDetail": "공격 시 7% 추가 데미지 (1%~7%)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 7% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 7% 증가 (1%~7%)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "주사위눈이 6일 경우, 20초동안 다음 스킬의 쿨타임 30% 감소 (최대 1중첩, 주사위눈 효과는 2세트 옵션으로 발동됩니다.)\n- 해당 스킬 : 디바인 플래쉬, 용맹의 아리아, 하베스팅",
+      "explainDetail": "주사위눈이 6일 경우, 20초동안 다음 스킬의 쿨타임 30% 감소 (최대 1중첩, 주사위눈 효과는 2세트 옵션으로 발동됩니다.)\n- 해당 스킬 : 디바인 플래쉬, 용맹의 아리아, 하베스팅",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 1
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 12
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 12
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 12
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  },
+  {
+    "itemId": "c549adc567f46e47f536a1e26e7f9d0b",
+    "itemName": "아린 고통의 비극",
+    "itemRarity": "신화",
+    "itemType": "추가장비",
+    "itemTypeDetail": "귀걸이",
+    "itemAvailableLevel": 105,
+    "itemObtainInfo": "* 시로코 레이드에서 획득하는 <지혜의 인도 에픽/신화 항아리>을(를) 통해 획득\n \n* 지혜의 인도 몬스터 사냥\n \n* 더 오큘러스 : 부활의 성전 <선지자 에스라> 사냥\n \n* 시로코 챌린지 모드 네임드/보스 몬스터 사냥\n \n* 검은 연옥 <공포의 아스타로스> 사냥\n \n* 다음의 던전에서 특별보상으로 획득\n- 고통의 지하실/검은 신전/로스체스트 외곽/공포의 묘지/절망의 요람/파멸의 낙원\n \n* 오즈마 레이드 하드 난이도 경매에서 획득\n \n* 다음의 지역 던전에서 난입 몬스터 사냥 시 획득\n- 균열의 주시자/종말의 인도\n \n* 시로코 레이드 하드 난이도 경매에서 획득\n",
+    "itemExplain": "스킬 공격력 27% 증가\n\nHP 30% 이상인 적 공격 시 5% 추가 데미지\nHP 30% 미만인 적 공격 시 6% 추가 데미지\n\nHP 70% 미만의 적 공격 시 10초동안 공격속도 3%, 캐스팅속도 4.5% 증가\n\n혈관 파열 조건 횟수 80% 감소\n무너진 세상의 슬픔, 광란을 품은 자의 종막 장비 효과 중 HP 70% 이상인 적 공격 시 추가 데미지량 2% 추가 증가",
+    "itemExplainDetail": "스킬 공격력 27% 증가\n\nHP 30% 이상인 적 공격 시 5% 추가 데미지\nHP 30% 미만인 적 공격 시 6% 추가 데미지\n\nHP 70% 미만의 적 공격 시 10초동안 공격속도 3%, 캐스팅속도 4.5% 증가 (최대 1중첩)\n\n혈관 파열 조건 횟수 80% 감소\n무너진 세상의 슬픔, 광란을 품은 자의 종막 장비 효과 중 HP 70% 이상인 적 공격 시 추가 데미지량 2% 추가 증가",
+    "itemFlavorText": "만약 그가 마지막에 품었을 감정이 세상에 남는다면...",
+    "setItemId": "bf7f99836f89770380231245c6048dfe",
+    "setItemName": "아린 비극의 잔해 세트",
+    "itemStatus": [
+      {
+        "name": "힘",
+        "value": 174
+      },
+      {
+        "name": "체력",
+        "value": 174
+      },
+      {
+        "name": "지능",
+        "value": 174
+      },
+      {
+        "name": "정신력",
+        "value": 174
+      },
+      {
+        "name": "모험가 명성",
+        "value": 2039
+      },
+      {
+        "name": "모든 속성 강화",
+        "value": 23
+      },
+      {
+        "name": "무게",
+        "value": "0.3kg"
+      }
+    ],
+    "mythologyInfo": {
+      "options": [
+        {
+          "explain": "모든 속성 강화 +16",
+          "explainDetail": "모든 속성 강화 +16 (8~16, 해당 옵션 수치는 4의 배수로만 나옵니다.)",
+          "buffExplain": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 5% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 물리, 마법, 독립 공격력 증가량 5% 증가 (3%~5%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "공격 시 적에게 입힌 피해의 10% 만큼 3초동안 지속피해 발생",
+          "explainDetail": "공격 시 적에게 입힌 피해의 10% 만큼 3초동안 지속피해 발생 (1%~10%)",
+          "buffExplain": "30Lv 버프 스킬 힘, 지능 증가량 10% 증가",
+          "buffExplainDetail": "30Lv 버프 스킬 힘, 지능 증가량 10% 증가 (1%~10%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "크리티컬 공격 시 데미지 증가량 8% 추가 증가",
+          "explainDetail": "크리티컬 공격 시 데미지 증가량 8% 추가 증가 (1%~8%)",
+          "buffExplain": "50Lv 액티브 스킬 힘, 지능 증가량 8% 증가",
+          "buffExplainDetail": "50Lv 액티브 스킬 힘, 지능 증가량 8% 증가 (1%~8%)",
+          "optionType": "mythology"
+        },
+        {
+          "explain": "힘, 지능 140 증가",
+          "explainDetail": "힘, 지능 140 증가 (80~140, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "buffExplain": "수호의 은총 체력, 정신력 140 증가",
+          "buffExplainDetail": "수호의 은총 체력, 정신력 140 증가 (80~140, 해당 옵션 수치는 20의 배수로만 나옵니다.)",
+          "optionType": "mythology"
+        }
+      ]
+    },
+    "itemBuff": {
+      "explain": "자신의 HP가 70% 이상일 때 슬로우 힐, 치유의 기도, 꼼꼼한 바느질 HP 회복량 1% 증가\n자신의 HP가 70% 미만 30% 이상일 때 슬로우 힐, 치유의 기도, 꼼꼼한 바느질 HP 회복량 2% 증가\n자신의 HP가 30% 미만일 때 슬로우 힐, 치유의 기도, 꼼꼼한 바느질 HP 회복량 3% 증가",
+      "explainDetail": "",
+      "reinforceSkill": [
+        {
+          "jobName": "마법사(여)",
+          "jobId": "3909d0b188e9c95311399f776e331da5",
+          "skills": [
+            {
+              "skillId": "61c8cb33dd20b4ff335e8deed70d3d9c",
+              "name": "금단의 저주",
+              "value": 1
+            },
+            {
+              "skillId": "56fca6cff74d828e92301a40cd2148b9",
+              "name": "마리오네트",
+              "value": 1
+            },
+            {
+              "skillId": "8d8981a94b8bdd4e3ffad5bc05042080",
+              "name": "퍼페티어",
+              "value": 16
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(남)",
+          "jobId": "f6a4ad30555b99b499c07835f87ce522",
+          "skills": [
+            {
+              "skillId": "e4c354a89c337310aeb7041d5e742828",
+              "name": "영광의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "dcb31a63ef58954f44ff2070c42a9a98",
+              "name": "아포칼립스",
+              "value": 1
+            },
+            {
+              "skillId": "2c9d9a36c8401bddff6cdb80fab8dc24",
+              "name": "수호의 은총",
+              "value": 16
+            }
+          ]
+        },
+        {
+          "jobName": "프리스트(여)",
+          "jobId": "0c1b401bb09241570d364420b3ba3fd7",
+          "skills": [
+            {
+              "skillId": "8c2379737c5acc935c1731f67f607655",
+              "name": "용맹의 축복",
+              "value": 1
+            },
+            {
+              "skillId": "bb34e8854a93fd250347a1c64119f7ab",
+              "name": "크럭스 오브 빅토리아",
+              "value": 1
+            },
+            {
+              "skillId": "78bd107acd474518b606be1e4fd38239",
+              "name": "계시 : 아리아",
+              "value": 16
+            }
+          ]
+        }
+      ]
+    },
+    "hashtag": []
+  }
+]

@@ -2,7 +2,7 @@ import { useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Select from "react-select";
-import { Box, VStack } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 import UserEquipInfo from "../components/Setting/UserEquipInfo";
 import AcquireEpicConcept from "../components/Setting/AcquireEpicConcept";
@@ -36,7 +36,23 @@ function Setting() {
       <Head>
         <title>DUNLINE</title>
       </Head>
-      <main>
+      <Box
+        as="header"
+        minWidth="320px"
+        textAlign="center"
+        padding="20px 0"
+        fontSize="6xl"
+      >
+        <h1>DUNLINE</h1>
+      </Box>
+      <Box
+        as="main"
+        minWidth="320px"
+        maxWidth="800px"
+        height="100%"
+        margin="0 auto"
+        padding="0 20px"
+      >
         <UserEquipInfo server={server} characterid={characterid} />
         <Box width={"500px"}>
           <Select
@@ -45,6 +61,7 @@ function Setting() {
             closeMenuOnSelect={false}
             onChange={(concept) => {
               setSelectedConcept([...concept]);
+              console.log(selectedConcept);
             }}
             placeholder={`원하는 컨셉을 선택해주세요`}
             noOptionsMessage={() => "검색하신 컨셉은 존재하지 않습니다"}
@@ -56,7 +73,7 @@ function Setting() {
           characterid={characterid}
           selectedConcept={selectedConcept}
         />
-      </main>
+      </Box>
     </>
   );
 }

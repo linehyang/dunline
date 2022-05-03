@@ -31,7 +31,16 @@ export default function WearItem({ wearItem }: Props) {
           <Box key={key}>
             <Box>
               {EpicInfoEquip[key as EpicInfoEquipKeyType]}
-              <Tooltip label={<HoverEpicInfo itemId={value} />} fontSize="md">
+              <Tooltip
+                label={
+                  <HoverEpicInfo
+                    itemName={
+                      EpicItems.find((v) => v.itemId === value)?.itemName
+                    }
+                  />
+                }
+                fontSize="md"
+              >
                 <Box as="span">
                   {value && (
                     <Image

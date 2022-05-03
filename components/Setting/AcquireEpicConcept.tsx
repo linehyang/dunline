@@ -1,11 +1,10 @@
 import { useState } from "react";
 import useSWR from "swr";
 import Image from "next/image";
-import { Box, Tooltip, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 
 import { EpicConcept, EpicItems, EpicInfoEquip } from "../../public/epic";
 
-import HoverEpicInfo from "./HoverEpicInfo";
 import WearItem from "./WearItem";
 
 import EpicItemToolTip from "./EpicItemToolTip";

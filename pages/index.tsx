@@ -4,6 +4,7 @@ import { Box } from "@chakra-ui/react";
 
 import SearchForm from "../components/Search/SearchForm";
 import CharacterList from "../components/Search/CharacterList";
+import GetEpicInfo from "../components/Others/GetEpicInfo";
 
 import type { NextPage } from "next";
 
@@ -40,6 +41,7 @@ const Home: NextPage = () => {
         />
         <CharacterList url={url} />
       </Box>
+      <GetEpicInfo />
     </>
   );
 };
