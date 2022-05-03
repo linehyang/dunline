@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Box } from "@chakra-ui/react";
 
 import EpicItemToolTip from "./EpicItemToolTip";
+import UserEquipDetail from "./UserEquipDetail";
 
 type Props = {
   server: string | string[] | undefined;
@@ -75,24 +76,62 @@ export default function UserEquipInfo({ server, characterid }: Props) {
   }
 
   return (
-    <>
-      <Box>{data.characterName}의 장착 장비 정보</Box>
-      <Box display="flex" alignItems="center" justifyContent="center">
+    <Box display="flex">
+      <Box
+        display="flex"
+        backgroundImage="url('/images/bg_char.jpeg')"
+        backgroundRepeat="no-repeat"
+        backgroundSize="100% 90%"
+        justifyContent="space-around"
+        position="relative"
+        width="300px"
+      >
+        <Box
+          position="absolute"
+          zIndex="1"
+          width="300px"
+          height="300px"
+          bottom="50px"
+        >
+          <Image
+            src={`https://img-api.neople.co.kr/df/servers/${server}/characters/${characterid}?zoom=3`}
+            alt="epicinfo characterImage"
+            layout="fill"
+          />
+        </Box>
         {leftEquip && (
-          <Box display="flex" width="100px" flexWrap="wrap">
+          <Box
+            display="flex"
+            width="80px"
+            flexWrap="wrap"
+            alignContent="flex-start"
+            marginTop="10px"
+          >
             {leftEquip.map((equipItemInfo) => (
               <EpicItemToolTip
                 key={equipItemInfo!.itemId}
                 itemName={equipItemInfo!.itemName}
               >
                 <Box>
+                  <Box
+                    as="span"
+                    position="absolute"
+                    color={
+                      equipItemInfo?.amplificationName ? "#DB00DB" : "#ffffff"
+                    }
+                    fontWeight="bold"
+                    zIndex="1"
+                    fontSize="12px"
+                  >
+                    +{equipItemInfo?.reinforce}
+                  </Box>
                   <Image
                     src={`https://img-api.neople.co.kr/df/items/${
                       equipItemInfo!.itemId
                     }`}
                     alt={`에픽아이템 ${equipItemInfo!.slotId}`}
-                    width={"50px"}
-                    height={"50px"}
+                    width={"40px"}
+                    height={"40px"}
                   />
                 </Box>
               </EpicItemToolTip>
@@ -100,27 +139,52 @@ export default function UserEquipInfo({ server, characterid }: Props) {
           </Box>
         )}
         {rightEquip && (
-          <Box display="flex" width="100px" flexWrap="wrap">
+          <Box
+            display="flex"
+            width="80px"
+            flexWrap="wrap"
+            alignContent="flex-start"
+            marginTop="10px"
+          >
             {rightEquip.map((equipItemInfo) => (
               <EpicItemToolTip
                 key={equipItemInfo!.itemId}
                 itemName={equipItemInfo!.itemName}
               >
-                <Box>
+                <Box position="relative">
+                  <Box
+                    as="span"
+                    position="absolute"
+                    color={
+                      equipItemInfo?.amplificationName ? "#DB00DB" : "#ffffff"
+                    }
+                    fontWeight="bold"
+                    zIndex="1"
+                    fontSize="12px"
+                  >
+                    +{equipItemInfo?.reinforce}
+                  </Box>
                   <Image
                     src={`https://img-api.neople.co.kr/df/items/${
                       equipItemInfo!.itemId
                     }`}
                     alt={`에픽아이템 ${equipItemInfo!.slotId}`}
-                    width={"50px"}
-                    height={"50px"}
+                    width={"40px"}
+                    height={"40px"}
                   />
                 </Box>
               </EpicItemToolTip>
             ))}
           </Box>
         )}
+        <Box position="absolute" bottom="0" textAlign="center">
+          <Box>{data.adventureName}</Box>
+          <Box>
+            {data.jobGrowName} / Lv.{data.level} {data.characterName}
+          </Box>
+        </Box>
       </Box>
-    </>
+      <UserEquipDetail data={data} />
+    </Box>
   );
 }
