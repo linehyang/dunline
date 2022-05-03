@@ -61,6 +61,7 @@ function Setting() {
             closeMenuOnSelect={false}
             onChange={(concept) => {
               setSelectedConcept([...concept]);
+              console.log(selectedConcept);
             }}
             placeholder={`원하는 컨셉을 선택해주세요`}
             noOptionsMessage={() => "검색하신 컨셉은 존재하지 않습니다"}

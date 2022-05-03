@@ -3,7 +3,7 @@ import { Box } from "@chakra-ui/react";
 import { EpicItems } from "../../public/epic";
 
 interface Props {
-  itemName: string;
+  itemName: string | undefined;
 }
 
 export default function HoverEpicInfo({ itemName }: Props) {
