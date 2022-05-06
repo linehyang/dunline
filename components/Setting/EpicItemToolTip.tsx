@@ -5,7 +5,7 @@ import HoverEpicInfo from "./HoverEpicInfo";
 import type { ReactNode } from "react";
 
 type Props = {
-  itemName: string;
+  itemName: string | undefined;
   children: ReactNode;
 };
 

@@ -34,17 +34,17 @@ export default function AcquireEpicConcept({
   const [wearItem, setWearItem] = useState<
     Record<EpicInfoEquipKeyType, string>
   >({
+    SHOULDER: "",
     JACKET: "",
     PANTS: "",
-    SHOULDER: "",
     WAIST: "",
     SHOES: "",
     WRIST: "",
     AMULET: "",
-    RING: "",
     SUPPORT: "",
-    MAGIC_STON: "",
+    RING: "",
     EARRING: "",
+    MAGIC_STON: "",
   });
 
   return (

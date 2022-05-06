@@ -1,14 +1,11 @@
 import useSWR from "swr";
 import Image from "next/image";
 import { Box } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 
 import EpicItemToolTip from "./EpicItemToolTip";
 import UserEquipDetail from "./UserEquipDetail";
-
-type Props = {
-  server: string | string[] | undefined;
-  characterid: string | string[] | undefined;
-};
+import InGameEpicConcept from "./InGameEpicConcept";
 
 type EquipmentType = {
   amplificationName: string;
@@ -59,7 +56,10 @@ const RIGHT_EQUIP_SLOT_IDS = [
 ];
 
 //server와 characterid를 받아와 해당 캐릭터 장착 장비를 확인하는 컴포넌트
-export default function UserEquipInfo({ server, characterid }: Props) {
+export default function UserEquipInfo() {
+  const router = useRouter();
+  const { server, characterid } = router.query;
+
   const url = `api/userEquipInfo?server=${server}&characterid=${characterid}`;
 
   const { data } = useSWR<UserEquipInfoType>(url);
@@ -184,7 +184,10 @@ export default function UserEquipInfo({ server, characterid }: Props) {
           </Box>
         </Box>
       </Box>
-      <UserEquipDetail data={data} />
+      <Box width="calc(100% - 300px)">
+        <UserEquipDetail data={data} />
+        <InGameEpicConcept data={data.equipment} />
+      </Box>
     </Box>
   );
 }
