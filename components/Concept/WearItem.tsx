@@ -1,10 +1,10 @@
-import { Box, Tooltip } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import { EpicInfoEquip, EpicItems, EpicConcept } from "../../public/epic";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import useSWR from "swr";
 
-import EpicItemToolTip from "./EpicItemToolTip";
+import EpicItemToolTip from "../Setting/EpicItemToolTip";
 
 type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;
 type EpicConceptKeyType = keyof typeof EpicConcept;
@@ -22,8 +22,48 @@ type wearItemType = {
   WAIST: string;
   WRIST: string;
 };
+
+type EquipmentType = {
+  amplificationName: string;
+  enchant: {
+    explain?: string;
+    status?: {
+      name: string;
+      value: number;
+    };
+  };
+  itemAvailableLevel: number;
+  itemGradeName: string;
+  itemId: string;
+  itemName: string;
+  itemRarity: string;
+  itemType: string;
+  itemTypeDetail: string;
+  refine: number;
+  reinforce: number;
+  slotId: string;
+  slotName: string;
+};
+
+type UserEquipInfoType = {
+  adventureName: string;
+  characterId: string;
+  characterName: string;
+  equipment: EquipmentType[];
+  guildId: string;
+  guildName: string;
+  jobGrowId: string;
+  jobGrowName: string;
+  jobId: string;
+  jobName: string;
+  level: number;
+};
+
 interface Props {
   wearItem: Record<EpicInfoEquipKeyType, string>;
+  // onClick: () => void;
+  resetWearItem: () => void;
+  toggleWearItem: (slotId: string) => void;
 }
 
 const LEFT_EQUIP_SLOT_IDS = ["SHOULDER", "JACKET", "PANTS", "WAIST", "SHOES"];
@@ -36,26 +76,21 @@ const RIGHT_EQUIP_SLOT_IDS = [
   "MAGIC_STON",
 ];
 
-// function wearConcept(value: string) {
-//   let concept = EpicItems.filter(({ itemId }) => itemId === value);
-
-//   const result = concept.map(({ concepts }) => {
-//     return concepts?.map((el) => {
-//       return EpicConcept[el as EpicConceptKeyType];
-//     });
-//   });
-
-//   return result.join();
-// }
-
 function itemIdChangeHandler(itemId: string) {
   return EpicItems.find((v) => v.itemId === itemId)?.itemName;
 }
 
-export default function WearItem({ wearItem }: Props) {
+export default function WearItem({
+  wearItem,
+  resetWearItem,
+  toggleWearItem,
+}: Props) {
   const router = useRouter();
-  const { query } = router;
-  const { server, characterid } = query;
+  const { server, characterid } = router.query;
+
+  const url = `api/userEquipInfo?server=${server}&characterid=${characterid}`;
+
+  const { data } = useSWR<UserEquipInfoType>(url);
 
   const leftEquip = Object.entries(wearItem)
     .filter(([key]) => LEFT_EQUIP_SLOT_IDS.includes(key))
@@ -71,6 +106,9 @@ export default function WearItem({ wearItem }: Props) {
 
   return (
     <Box display="flex">
+      <Button onClick={resetWearItem} colorScheme="blue">
+        초기화 버튼
+      </Button>
       <Box
         display="flex"
         backgroundImage="url('/images/bg_char.jpeg')"
@@ -93,7 +131,11 @@ export default function WearItem({ wearItem }: Props) {
                 key={`${itemId}, ${slotId}`}
                 itemName={itemIdChangeHandler(itemId)}
               >
-                <Box>
+                <Box
+                  onClick={() => {
+                    toggleWearItem(slotId);
+                  }}
+                >
                   <Image
                     src={
                       itemId
@@ -122,7 +164,12 @@ export default function WearItem({ wearItem }: Props) {
                 key={`${itemId}, ${slotId}`}
                 itemName={itemIdChangeHandler(itemId)}
               >
-                <Box position="relative">
+                <Box
+                  position="relative"
+                  onClick={() => {
+                    toggleWearItem(slotId);
+                  }}
+                >
                   <Image
                     src={
                       itemId
@@ -138,40 +185,13 @@ export default function WearItem({ wearItem }: Props) {
             ))}
           </Box>
         )}
+        <Box position="absolute" bottom="0" textAlign="center">
+          <Box>{data?.adventureName}</Box>
+          <Box>
+            {data?.jobGrowName} / Lv.{data?.level} {data?.characterName}
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
-  {
-    /* {Object.entries(wearItem).map(([key, value]) => {
-        return (
-          <Box key={key}>
-            <Box>
-              {EpicInfoEquip[key as EpicInfoEquipKeyType]}
-              <Tooltip
-                label={
-                  <HoverEpicInfo
-                    itemName={
-                      EpicItems.find((v) => v.itemId === value)?.itemName
-                    }
-                  />
-                }
-                fontSize="md"
-              >
-                <Box as="span">
-                  {value && (
-                    <Image
-                      src={`https://img-api.neople.co.kr/df/items/${value}`}
-                      alt={value}
-                      width={"30px"}
-                      height={"30px"}
-                    />
-                  )}
-                  <Box as={"span"}> {wearConcept(value)}</Box>
-                </Box>
-              </Tooltip>
-            </Box>
-          </Box>
-        );
-      })} */
-  }
 }

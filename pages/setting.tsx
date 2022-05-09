@@ -1,23 +1,20 @@
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 
 import UserEquipInfo from "../components/Setting/UserEquipInfo";
+import Header from "../components/Header";
 
 function Setting() {
+  const router = useRouter();
+  const { server, characterid } = router.query;
+
   return (
     <>
       <Head>
         <title>DUNLINE</title>
       </Head>
-      <Box
-        as="header"
-        minWidth="320px"
-        textAlign="center"
-        padding="20px 0"
-        fontSize="6xl"
-      >
-        <h1>DUNLINE</h1>
-      </Box>
+      <Header server={server} characterid={characterid} />
       <Box
         as="main"
         minWidth="320px"
