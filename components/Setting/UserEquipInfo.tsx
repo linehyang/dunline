@@ -1,6 +1,17 @@
 import useSWR from "swr";
 import Image from "next/image";
-import { Box } from "@chakra-ui/react";
+import {
+  Box,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  Button,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
 import EpicItemToolTip from "./EpicItemToolTip";
@@ -60,6 +71,7 @@ export default function UserEquipInfo() {
   const router = useRouter();
   const { server, characterid } = router.query;
 
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const url = `api/userEquipInfo?server=${server}&characterid=${characterid}`;
 
   const { data } = useSWR<UserEquipInfoType>(url);
