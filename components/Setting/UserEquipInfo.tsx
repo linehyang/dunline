@@ -1,17 +1,6 @@
 import useSWR from "swr";
 import Image from "next/image";
-import {
-  Box,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-  Button,
-  useDisclosure,
-} from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
 import EpicItemToolTip from "./EpicItemToolTip";
@@ -71,22 +60,24 @@ export default function UserEquipInfo() {
   const router = useRouter();
   const { server, characterid } = router.query;
 
-  const { isOpen, onOpen, onClose } = useDisclosure();
   const url = `api/userEquipInfo?server=${server}&characterid=${characterid}`;
 
   const { data } = useSWR<UserEquipInfoType>(url);
+
+  console.log(data);
+
   const leftEquip = LEFT_EQUIP_SLOT_IDS.map((slotId) =>
     data?.equipment.find((v) => v.slotId === slotId)
-  ).filter(Boolean);
-
+  );
   const rightEquip = RIGHT_EQUIP_SLOT_IDS.map((slotId) =>
     data?.equipment.find((v) => v.slotId === slotId)
-  ).filter(Boolean);
+  );
 
   if (!data) {
     return null;
   }
 
+  console.log(leftEquip);
   return (
     <Box display="flex">
       <Box
@@ -119,35 +110,46 @@ export default function UserEquipInfo() {
             alignContent="flex-start"
             marginTop="10px"
           >
-            {leftEquip.map((equipItemInfo) => (
-              <EpicItemToolTip
-                key={equipItemInfo!.itemId}
-                itemName={equipItemInfo!.itemName}
-              >
-                <Box>
-                  <Box
-                    as="span"
-                    position="absolute"
-                    color={
-                      equipItemInfo?.amplificationName ? "#DB00DB" : "#ffffff"
-                    }
-                    fontWeight="bold"
-                    zIndex="1"
-                    fontSize="12px"
-                  >
-                    +{equipItemInfo?.reinforce}
+            {leftEquip.map((equipItemInfo, idx) =>
+              equipItemInfo ? (
+                <EpicItemToolTip
+                  key={equipItemInfo!.itemId}
+                  itemName={equipItemInfo!.itemName}
+                >
+                  <Box>
+                    <Box
+                      as="span"
+                      position="absolute"
+                      color={
+                        equipItemInfo?.amplificationName ? "#DB00DB" : "#ffffff"
+                      }
+                      fontWeight="bold"
+                      zIndex="1"
+                      fontSize="12px"
+                    >
+                      +{equipItemInfo?.reinforce}
+                    </Box>
+                    <Image
+                      src={`https://img-api.neople.co.kr/df/items/${
+                        equipItemInfo!.itemId
+                      }`}
+                      alt={`에픽아이템 ${equipItemInfo!.slotId}`}
+                      width={"40px"}
+                      height={"40px"}
+                    />
                   </Box>
+                </EpicItemToolTip>
+              ) : (
+                <Box>
                   <Image
-                    src={`https://img-api.neople.co.kr/df/items/${
-                      equipItemInfo!.itemId
-                    }`}
-                    alt={`에픽아이템 ${equipItemInfo!.slotId}`}
+                    src={`/images/emptySlot/${LEFT_EQUIP_SLOT_IDS[idx]}.png`}
+                    alt=""
                     width={"40px"}
                     height={"40px"}
                   />
                 </Box>
-              </EpicItemToolTip>
-            ))}
+              )
+            )}
           </Box>
         )}
         {rightEquip && (
@@ -158,35 +160,46 @@ export default function UserEquipInfo() {
             alignContent="flex-start"
             marginTop="10px"
           >
-            {rightEquip.map((equipItemInfo) => (
-              <EpicItemToolTip
-                key={equipItemInfo!.itemId}
-                itemName={equipItemInfo!.itemName}
-              >
-                <Box position="relative">
-                  <Box
-                    as="span"
-                    position="absolute"
-                    color={
-                      equipItemInfo?.amplificationName ? "#DB00DB" : "#ffffff"
-                    }
-                    fontWeight="bold"
-                    zIndex="1"
-                    fontSize="12px"
-                  >
-                    +{equipItemInfo?.reinforce}
+            {rightEquip.map((equipItemInfo, idx) =>
+              equipItemInfo ? (
+                <EpicItemToolTip
+                  key={equipItemInfo!.itemId}
+                  itemName={equipItemInfo!.itemName}
+                >
+                  <Box position="relative">
+                    <Box
+                      as="span"
+                      position="absolute"
+                      color={
+                        equipItemInfo?.amplificationName ? "#DB00DB" : "#ffffff"
+                      }
+                      fontWeight="bold"
+                      zIndex="1"
+                      fontSize="12px"
+                    >
+                      +{equipItemInfo?.reinforce}
+                    </Box>
+                    <Image
+                      src={`https://img-api.neople.co.kr/df/items/${
+                        equipItemInfo!.itemId
+                      }`}
+                      alt={`에픽아이템 ${equipItemInfo!.slotId}`}
+                      width={"40px"}
+                      height={"40px"}
+                    />
                   </Box>
+                </EpicItemToolTip>
+              ) : (
+                <Box>
                   <Image
-                    src={`https://img-api.neople.co.kr/df/items/${
-                      equipItemInfo!.itemId
-                    }`}
-                    alt={`에픽아이템 ${equipItemInfo!.slotId}`}
+                    src={`/images/emptySlot/${RIGHT_EQUIP_SLOT_IDS[idx]}.png`}
+                    alt=""
                     width={"40px"}
                     height={"40px"}
                   />
                 </Box>
-              </EpicItemToolTip>
-            ))}
+              )
+            )}
           </Box>
         )}
         <Box position="absolute" bottom="0" textAlign="center">

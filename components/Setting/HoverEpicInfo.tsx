@@ -15,6 +15,7 @@ export default function HoverEpicInfo({ itemName }: Props) {
   return (
     <>
       <Box>{epicItem.itemName}</Box>
+      <Box>아이템 옵션</Box>
       {epicItem.options.map((option, index) => (
         <Box key={`HoverEpicInfo-${index.toString()}`}>
           {`${index + 1}옵션 : ${option}`}

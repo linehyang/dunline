@@ -126,7 +126,7 @@ export default function WearItem({
             alignContent="flex-start"
             marginTop="10px"
           >
-            {leftEquip.map(({ slotId, itemId }) => (
+            {leftEquip.map(({ slotId, itemId }, idx) => (
               <EpicItemToolTip
                 key={`${itemId}, ${slotId}`}
                 itemName={itemIdChangeHandler(itemId)}
@@ -140,7 +140,7 @@ export default function WearItem({
                     src={
                       itemId
                         ? `https://img-api.neople.co.kr/df/items/${itemId}`
-                        : `/images/white-g2c278791b_640.jpg`
+                        : `/images/emptySlot/${LEFT_EQUIP_SLOT_IDS[idx]}.png`
                     }
                     alt={`에픽아이템 ${slotId}`}
                     width={"40px"}
@@ -159,7 +159,7 @@ export default function WearItem({
             alignContent="flex-start"
             marginTop="10px"
           >
-            {rightEquip.map(({ slotId, itemId }) => (
+            {rightEquip.map(({ slotId, itemId }, idx) => (
               <EpicItemToolTip
                 key={`${itemId}, ${slotId}`}
                 itemName={itemIdChangeHandler(itemId)}
@@ -174,7 +174,7 @@ export default function WearItem({
                     src={
                       itemId
                         ? `https://img-api.neople.co.kr/df/items/${itemId}`
-                        : `/images/white-g2c278791b_640.jpg`
+                        : `/images/emptySlot/${RIGHT_EQUIP_SLOT_IDS[idx]}.png`
                     }
                     alt={`에픽아이템 ${itemId}`}
                     width={"40px"}
@@ -185,12 +185,14 @@ export default function WearItem({
             ))}
           </Box>
         )}
-        <Box position="absolute" bottom="0" textAlign="center">
-          <Box>{data?.adventureName}</Box>
-          <Box>
-            {data?.jobGrowName} / Lv.{data?.level} {data?.characterName}
+        {data ? (
+          <Box position="absolute" bottom="0" textAlign="center">
+            <Box>{data?.adventureName}</Box>
+            <Box>
+              {data?.jobGrowName} / Lv.{data?.level} {data?.characterName}
+            </Box>
           </Box>
-        </Box>
+        ) : null}
       </Box>
     </Box>
   );
