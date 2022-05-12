@@ -2,6 +2,9 @@ import { useState } from "react";
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
 import type { NextPage } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import styled from "@emotion/styled";
 
 import SearchForm from "../components/Search/SearchForm";
 import CharacterList from "../components/Search/CharacterList";
@@ -21,9 +24,9 @@ const Home: NextPage = () => {
         as="main"
         minWidth="320px"
         maxWidth="800px"
-        height="100%"
         margin="0 auto"
         padding="0 20px"
+        minHeight="70%"
       >
         <SearchForm
           handleSubmit={(url) => {
@@ -32,8 +35,51 @@ const Home: NextPage = () => {
         />
         <CharacterList url={url} />
       </Box>
+      <Box
+        as="footer"
+        minWidth="320px"
+        maxWidth="800px"
+        margin="0 auto"
+        padding="20px"
+      >
+        <Box display="flex" justifyContent="space-around">
+          <Link
+            href="https://developers.neople.co.kr"
+            passHref
+            prefetch={false}
+          >
+            <Box position="relative" width="191px" height="36px">
+              <StyledImage
+                src="/images/df_Logo.png"
+                alt="df API LOGO"
+                layout="fill"
+                quality={100}
+              />
+            </Box>
+          </Link>
+          <Link
+            href="https://open.kakao.com/o/s3Dh8Afe"
+            passHref
+            prefetch={false}
+          >
+            <a>
+              <StyledImage
+                src="/images/kakao.png"
+                alt="Kakao Open Talk"
+                width="50px"
+                height="50px"
+                quality={100}
+              />
+            </a>
+          </Link>
+        </Box>
+      </Box>
     </>
   );
 };
 
 export default Home;
+
+const StyledImage = styled(Image)`
+  cursor: pointer;
+`;

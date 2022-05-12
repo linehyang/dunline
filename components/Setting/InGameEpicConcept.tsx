@@ -29,9 +29,10 @@ type EpicConceptKeyType = keyof typeof EpicConcept;
 
 type Props = {
   data: EquipmentType[];
+  hoverWearItem: (concept: string[]) => void;
 };
 
-export default function InGameEpicConcept({ data }: Props) {
+export default function InGameEpicConcept({ data, hoverWearItem }: Props) {
   const itemNameRecord: Record<string, string> = data.reduce((acc, cur) => {
     return {
       ...acc,
@@ -61,7 +62,15 @@ export default function InGameEpicConcept({ data }: Props) {
     <StyledBox display="flex" flexWrap="wrap">
       {Object.keys(ingameEpicItemsByConcept).map((conceptName) => {
         return (
-          <Box key={conceptName}>
+          <Box
+            key={conceptName}
+            onMouseOver={() => {
+              hoverWearItem(ingameEpicItemsByConcept[conceptName]);
+            }}
+            onMouseOut={() => {
+              hoverWearItem([]);
+            }}
+          >
             <Tooltip
               label={
                 <Box as="ul">

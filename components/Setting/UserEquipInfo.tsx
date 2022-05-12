@@ -1,18 +1,8 @@
 import useSWR from "swr";
 import Image from "next/image";
-import {
-  Box,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-  Button,
-  useDisclosure,
-} from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 import EpicItemToolTip from "./EpicItemToolTip";
 import UserEquipDetail from "./UserEquipDetail";
@@ -71,17 +61,18 @@ export default function UserEquipInfo() {
   const router = useRouter();
   const { server, characterid } = router.query;
 
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [conceptSelect, setConceptSelect] = useState<string[]>([]);
+
   const url = `api/userEquipInfo?server=${server}&characterid=${characterid}`;
 
   const { data } = useSWR<UserEquipInfoType>(url);
+
   const leftEquip = LEFT_EQUIP_SLOT_IDS.map((slotId) =>
     data?.equipment.find((v) => v.slotId === slotId)
-  ).filter(Boolean);
-
+  );
   const rightEquip = RIGHT_EQUIP_SLOT_IDS.map((slotId) =>
     data?.equipment.find((v) => v.slotId === slotId)
-  ).filter(Boolean);
+  );
 
   if (!data) {
     return null;
@@ -119,35 +110,52 @@ export default function UserEquipInfo() {
             alignContent="flex-start"
             marginTop="10px"
           >
-            {leftEquip.map((equipItemInfo) => (
-              <EpicItemToolTip
-                key={equipItemInfo!.itemId}
-                itemName={equipItemInfo!.itemName}
-              >
-                <Box>
+            {leftEquip.map((equipItemInfo, idx) =>
+              equipItemInfo ? (
+                <EpicItemToolTip
+                  key={equipItemInfo!.itemId}
+                  itemName={equipItemInfo!.itemName}
+                >
                   <Box
-                    as="span"
-                    position="absolute"
-                    color={
-                      equipItemInfo?.amplificationName ? "#DB00DB" : "#ffffff"
+                    border={
+                      conceptSelect.includes(equipItemInfo.itemName)
+                        ? "1px solid red"
+                        : ""
                     }
-                    fontWeight="bold"
-                    zIndex="1"
-                    fontSize="12px"
                   >
-                    +{equipItemInfo?.reinforce}
+                    <Box
+                      as="span"
+                      position="absolute"
+                      color={
+                        equipItemInfo?.amplificationName ? "#DB00DB" : "#ffffff"
+                      }
+                      fontWeight="bold"
+                      zIndex="1"
+                      fontSize="12px"
+                    >
+                      +{equipItemInfo?.reinforce}
+                    </Box>
+                    <Image
+                      src={`https://img-api.neople.co.kr/df/items/${
+                        equipItemInfo!.itemId
+                      }`}
+                      alt={`에픽아이템 ${equipItemInfo!.slotId}`}
+                      width={"39px"}
+                      height={"39px"}
+                    />
                   </Box>
+                </EpicItemToolTip>
+              ) : (
+                <Box>
                   <Image
-                    src={`https://img-api.neople.co.kr/df/items/${
-                      equipItemInfo!.itemId
-                    }`}
-                    alt={`에픽아이템 ${equipItemInfo!.slotId}`}
-                    width={"40px"}
-                    height={"40px"}
+                    src={`/images/emptySlot/${LEFT_EQUIP_SLOT_IDS[idx]}.png`}
+                    alt=""
+                    width={"39px"}
+                    height={"39px"}
                   />
                 </Box>
-              </EpicItemToolTip>
-            ))}
+              )
+            )}
           </Box>
         )}
         {rightEquip && (
@@ -158,35 +166,53 @@ export default function UserEquipInfo() {
             alignContent="flex-start"
             marginTop="10px"
           >
-            {rightEquip.map((equipItemInfo) => (
-              <EpicItemToolTip
-                key={equipItemInfo!.itemId}
-                itemName={equipItemInfo!.itemName}
-              >
-                <Box position="relative">
+            {rightEquip.map((equipItemInfo, idx) =>
+              equipItemInfo ? (
+                <EpicItemToolTip
+                  key={equipItemInfo!.itemId}
+                  itemName={equipItemInfo!.itemName}
+                >
                   <Box
-                    as="span"
-                    position="absolute"
-                    color={
-                      equipItemInfo?.amplificationName ? "#DB00DB" : "#ffffff"
+                    position="relative"
+                    border={
+                      conceptSelect.includes(equipItemInfo.itemName)
+                        ? "1px solid red"
+                        : ""
                     }
-                    fontWeight="bold"
-                    zIndex="1"
-                    fontSize="12px"
                   >
-                    +{equipItemInfo?.reinforce}
+                    <Box
+                      as="span"
+                      position="absolute"
+                      color={
+                        equipItemInfo?.amplificationName ? "#DB00DB" : "#ffffff"
+                      }
+                      fontWeight="bold"
+                      zIndex="1"
+                      fontSize="12px"
+                    >
+                      +{equipItemInfo?.reinforce}
+                    </Box>
+                    <Image
+                      src={`https://img-api.neople.co.kr/df/items/${
+                        equipItemInfo!.itemId
+                      }`}
+                      alt={`에픽아이템 ${equipItemInfo!.slotId}`}
+                      width={"39px"}
+                      height={"39px"}
+                    />
                   </Box>
+                </EpicItemToolTip>
+              ) : (
+                <Box>
                   <Image
-                    src={`https://img-api.neople.co.kr/df/items/${
-                      equipItemInfo!.itemId
-                    }`}
-                    alt={`에픽아이템 ${equipItemInfo!.slotId}`}
-                    width={"40px"}
-                    height={"40px"}
+                    src={`/images/emptySlot/${RIGHT_EQUIP_SLOT_IDS[idx]}.png`}
+                    alt=""
+                    width={"39px"}
+                    height={"39px"}
                   />
                 </Box>
-              </EpicItemToolTip>
-            ))}
+              )
+            )}
           </Box>
         )}
         <Box position="absolute" bottom="0" textAlign="center">
@@ -198,7 +224,12 @@ export default function UserEquipInfo() {
       </Box>
       <Box width="calc(100% - 300px)">
         <UserEquipDetail data={data} />
-        <InGameEpicConcept data={data.equipment} />
+        <InGameEpicConcept
+          data={data.equipment}
+          hoverWearItem={(concept) => {
+            setConceptSelect(concept);
+          }}
+        />
       </Box>
     </Box>
   );

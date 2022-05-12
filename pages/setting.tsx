@@ -4,10 +4,21 @@ import { useRouter } from "next/router";
 
 import UserEquipInfo from "../components/Setting/UserEquipInfo";
 import Header from "../components/Header";
+import ErrorModal from "../components/Others/ErrorModal";
 
 function Setting() {
   const router = useRouter();
   const { server, characterid } = router.query;
+
+  if (server === undefined || characterid === undefined) {
+    return (
+      <ErrorModal
+        onClose={() => {
+          router.replace("/");
+        }}
+      />
+    );
+  }
 
   return (
     <>
