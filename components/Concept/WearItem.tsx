@@ -64,6 +64,7 @@ interface Props {
   // onClick: () => void;
   resetWearItem: () => void;
   toggleWearItem: (slotId: string) => void;
+  hoveredConcept: { itemId: string; itemName: string }[];
 }
 
 const LEFT_EQUIP_SLOT_IDS = ["SHOULDER", "JACKET", "PANTS", "WAIST", "SHOES"];
@@ -84,6 +85,7 @@ export default function WearItem({
   wearItem,
   resetWearItem,
   toggleWearItem,
+  hoveredConcept,
 }: Props) {
   const router = useRouter();
   const { server, characterid } = router.query;
@@ -103,6 +105,8 @@ export default function WearItem({
     .map(([key, value]) => {
       return { slotId: key, itemId: value };
     });
+
+  console.log(hoveredConcept);
 
   return (
     <Box display="flex">
@@ -135,6 +139,11 @@ export default function WearItem({
                   onClick={() => {
                     toggleWearItem(slotId);
                   }}
+                  border={
+                    hoveredConcept.findIndex((c) => c.itemId === itemId) > -1
+                      ? "1px solid red"
+                      : ""
+                  }
                 >
                   <Image
                     src={
@@ -169,6 +178,11 @@ export default function WearItem({
                   onClick={() => {
                     toggleWearItem(slotId);
                   }}
+                  border={
+                    hoveredConcept.findIndex((c) => c.itemId === itemId) > -1
+                      ? "1px solid red"
+                      : ""
+                  }
                 >
                   <Image
                     src={

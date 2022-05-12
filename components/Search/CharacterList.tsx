@@ -49,7 +49,7 @@ export default function CharacterList({ url }: Props) {
                   prefetch={false}
                 >
                   <a>
-                    <div>{jobGrowName}</div>
+                    <Box>{jobGrowName}</Box>
                     <AspectRatio
                       width="100%"
                       ratio={1 / 1}

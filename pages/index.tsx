@@ -24,9 +24,9 @@ const Home: NextPage = () => {
         as="main"
         minWidth="320px"
         maxWidth="800px"
-        height="70vh"
         margin="0 auto"
         padding="0 20px"
+        minHeight="70%"
       >
         <SearchForm
           handleSubmit={(url) => {
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
         minWidth="320px"
         maxWidth="800px"
         margin="0 auto"
-        padding="0 20px"
+        padding="20px"
       >
         <Box display="flex" justifyContent="space-around">
           <Link
@@ -48,12 +48,14 @@ const Home: NextPage = () => {
             passHref
             prefetch={false}
           >
-            <StyledImage
-              src="/images/df_Logo.png"
-              alt="df API LOGO"
-              width="200px"
-              height="35px"
-            />
+            <Box position="relative" width="191px" height="36px">
+              <StyledImage
+                src="/images/df_Logo.png"
+                alt="df API LOGO"
+                layout="fill"
+                quality={100}
+              />
+            </Box>
           </Link>
           <Link
             href="https://open.kakao.com/o/s3Dh8Afe"
@@ -66,6 +68,7 @@ const Home: NextPage = () => {
                 alt="Kakao Open Talk"
                 width="50px"
                 height="50px"
+                quality={100}
               />
             </a>
           </Link>

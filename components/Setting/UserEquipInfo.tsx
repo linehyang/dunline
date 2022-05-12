@@ -2,6 +2,7 @@ import useSWR from "swr";
 import Image from "next/image";
 import { Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 import EpicItemToolTip from "./EpicItemToolTip";
 import UserEquipDetail from "./UserEquipDetail";
@@ -60,11 +61,11 @@ export default function UserEquipInfo() {
   const router = useRouter();
   const { server, characterid } = router.query;
 
+  const [conceptSelect, setConceptSelect] = useState<string[]>([]);
+
   const url = `api/userEquipInfo?server=${server}&characterid=${characterid}`;
 
   const { data } = useSWR<UserEquipInfoType>(url);
-
-  console.log(data);
 
   const leftEquip = LEFT_EQUIP_SLOT_IDS.map((slotId) =>
     data?.equipment.find((v) => v.slotId === slotId)
@@ -77,7 +78,6 @@ export default function UserEquipInfo() {
     return null;
   }
 
-  console.log(leftEquip);
   return (
     <Box display="flex">
       <Box
@@ -116,7 +116,13 @@ export default function UserEquipInfo() {
                   key={equipItemInfo!.itemId}
                   itemName={equipItemInfo!.itemName}
                 >
-                  <Box>
+                  <Box
+                    border={
+                      conceptSelect.includes(equipItemInfo.itemName)
+                        ? "1px solid red"
+                        : ""
+                    }
+                  >
                     <Box
                       as="span"
                       position="absolute"
@@ -134,8 +140,8 @@ export default function UserEquipInfo() {
                         equipItemInfo!.itemId
                       }`}
                       alt={`에픽아이템 ${equipItemInfo!.slotId}`}
-                      width={"40px"}
-                      height={"40px"}
+                      width={"39px"}
+                      height={"39px"}
                     />
                   </Box>
                 </EpicItemToolTip>
@@ -144,8 +150,8 @@ export default function UserEquipInfo() {
                   <Image
                     src={`/images/emptySlot/${LEFT_EQUIP_SLOT_IDS[idx]}.png`}
                     alt=""
-                    width={"40px"}
-                    height={"40px"}
+                    width={"39px"}
+                    height={"39px"}
                   />
                 </Box>
               )
@@ -166,7 +172,14 @@ export default function UserEquipInfo() {
                   key={equipItemInfo!.itemId}
                   itemName={equipItemInfo!.itemName}
                 >
-                  <Box position="relative">
+                  <Box
+                    position="relative"
+                    border={
+                      conceptSelect.includes(equipItemInfo.itemName)
+                        ? "1px solid red"
+                        : ""
+                    }
+                  >
                     <Box
                       as="span"
                       position="absolute"
@@ -184,8 +197,8 @@ export default function UserEquipInfo() {
                         equipItemInfo!.itemId
                       }`}
                       alt={`에픽아이템 ${equipItemInfo!.slotId}`}
-                      width={"40px"}
-                      height={"40px"}
+                      width={"39px"}
+                      height={"39px"}
                     />
                   </Box>
                 </EpicItemToolTip>
@@ -194,8 +207,8 @@ export default function UserEquipInfo() {
                   <Image
                     src={`/images/emptySlot/${RIGHT_EQUIP_SLOT_IDS[idx]}.png`}
                     alt=""
-                    width={"40px"}
-                    height={"40px"}
+                    width={"39px"}
+                    height={"39px"}
                   />
                 </Box>
               )
@@ -211,7 +224,12 @@ export default function UserEquipInfo() {
       </Box>
       <Box width="calc(100% - 300px)">
         <UserEquipDetail data={data} />
-        <InGameEpicConcept data={data.equipment} />
+        <InGameEpicConcept
+          data={data.equipment}
+          hoverWearItem={(concept) => {
+            setConceptSelect(concept);
+          }}
+        />
       </Box>
     </Box>
   );
