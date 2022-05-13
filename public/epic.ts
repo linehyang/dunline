@@ -44,7 +44,6 @@ export enum EpicInfoEquip {
   SUPPORT = "보장",
   MAGIC_STON = "법석",
   EARRING = "귀걸이",
-  WEAPON = "무기",
 }
 
 export enum Dungeon {
