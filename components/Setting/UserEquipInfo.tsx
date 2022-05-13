@@ -7,6 +7,7 @@ import { useState } from "react";
 import EpicItemToolTip from "./EpicItemToolTip";
 import UserEquipDetail from "./UserEquipDetail";
 import InGameEpicConcept from "./InGameEpicConcept";
+import { SERVER_LIST } from "../../interface/characterSearch";
 
 type EquipmentType = {
   amplificationName: string;
@@ -78,24 +79,20 @@ export default function UserEquipInfo() {
     return null;
   }
 
+  console.log(data);
+
   return (
     <Box display="flex">
       <Box
         display="flex"
         backgroundImage="url('/images/bg_char.jpeg')"
         backgroundRepeat="no-repeat"
-        backgroundSize="100% 90%"
+        backgroundSize="100% 85%"
         justifyContent="space-around"
         position="relative"
-        width="300px"
+        width="40%"
       >
-        <Box
-          position="absolute"
-          zIndex="1"
-          width="300px"
-          height="300px"
-          bottom="50px"
-        >
+        <Box position="absolute" width="100%" height="75%" bottom="15%">
           <Image
             src={`https://img-api.neople.co.kr/df/servers/${server}/characters/${characterid}?zoom=3`}
             alt="epicinfo characterImage"
@@ -108,7 +105,7 @@ export default function UserEquipInfo() {
             width="80px"
             flexWrap="wrap"
             alignContent="flex-start"
-            marginTop="10px"
+            marginTop="20px"
           >
             {leftEquip.map((equipItemInfo, idx) =>
               equipItemInfo ? (
@@ -123,7 +120,7 @@ export default function UserEquipInfo() {
                         : ""
                     }
                   >
-                    <Box
+                    {/* <Box
                       as="span"
                       position="absolute"
                       color={
@@ -134,7 +131,7 @@ export default function UserEquipInfo() {
                       fontSize="12px"
                     >
                       +{equipItemInfo?.reinforce}
-                    </Box>
+                    </Box> */}
                     <Image
                       src={`https://img-api.neople.co.kr/df/items/${
                         equipItemInfo!.itemId
@@ -164,7 +161,7 @@ export default function UserEquipInfo() {
             width="80px"
             flexWrap="wrap"
             alignContent="flex-start"
-            marginTop="10px"
+            marginTop="20px"
           >
             {rightEquip.map((equipItemInfo, idx) =>
               equipItemInfo ? (
@@ -180,7 +177,7 @@ export default function UserEquipInfo() {
                         : ""
                     }
                   >
-                    <Box
+                    {/* <Box
                       as="span"
                       position="absolute"
                       color={
@@ -191,7 +188,7 @@ export default function UserEquipInfo() {
                       fontSize="12px"
                     >
                       +{equipItemInfo?.reinforce}
-                    </Box>
+                    </Box> */}
                     <Image
                       src={`https://img-api.neople.co.kr/df/items/${
                         equipItemInfo!.itemId
@@ -216,10 +213,12 @@ export default function UserEquipInfo() {
           </Box>
         )}
         <Box position="absolute" bottom="0" textAlign="center">
-          <Box>{data.adventureName}</Box>
+          <Box fontWeight="700">{data.characterName}</Box>
           <Box>
-            {data.jobGrowName} / Lv.{data.level} {data.characterName}
+            Lv.{data.level} / {data.jobGrowName} /{" "}
+            {SERVER_LIST[server as keyof typeof SERVER_LIST]}
           </Box>
+          <Box background="gray.400">모험단 : {data.adventureName}</Box>
         </Box>
       </Box>
       <Box width="calc(100% - 300px)">

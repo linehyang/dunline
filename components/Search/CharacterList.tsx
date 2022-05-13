@@ -42,6 +42,7 @@ export default function CharacterList({ url }: Props) {
                 _hover={{
                   backgroundColor: "gray.800",
                 }}
+                position="relative"
               >
                 <Link
                   href={`/setting?server=${serverId}&characterid=${characterId}`}
@@ -49,7 +50,17 @@ export default function CharacterList({ url }: Props) {
                   prefetch={false}
                 >
                   <a>
-                    <Box>{jobGrowName}</Box>
+                    <Box
+                      position="absolute"
+                      top="2"
+                      left="2"
+                      border="1px solid #ffffff"
+                      borderRadius="4px"
+                      padding="3px"
+                      fontSize="sm"
+                    >
+                      {SERVER_LIST[serverId]}
+                    </Box>
                     <AspectRatio
                       width="100%"
                       ratio={1 / 1}
@@ -61,11 +72,20 @@ export default function CharacterList({ url }: Props) {
                         alt={`${characterName}의 정보`}
                       />
                     </AspectRatio>
-                    <Box>
-                      <Box>{SERVER_LIST[serverId]}</Box>
-                      <Box>
-                        Lv.{level} {characterName}
-                      </Box>
+                    <Box
+                      position="absolute"
+                      top="2"
+                      right="2"
+                      border="1px solid #ffffff"
+                      borderRadius="4px"
+                      padding="3px"
+                      fontSize="sm"
+                    >
+                      {jobGrowName}
+                    </Box>
+                    <Box display="flex" justifyContent="center" marginTop="5px">
+                      <Box>Lv.{level}</Box>
+                      <Box fontWeight="700"> &nbsp;{characterName}</Box>
                     </Box>
                   </a>
                 </Link>
