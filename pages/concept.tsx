@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Header from "../components/Header";
 import AcquireEpicConcept from "../components/Concept/AcquireEpicConcept";
@@ -9,7 +9,7 @@ import ConceptSelect from "../components/Concept/ConceptSelect";
 import WearItem from "../components/Concept/WearItem";
 import EquipEpicConcept from "../components/Concept/EquipEpicConcept";
 
-import { EpicConcept, EpicInfoEquip } from "../public/epic";
+import { EpicConcept, EpicInfoEquip, EpicItems } from "../public/epic";
 
 type EpicConceptKeyType = keyof typeof EpicConcept;
 type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;
@@ -20,6 +20,9 @@ function Concept() {
   const { server, characterid } = router.query;
 
   const [selectedConcept, setSelectedConcept] = useState<OptionValue[]>([]);
+  const [conceptSelect, setConceptSelect] = useState<
+    { itemId: string; itemName: string }[]
+  >([]);
   const [wearItem, setWearItem] = useState<
     Record<EpicInfoEquipKeyType, string>
   >({
@@ -74,8 +77,14 @@ function Concept() {
                 [slotId]: "",
               });
             }}
+            hoveredConcept={conceptSelect}
           />
-          <EquipEpicConcept wearItem={wearItem} />
+          <EquipEpicConcept
+            wearItem={wearItem}
+            hoverWearItem={(concept) => {
+              setConceptSelect(concept);
+            }}
+          />
         </Box>
         <ConceptSelect onChange={setSelectedConcept} />
         <AcquireEpicConcept
