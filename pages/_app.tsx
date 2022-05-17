@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           html, body {
             height: 100%;
             color: #ffffff;
-            background-color: #141517;
+            background-color: #000000;
           }
 
           ul, ol {

@@ -3,7 +3,7 @@ import { Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
 import UserEquipInfo from "../components/Setting/UserEquipInfo";
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 import ErrorModal from "../components/Others/ErrorModal";
 
 function Setting() {
@@ -25,7 +25,7 @@ function Setting() {
       <Head>
         <title>DUNLINE</title>
       </Head>
-      <Header server={server} characterid={characterid} />
+      <Header server={server} characterid={characterid} LogoHandler={true} />
       <Box
         as="main"
         minWidth="320px"

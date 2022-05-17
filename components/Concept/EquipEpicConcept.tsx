@@ -33,13 +33,17 @@ export default function EquipEpicConcept({ wearItem, hoverWearItem }: Props) {
   }, {} as { [key: string]: { itemId: string; itemName: string }[] });
 
   if (!checkedWearItems.length) {
-    return <Box>선택된 에픽이 없습니다 에픽을 선택해주세요</Box>;
+    return (
+      <Box display="flex" flexWrap="wrap" flex="1">
+        선택된 에픽이 없습니다 에픽을 선택해주세요
+      </Box>
+    );
   }
 
   console.log(wearItemByConcept);
 
   return (
-    <StyledBox display="flex" flexWrap="wrap">
+    <StyledBox display="flex" flexWrap="wrap" flex="1" height="1rem">
       {Object.keys(wearItemByConcept).map((conceptName) => {
         return (
           <Box
