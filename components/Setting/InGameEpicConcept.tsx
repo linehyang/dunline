@@ -70,6 +70,9 @@ export default function InGameEpicConcept({ data, hoverWearItem }: Props) {
             onMouseOut={() => {
               hoverWearItem([]);
             }}
+            _hover={{
+              backgroundColor: "red",
+            }}
           >
             <Tooltip
               label={

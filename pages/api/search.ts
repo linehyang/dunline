@@ -48,7 +48,9 @@ export default async function handler(
     }
 
     const data = await response.json();
+
     const { rows }: { rows: CharacterSearch[] } = data;
+
     const validUsers = rows.filter(({ level }) => level >= MININUM_LEVEL_LIMIT);
 
     return res.status(200).json(validUsers);

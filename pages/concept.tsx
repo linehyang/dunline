@@ -3,7 +3,7 @@ import { Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 import AcquireEpicConcept from "../components/Concept/AcquireEpicConcept";
 import ConceptSelect from "../components/Concept/ConceptSelect";
 import WearItem from "../components/Concept/WearItem";
@@ -44,7 +44,7 @@ function Concept() {
       <Head>
         <title>DUNLINE</title>
       </Head>
-      <Header server={server} characterid={characterid} />
+      <Header server={server} characterid={characterid} LogoHandler={true} />
       <Box
         as="main"
         minWidth="320px"

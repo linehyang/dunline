@@ -7,6 +7,7 @@ import { useState } from "react";
 import EpicItemToolTip from "./EpicItemToolTip";
 import UserEquipDetail from "./UserEquipDetail";
 import InGameEpicConcept from "./InGameEpicConcept";
+import { SERVER_LIST } from "../../interface/characterSearch";
 
 type EquipmentType = {
   amplificationName: string;
@@ -82,20 +83,21 @@ export default function UserEquipInfo() {
     <Box display="flex">
       <Box
         display="flex"
-        backgroundImage="url('/images/bg_char.jpeg')"
-        backgroundRepeat="no-repeat"
-        backgroundSize="100% 90%"
         justifyContent="space-around"
         position="relative"
-        width="300px"
+        width="40%"
+        backgroundColor="gray.600"
+        borderRadius="20px"
       >
         <Box
           position="absolute"
-          zIndex="1"
-          width="300px"
-          height="300px"
-          bottom="50px"
-        >
+          backgroundColor="gray.500"
+          borderRadius="50%"
+          width="80%"
+          height="60%"
+          top="20%"
+        />
+        <Box position="absolute" width="100%" height="75%" bottom="20%">
           <Image
             src={`https://img-api.neople.co.kr/df/servers/${server}/characters/${characterid}?zoom=3`}
             alt="epicinfo characterImage"
@@ -108,7 +110,7 @@ export default function UserEquipInfo() {
             width="80px"
             flexWrap="wrap"
             alignContent="flex-start"
-            marginTop="10px"
+            marginTop="25px"
           >
             {leftEquip.map((equipItemInfo, idx) =>
               equipItemInfo ? (
@@ -117,31 +119,21 @@ export default function UserEquipInfo() {
                   itemName={equipItemInfo!.itemName}
                 >
                   <Box
+                    position="relative"
                     border={
                       conceptSelect.includes(equipItemInfo.itemName)
-                        ? "1px solid red"
+                        ? "2px solid red"
                         : ""
                     }
+                    width="40px"
+                    height="40px"
                   >
-                    <Box
-                      as="span"
-                      position="absolute"
-                      color={
-                        equipItemInfo?.amplificationName ? "#DB00DB" : "#ffffff"
-                      }
-                      fontWeight="bold"
-                      zIndex="1"
-                      fontSize="12px"
-                    >
-                      +{equipItemInfo?.reinforce}
-                    </Box>
                     <Image
                       src={`https://img-api.neople.co.kr/df/items/${
                         equipItemInfo!.itemId
                       }`}
                       alt={`에픽아이템 ${equipItemInfo!.slotId}`}
-                      width={"39px"}
-                      height={"39px"}
+                      layout="fill"
                     />
                   </Box>
                 </EpicItemToolTip>
@@ -164,7 +156,7 @@ export default function UserEquipInfo() {
             width="80px"
             flexWrap="wrap"
             alignContent="flex-start"
-            marginTop="10px"
+            marginTop="25px"
           >
             {rightEquip.map((equipItemInfo, idx) =>
               equipItemInfo ? (
@@ -176,29 +168,18 @@ export default function UserEquipInfo() {
                     position="relative"
                     border={
                       conceptSelect.includes(equipItemInfo.itemName)
-                        ? "1px solid red"
+                        ? "2px solid red"
                         : ""
                     }
+                    width="40px"
+                    height="40px"
                   >
-                    <Box
-                      as="span"
-                      position="absolute"
-                      color={
-                        equipItemInfo?.amplificationName ? "#DB00DB" : "#ffffff"
-                      }
-                      fontWeight="bold"
-                      zIndex="1"
-                      fontSize="12px"
-                    >
-                      +{equipItemInfo?.reinforce}
-                    </Box>
                     <Image
                       src={`https://img-api.neople.co.kr/df/items/${
                         equipItemInfo!.itemId
                       }`}
                       alt={`에픽아이템 ${equipItemInfo!.slotId}`}
-                      width={"39px"}
-                      height={"39px"}
+                      layout="fill"
                     />
                   </Box>
                 </EpicItemToolTip>
@@ -215,11 +196,13 @@ export default function UserEquipInfo() {
             )}
           </Box>
         )}
-        <Box position="absolute" bottom="0" textAlign="center">
-          <Box>{data.adventureName}</Box>
+        <Box position="absolute" bottom="5%" textAlign="center">
+          <Box fontWeight="700">{data.characterName}</Box>
           <Box>
-            {data.jobGrowName} / Lv.{data.level} {data.characterName}
+            Level {data.level} / {data.jobGrowName} /{" "}
+            {SERVER_LIST[server as keyof typeof SERVER_LIST]}
           </Box>
+          <Box background="gray.400">모험단 : {data.adventureName}</Box>
         </Box>
       </Box>
       <Box width="calc(100% - 300px)">

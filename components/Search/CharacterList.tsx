@@ -9,11 +9,19 @@ import { CharacterSearch, SERVER_LIST } from "../../interface/characterSearch";
 
 interface Props {
   url: string | null;
+  search?: {
+    serverName: string | string[] | undefined;
+    characterName: string | string[] | undefined;
+  };
 }
 
 //캐릭터 검색을 위한 컴포넌트
 export default function CharacterList({ url }: Props) {
-  const { data, isValidating } = useSWR<CharacterSearch[]>(url);
+  const { data } = useSWR<CharacterSearch[]>(url);
+
+  if (data?.length === 0) {
+    return <Box textAlign="center">해당 캐릭터는 존재하지 않습니다</Box>;
+  }
 
   return (
     <Box
@@ -24,36 +32,48 @@ export default function CharacterList({ url }: Props) {
         "repeat(2, 1fr)",
         "repeat(3, 1fr)",
       ]}
-      gap="10px"
-      textAlign="center"
+      gap="3px"
     >
-      {data
-        ? data.map(
-            ({ characterId, jobGrowName, serverId, characterName, level }) => (
-              <Box
-                key={characterId}
-                as="li"
-                display="flex"
-                flexDirection="column"
-                justifyContent="space-between"
-                border="1px solid gray"
-                borderRadius="5px"
-                padding="20px 0"
-                _hover={{
-                  backgroundColor: "gray.800",
-                }}
+      {data &&
+        data.map(
+          ({ characterId, jobGrowName, serverId, characterName, level }) => (
+            <Box
+              key={characterId}
+              as="li"
+              display="flex"
+              flexDirection="column"
+              padding="15px 10px"
+              _hover={{
+                transform: "scale(1.1)",
+              }}
+              position="relative"
+            >
+              <Link
+                href={`/setting?server=${serverId}&characterid=${characterId}`}
+                passHref
+                prefetch={false}
               >
-                <Link
-                  href={`/setting?server=${serverId}&characterid=${characterId}`}
-                  passHref
-                  prefetch={false}
-                >
-                  <a>
-                    <Box>{jobGrowName}</Box>
+                <Box as="a">
+                  <Box backgroundColor="#8d8d8d">
+                    <Box
+                      as="span"
+                      display="inline-block"
+                      fontSize="sm"
+                      borderRadius="5px"
+                      border="1px solid #ffffff"
+                      padding="1px 3px"
+                      marginLeft="10px"
+                      marginTop="10px"
+                    >
+                      {SERVER_LIST[serverId]}
+                    </Box>
                     <AspectRatio
                       width="100%"
+                      height="300px"
                       ratio={1 / 1}
-                      transform="scale(1.2)"
+                      transform="scale(1.4)"
+                      bottom="60px"
+                      pointerEvents="none"
                     >
                       <Image
                         src={`https://img-api.neople.co.kr/df/servers/${serverId}/characters/${characterId}?zoom=3`}
@@ -61,18 +81,25 @@ export default function CharacterList({ url }: Props) {
                         alt={`${characterName}의 정보`}
                       />
                     </AspectRatio>
-                    <Box>
-                      <Box>{SERVER_LIST[serverId]}</Box>
-                      <Box>
-                        Lv.{level} {characterName}
+                  </Box>
+                  <Box padding="15px 0">
+                    <Box display="flex" justifyContent="space-between">
+                      <Box fontSize="sm" color="#F96539">
+                        Level {level}
+                      </Box>
+                      <Box fontSize="sm" opacity="0.7">
+                        {jobGrowName}
                       </Box>
                     </Box>
-                  </a>
-                </Link>
-              </Box>
-            )
+                    <Box fontSize="2xl" fontWeight="700">
+                      {characterName}
+                    </Box>
+                  </Box>
+                </Box>
+              </Link>
+            </Box>
           )
-        : null}
+        )}
     </Box>
   );
 }
