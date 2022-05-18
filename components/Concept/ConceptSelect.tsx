@@ -3,6 +3,8 @@ import Select from "react-select";
 
 import { EpicConcept } from "../../public/epic";
 
+import type { StylesConfig } from "react-select";
+
 type EpicConceptKeyType = keyof typeof EpicConcept;
 export type ConceptSelectOptionValue = {
   value: EpicConceptKeyType;
@@ -14,11 +16,49 @@ type Props = {
 };
 
 export default function ConceptSelect({ onChange }: Props) {
-  const selectCustomStyles = {
-    menu: () => ({
-      borderBottom: "1px dotted pink",
-      background: "#eeeeee",
-      color: "gray",
+  const selectCustomStyles: StylesConfig = {
+    input: (base) => ({
+      ...base,
+      color: "#ffffff",
+    }),
+
+    control: (base) => ({
+      ...base,
+      background: "#000000",
+      borderRadius: "25px",
+      borderColor: "#ffffff",
+      "&:hover": {
+        borderColor: "none",
+      },
+      padding: "0 0 0 5px",
+      color: "#8D8D8D",
+    }),
+    menuList: (base) => ({
+      ...base,
+      padding: 0,
+      background: "#ffffff",
+      color: "#000000",
+    }),
+    multiValueLabel: (base) => ({
+      ...base,
+      color: "#fff",
+      fontWeight: "600",
+    }),
+    multiValue: (base) => ({
+      ...base,
+      background: "#8d8d8d",
+      borderRadius: "25px",
+      padding: "0 8px",
+    }),
+    multiValueRemove: (base) => ({
+      ...base,
+      color: "#212529",
+      background: "#8d8d8d",
+      borderRadius: "25px",
+      "&:hover": {
+        color: "#212529",
+        background: "#8d8d8d",
+      },
     }),
   };
 
@@ -28,7 +68,7 @@ export default function ConceptSelect({ onChange }: Props) {
   }));
 
   return (
-    <Box width={"500px"}>
+    <Box width="100%" marginTop="50px">
       <Select
         styles={selectCustomStyles}
         options={options}

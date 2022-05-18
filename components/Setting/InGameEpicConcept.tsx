@@ -59,7 +59,7 @@ export default function InGameEpicConcept({ data, hoverWearItem }: Props) {
   }, {} as { [key: string]: string[] });
 
   return (
-    <StyledBox display="flex" flexWrap="wrap">
+    <StyledBox display="flex" flexWrap="wrap" color="#FFD065">
       {Object.keys(ingameEpicItemsByConcept).map((conceptName) => {
         return (
           <Box
@@ -71,8 +71,13 @@ export default function InGameEpicConcept({ data, hoverWearItem }: Props) {
               hoverWearItem([]);
             }}
             _hover={{
-              backgroundColor: "red",
+              backgroundColor: "#FFD065",
+              color: "#000000",
             }}
+            border=" 1px solid #FFD065"
+            borderRadius="25px"
+            padding="3px 15px"
+            marginBottom="4px"
           >
             <Tooltip
               label={

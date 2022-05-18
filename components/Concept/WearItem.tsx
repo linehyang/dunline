@@ -4,8 +4,9 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import useSWR from "swr";
 
-import EpicItemToolTip from "../Setting/EpicItemToolTip";
+import EpicItemToolTip from "../Others/EpicItemToolTip";
 import { SERVER_LIST } from "../../interface/characterSearch";
+import EquipEpicConcept from "../Concept/EquipEpicConcept";
 
 type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;
 type EpicConceptKeyType = keyof typeof EpicConcept;
@@ -66,6 +67,7 @@ interface Props {
   resetWearItem: () => void;
   toggleWearItem: (slotId: string) => void;
   hoveredConcept: { itemId: string; itemName: string }[];
+  hoverWearItem: (concept: { itemId: string; itemName: string }[]) => void;
 }
 
 const LEFT_EQUIP_SLOT_IDS = ["SHOULDER", "JACKET", "PANTS", "WAIST", "SHOES"];
@@ -87,6 +89,7 @@ export default function WearItem({
   resetWearItem,
   toggleWearItem,
   hoveredConcept,
+  hoverWearItem,
 }: Props) {
   const router = useRouter();
   const { server, characterid } = router.query;
@@ -107,126 +110,191 @@ export default function WearItem({
       return { slotId: key, itemId: value };
     });
 
-  console.log(hoveredConcept);
-
   return (
-    <Box
-      display="flex"
-      backgroundImage="url('/images/bg_char.jpeg')"
-      backgroundRepeat="no-repeat"
-      backgroundSize="100% 85%"
-      justifyContent="space-around"
-      position="relative"
-      width="40%"
-      height="350px"
-    >
-      <Button
-        onClick={resetWearItem}
-        colorScheme="blue"
-        position="absolute"
-        left="0"
-        zIndex="1"
+    <Box display="flex">
+      <Box
+        display="flex"
+        flexDirection="column"
+        position="relative"
+        backgroundColor="#8d8d8d"
+        width="50%"
+        height="50vh"
+        padding="55px 20px"
+        minHeight="30px"
       >
-        초기화 버튼
-      </Button>
-
-      {data && (
-        <Box position="absolute" width="100%" height="75%" bottom="15%">
-          <Image
-            src={`https://img-api.neople.co.kr/df/servers/${server}/characters/${characterid}?zoom=3`}
-            alt="epicinfo characterImage"
-            layout="fill"
-          />
-        </Box>
-      )}
-      {leftEquip && (
         <Box
-          display="flex"
-          width="80px"
-          flexWrap="wrap"
-          alignContent="flex-start"
-          marginTop="50px"
+          as="span"
+          position="absolute"
+          top="10px"
+          left="10px"
+          fontSize="16px"
+          borderRadius="5px"
+          border="1px solid #ffffff"
+          padding="1px 5px"
+          textAlign="center"
         >
-          {leftEquip.map(({ slotId, itemId }, idx) => (
-            <EpicItemToolTip
-              key={`${itemId}, ${slotId}`}
-              itemName={itemIdChangeHandler(itemId)}
-            >
-              <Box
-                position="relative"
-                onClick={() => {
-                  toggleWearItem(slotId);
-                }}
-                border={
-                  hoveredConcept.findIndex((c) => c.itemId === itemId) > -1
-                    ? "2px solid gold"
-                    : ""
-                }
-                width={"40px"}
-                height={"40px"}
-              >
-                <Image
-                  src={
-                    itemId
-                      ? `https://img-api.neople.co.kr/df/items/${itemId}`
-                      : `/images/emptySlot/${LEFT_EQUIP_SLOT_IDS[idx]}.png`
-                  }
-                  alt={`에픽아이템 ${slotId}`}
-                  layout="fill"
-                />
-              </Box>
-            </EpicItemToolTip>
-          ))}
+          {SERVER_LIST[server as keyof typeof SERVER_LIST]}
         </Box>
-      )}
-      {rightEquip && (
-        <Box
-          display="flex"
-          width="80px"
-          flexWrap="wrap"
-          alignContent="flex-start"
-          marginTop="50px"
+        <Button
+          position="absolute"
+          onClick={resetWearItem}
+          colorScheme="red"
+          right="10px"
+          top="5px"
         >
-          {rightEquip.map(({ slotId, itemId }, idx) => (
-            <EpicItemToolTip
-              key={`${itemId}, ${slotId}`}
-              itemName={itemIdChangeHandler(itemId)}
-            >
-              <Box
-                position="relative"
-                onClick={() => {
-                  toggleWearItem(slotId);
-                }}
-                border={
-                  hoveredConcept.findIndex((c) => c.itemId === itemId) > -1
-                    ? "2px solid gold"
-                    : ""
-                }
-                width={"40px"}
-                height={"40px"}
-              >
-                <Image
-                  src={
-                    itemId
-                      ? `https://img-api.neople.co.kr/df/items/${itemId}`
-                      : `/images/emptySlot/${RIGHT_EQUIP_SLOT_IDS[idx]}.png`
-                  }
-                  alt={`에픽아이템 ${itemId}`}
-                  layout="fill"
-                />
-              </Box>
-            </EpicItemToolTip>
-          ))}
-        </Box>
-      )}
-      {data ? (
-        <Box position="absolute" bottom="0" textAlign="center">
-          <Box fontWeight="700">{data.characterName}</Box>
-          <Box>
-            Lv.{data.level} / {data.jobGrowName} /{" "}
-            {SERVER_LIST[server as keyof typeof SERVER_LIST]}
+          초기화 버튼
+        </Button>
+        {data && (
+          <Box
+            position="absolute"
+            width="100%"
+            height="75%"
+            bottom="10%"
+            left="0"
+          >
+            <Image
+              src={`https://img-api.neople.co.kr/df/servers/${server}/characters/${characterid}?zoom=3`}
+              alt="epicinfo characterImage"
+              layout="fill"
+            />
           </Box>
-          {/* <Box background="gray.400">모험단 : {data.adventureName}</Box> */}
+        )}
+        <Box display="flex" justifyContent="space-between">
+          {leftEquip && (
+            <Box
+              display="flex"
+              width="90px"
+              flexWrap="wrap"
+              alignContent="flex-start"
+            >
+              {leftEquip.map(({ slotId, itemId }, idx) => (
+                <EpicItemToolTip
+                  key={
+                    slotId
+                      ? `leftEquip ${itemId} ${idx}`
+                      : `leftEquip ${LEFT_EQUIP_SLOT_IDS[idx]}`
+                  }
+                  itemName={itemIdChangeHandler(itemId)}
+                >
+                  <Box
+                    position="relative"
+                    onClick={() => {
+                      toggleWearItem(slotId);
+                    }}
+                    border={
+                      hoveredConcept.findIndex((c) => c.itemId === itemId) > -1
+                        ? "2px solid #FFD065"
+                        : ""
+                    }
+                    width="40px"
+                    height="40px"
+                    marginBottom="2px"
+                    marginRight="2px"
+                  >
+                    <Image
+                      src={
+                        itemId
+                          ? `https://img-api.neople.co.kr/df/items/${itemId}`
+                          : `/images/emptySlot/${LEFT_EQUIP_SLOT_IDS[idx]}.png`
+                      }
+                      alt={`에픽아이템 ${slotId}`}
+                      layout="fill"
+                    />
+                  </Box>
+                </EpicItemToolTip>
+              ))}
+            </Box>
+          )}
+          {rightEquip && (
+            <Box
+              display="flex"
+              width="90px"
+              flexWrap="wrap"
+              alignContent="flex-start"
+            >
+              {rightEquip.map(({ slotId, itemId }, idx) => (
+                <EpicItemToolTip
+                  key={
+                    slotId
+                      ? `rightEquip ${itemId} ${idx}`
+                      : `rightEquip ${RIGHT_EQUIP_SLOT_IDS[idx]} `
+                  }
+                  itemName={itemIdChangeHandler(itemId)}
+                >
+                  <Box
+                    position="relative"
+                    onClick={() => {
+                      toggleWearItem(slotId);
+                    }}
+                    border={
+                      hoveredConcept.findIndex((c) => c.itemId === itemId) > -1
+                        ? "2px solid #FFD065"
+                        : ""
+                    }
+                    width="40px"
+                    height="40px"
+                    marginBottom="2px"
+                    marginRight="2px"
+                  >
+                    <Image
+                      src={
+                        itemId
+                          ? `https://img-api.neople.co.kr/df/items/${itemId}`
+                          : `/images/emptySlot/${RIGHT_EQUIP_SLOT_IDS[idx]}.png`
+                      }
+                      alt={`에픽아이템 ${itemId}`}
+                      layout="fill"
+                    />
+                  </Box>
+                </EpicItemToolTip>
+              ))}
+            </Box>
+          )}
+        </Box>
+      </Box>
+      {data ? (
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent="space-between"
+          flex="1"
+          padding="4px 25px"
+        >
+          <Box>
+            <Box
+              color="#000000"
+              backgroundColor="#ffffff"
+              borderRadius="5px"
+              border="1px solid #FFFFFF"
+              width="52px"
+              height="24px"
+              textAlign="center"
+              fontSize="16px"
+            >
+              {data.characterName}
+            </Box>
+            <Box
+              color="#F96539"
+              marginTop="15px"
+              fontSize="24px"
+              fontWeight="500"
+              lineHeight="29px"
+            >
+              Lv.{data.level}
+            </Box>
+            <Box fontSize="30px" fontWeight="700" lineHeight="36px">
+              {data.characterName}
+            </Box>
+            <Box
+              fontSize="24px"
+              fontWeight="400"
+              opacity="0.7"
+              lineHeight="29px"
+            >
+              {data.jobGrowName}
+            </Box>
+          </Box>
+          <EquipEpicConcept wearItem={wearItem} hoverWearItem={hoverWearItem} />
         </Box>
       ) : null}
     </Box>
