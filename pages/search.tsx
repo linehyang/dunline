@@ -7,7 +7,6 @@ import SearchForm from "../components/Search/SearchForm";
 import CharacterList from "../components/Search/CharacterList";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer";
-import { SERVER_LIST } from "../interface/characterSearch";
 
 function Search() {
   const router = useRouter();

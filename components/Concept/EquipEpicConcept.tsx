@@ -34,32 +34,41 @@ export default function EquipEpicConcept({ wearItem, hoverWearItem }: Props) {
 
   if (!checkedWearItems.length) {
     return (
-      <Box display="flex" flexWrap="wrap" flex="1">
-        선택된 에픽이 없습니다 에픽을 선택해주세요
+      <Box display="flex" flexWrap="wrap" color="#FFD065" marginBottom="100px">
+        선택된 컨셉과 에픽이 없습니다.
       </Box>
     );
   }
 
-  console.log(wearItemByConcept);
-
   return (
-    <StyledBox display="flex" flexWrap="wrap" flex="1" height="1rem">
-      {Object.keys(wearItemByConcept).map((conceptName) => {
+    <StyledBox display="flex" flexWrap="wrap" color="#FFD065">
+      {Object.keys(wearItemByConcept).map((conceptName, idx) => {
         return (
           <Box
-            key={conceptName}
+            key={conceptName ? `concept ${conceptName} ` : `concept ${idx}`}
             onMouseOver={() => {
               hoverWearItem(wearItemByConcept[conceptName]);
             }}
             onMouseOut={() => {
               hoverWearItem([]);
             }}
+            _hover={{
+              backgroundColor: "#FFD065",
+              color: "#000000",
+            }}
+            border=" 1px solid #FFD065"
+            borderRadius="25px"
+            padding="3px 15px"
+            marginBottom="4px"
           >
             <Tooltip
               label={
                 <Box as="ul">
-                  {wearItemByConcept[conceptName].map(({ itemName }) => (
-                    <Box as="li" key={itemName}>
+                  {wearItemByConcept[conceptName].map(({ itemName }, idx) => (
+                    <Box
+                      as="li"
+                      key={itemName ? `Equip1 ${itemName}` : `Equip1 ${idx}`}
+                    >
                       {itemName}
                     </Box>
                   ))}

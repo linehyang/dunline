@@ -5,7 +5,7 @@ import { Box, Text } from "@chakra-ui/react";
 
 import { EpicConcept, EpicItems, EpicInfoEquip } from "../../public/epic";
 
-import EpicItemToolTip from "../Setting/EpicItemToolTip";
+import EpicItemToolTip from "../Others/EpicItemToolTip";
 
 type EpicConceptKeyType = keyof typeof EpicConcept;
 type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;
@@ -38,13 +38,25 @@ export default function AcquireEpicConcept({
     }
   );
 
+  if (!selectedConcept.length) {
+    return (
+      <Box marginTop="50px" fontSize="25px">
+        컨셉이 설정되지 않았습니다.
+      </Box>
+    );
+  }
+
   return (
     <>
-      <Box>컨셉별 에픽 득템 현황</Box>
+      <Box marginTop="50px" fontSize="25px" fontWeight="700">
+        컨셉별 에픽 득템 현황
+      </Box>
       {selectedConcept.map(({ value }) => {
         return (
-          <Box key={value}>
-            <Text>{EpicConcept[value]}</Text>
+          <Box key={value} marginTop="20px" borderTop="1px solid #fff">
+            <Text margin="10px 0 " fontWeight="500">
+              {EpicConcept[value]}
+            </Text>
             <Box display={"flex"} flexWrap={"wrap"}>
               {EpicItems.filter((epicItem) =>
                 epicItem.concepts?.includes(value)
