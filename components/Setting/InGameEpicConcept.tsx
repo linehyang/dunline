@@ -59,7 +59,7 @@ export default function InGameEpicConcept({ data, hoverWearItem }: Props) {
   }, {} as { [key: string]: string[] });
 
   return (
-    <StyledBox display="flex" flexWrap="wrap">
+    <StyledBox display="flex" flexWrap="wrap" color="#FFD065">
       {Object.keys(ingameEpicItemsByConcept).map((conceptName) => {
         return (
           <Box
@@ -70,6 +70,14 @@ export default function InGameEpicConcept({ data, hoverWearItem }: Props) {
             onMouseOut={() => {
               hoverWearItem([]);
             }}
+            _hover={{
+              backgroundColor: "#FFD065",
+              color: "#000000",
+            }}
+            border=" 1px solid #FFD065"
+            borderRadius="25px"
+            padding="3px 15px"
+            marginBottom="4px"
           >
             <Tooltip
               label={
@@ -97,5 +105,9 @@ export default function InGameEpicConcept({ data, hoverWearItem }: Props) {
 const StyledBox = styled(Box)`
   & > :not(:last-child) {
     margin-right: 10px;
+  }
+
+  @media (max-width: 576px) {
+    margin-top: 30px;
   }
 `;

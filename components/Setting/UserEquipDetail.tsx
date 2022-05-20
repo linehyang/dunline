@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Box } from "@chakra-ui/react";
+import styled from "@emotion/styled";
+
 import { EpicInfoEquip } from "../../public/epic";
 
 type EquipmentType = {
@@ -92,35 +94,36 @@ export default function UserEquipDetail({ data }: Props) {
     }
   }, [] as EquipmentType[]);
 
-  console.log(inGameData);
-
   return (
-    <Box flex="1">
+    <Box>
       {inGameData.map((equipt, idx) => {
         return (
           <Box
-            key={equipt.itemId ? equipt.itemId : `${equipt.slotId}${idx}`}
+            key={
+              equipt.itemId
+                ? `UserEquiptDetail ${equipt.itemId}`
+                : `UserEquiptDetail ${EQUIP_SLOT_IDS[idx]}`
+            }
             display="flex"
-            border="1px solid #ffffff"
-            borderRadius="4px"
-            textAlign="center"
+            alignItems="center"
+            borderBottom="1px solid gray"
           >
-            <Image
-              src={
-                equipt.itemId
-                  ? `https://img-api.neople.co.kr/df/items/${equipt.itemId}`
-                  : `/images/emptySlot/${equipt.slotId}.png`
-              }
-              alt={`에픽아이템 ${equipt.itemName}`}
-              width={"30px"}
-              height={"30px"}
-            />
-            <Box flex="2">{equipt.slotName}</Box>
-            <Box flex="7">{equipt.itemName}</Box>
-            <Box
-              flex="3"
-              color={equipt?.amplificationName ? "#DB00DB" : "#ffffff"}
-            >
+            <Box position="relative" width="30px" height="30px" margin="3px 0">
+              <Image
+                src={
+                  equipt.itemId
+                    ? `https://img-api.neople.co.kr/df/items/${equipt.itemId}`
+                    : `/images/emptySlot/${equipt.slotId}.png`
+                }
+                alt={`에픽아이템 ${equipt.itemName}`}
+                layout="fill"
+              />
+            </Box>
+            <SlotNameStyled flex="0 0 80px" margin="0 30px" textAlign="center">
+              {equipt.slotName}
+            </SlotNameStyled>
+            <Box flex="1">{equipt.itemName}</Box>
+            <Box color={equipt?.amplificationName ? "#DB00DB" : "#ffffff"}>
               {equipt.reinforce
                 ? `+${equipt.reinforce}${
                     equipt?.amplificationName ? "증폭" : "강화"
@@ -133,3 +136,10 @@ export default function UserEquipDetail({ data }: Props) {
     </Box>
   );
 }
+
+const SlotNameStyled = styled(Box)`
+  @media (max-width: 576px) {
+    flex: 0 0 35px;
+    margin: 0 10px;
+  }
+`;

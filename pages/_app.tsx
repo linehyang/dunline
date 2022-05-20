@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           html, body {
             height: 100%;
             color: #ffffff;
-            background-color: #141517;
+            background-color: #000000;
           }
 
           ul, ol {
@@ -20,6 +20,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
           #__next {
             font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+            min-width: 320px;
+            width: 100%;
             height: 100%;
           }
         `}

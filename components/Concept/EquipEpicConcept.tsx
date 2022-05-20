@@ -33,29 +33,47 @@ export default function EquipEpicConcept({ wearItem, hoverWearItem }: Props) {
   }, {} as { [key: string]: { itemId: string; itemName: string }[] });
 
   if (!checkedWearItems.length) {
-    return <Box>선택된 에픽이 없습니다 에픽을 선택해주세요</Box>;
+    return (
+      <NotSelctConceptBox
+        display="flex"
+        flexWrap="wrap"
+        color="#FFD065"
+        marginBottom="100px"
+      >
+        선택된 컨셉과 에픽이 없습니다.
+      </NotSelctConceptBox>
+    );
   }
 
-  console.log(wearItemByConcept);
-
   return (
-    <StyledBox display="flex" flexWrap="wrap">
-      {Object.keys(wearItemByConcept).map((conceptName) => {
+    <StyledBox display="flex" flexWrap="wrap" color="#FFD065">
+      {Object.keys(wearItemByConcept).map((conceptName, idx) => {
         return (
           <Box
-            key={conceptName}
+            key={conceptName ? `concept ${conceptName} ` : `concept ${idx}`}
             onMouseOver={() => {
               hoverWearItem(wearItemByConcept[conceptName]);
             }}
             onMouseOut={() => {
               hoverWearItem([]);
             }}
+            _hover={{
+              backgroundColor: "#FFD065",
+              color: "#000000",
+            }}
+            border=" 1px solid #FFD065"
+            borderRadius="25px"
+            padding="3px 15px"
+            marginBottom="4px"
           >
             <Tooltip
               label={
                 <Box as="ul">
-                  {wearItemByConcept[conceptName].map(({ itemName }) => (
-                    <Box as="li" key={itemName}>
+                  {wearItemByConcept[conceptName].map(({ itemName }, idx) => (
+                    <Box
+                      as="li"
+                      key={itemName ? `Equip1 ${itemName}` : `Equip1 ${idx}`}
+                    >
                       {itemName}
                     </Box>
                   ))}
@@ -77,5 +95,15 @@ export default function EquipEpicConcept({ wearItem, hoverWearItem }: Props) {
 const StyledBox = styled(Box)`
   & > :not(:last-child) {
     margin-right: 10px;
+  }
+  @media (max-width: 576px) {
+    margin-top: 30px;
+  }
+`;
+
+const NotSelctConceptBox = styled(Box)`
+  @media (max-width: 576px) {
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 `;

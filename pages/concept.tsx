@@ -1,15 +1,16 @@
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 import AcquireEpicConcept from "../components/Concept/AcquireEpicConcept";
 import ConceptSelect from "../components/Concept/ConceptSelect";
 import WearItem from "../components/Concept/WearItem";
 import EquipEpicConcept from "../components/Concept/EquipEpicConcept";
+import Footer from "../components/Footer";
 
-import { EpicConcept, EpicInfoEquip, EpicItems } from "../public/epic";
+import { EpicConcept, EpicInfoEquip } from "../public/epic";
 
 type EpicConceptKeyType = keyof typeof EpicConcept;
 type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;
@@ -44,16 +45,16 @@ function Concept() {
       <Head>
         <title>DUNLINE</title>
       </Head>
-      <Header server={server} characterid={characterid} />
-      <Box
-        as="main"
-        minWidth="320px"
-        maxWidth="800px"
-        height="100%"
-        margin="0 auto"
-        padding="0 20px"
-      >
-        <Box display="flex">
+      <Box display="flex" flexDirection="column" height="100%">
+        <Header server={server} characterid={characterid} showLogo />
+        <Box
+          as="main"
+          flex="1"
+          width="100%"
+          maxWidth="800px"
+          margin="120px auto"
+          padding="0 20px"
+        >
           <WearItem
             wearItem={wearItem}
             resetWearItem={() =>
@@ -78,22 +79,20 @@ function Concept() {
               });
             }}
             hoveredConcept={conceptSelect}
-          />
-          <EquipEpicConcept
-            wearItem={wearItem}
             hoverWearItem={(concept) => {
               setConceptSelect(concept);
             }}
           />
+          <ConceptSelect onChange={setSelectedConcept} />
+          <AcquireEpicConcept
+            server={server}
+            characterid={characterid}
+            selectedConcept={selectedConcept}
+            setWearItem={setWearItem}
+            wearItem={wearItem}
+          />
         </Box>
-        <ConceptSelect onChange={setSelectedConcept} />
-        <AcquireEpicConcept
-          server={server}
-          characterid={characterid}
-          selectedConcept={selectedConcept}
-          setWearItem={setWearItem}
-          wearItem={wearItem}
-        />
+        <Footer />
       </Box>
     </>
   );

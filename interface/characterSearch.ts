@@ -1,4 +1,5 @@
 export enum SERVER_LIST {
+  all = "전체",
   cain = "카인",
   diregie = "디레지에",
   siroco = "시로코",
