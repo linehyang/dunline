@@ -34,9 +34,14 @@ export default function EquipEpicConcept({ wearItem, hoverWearItem }: Props) {
 
   if (!checkedWearItems.length) {
     return (
-      <Box display="flex" flexWrap="wrap" color="#FFD065" marginBottom="100px">
+      <NotSelctConceptBox
+        display="flex"
+        flexWrap="wrap"
+        color="#FFD065"
+        marginBottom="100px"
+      >
         선택된 컨셉과 에픽이 없습니다.
-      </Box>
+      </NotSelctConceptBox>
     );
   }
 
@@ -90,5 +95,15 @@ export default function EquipEpicConcept({ wearItem, hoverWearItem }: Props) {
 const StyledBox = styled(Box)`
   & > :not(:last-child) {
     margin-right: 10px;
+  }
+  @media (max-width: 576px) {
+    margin-top: 30px;
+  }
+`;
+
+const NotSelctConceptBox = styled(Box)`
+  @media (max-width: 576px) {
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 `;

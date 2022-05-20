@@ -106,4 +106,8 @@ const StyledBox = styled(Box)`
   & > :not(:last-child) {
     margin-right: 10px;
   }
+
+  @media (max-width: 576px) {
+    margin-top: 30px;
+  }
 `;

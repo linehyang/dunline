@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import styled from "@emotion/styled";
 
 import EpicItemToolTip from "../Others/EpicItemToolTip";
 import InGameEpicConcept from "./InGameEpicConcept";
@@ -82,8 +83,8 @@ export default function UserEquipInfo({
   }
 
   return (
-    <Box display="flex">
-      <Box
+    <ResponsiveBox display="flex">
+      <ResponsiveWearBox
         display="flex"
         flexDirection="column"
         position="relative"
@@ -235,8 +236,8 @@ export default function UserEquipInfo({
             </Box>
           )}
         </Box>
-      </Box>
-      <Box
+      </ResponsiveWearBox>
+      <ResponsiveTextBox
         display="flex"
         flexDirection="column"
         justifyContent="space-between"
@@ -277,7 +278,27 @@ export default function UserEquipInfo({
           data={data.equipment}
           hoverWearItem={hoverWearItem}
         />
-      </Box>
-    </Box>
+      </ResponsiveTextBox>
+    </ResponsiveBox>
   );
 }
+
+const ResponsiveBox = styled(Box)`
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const ResponsiveWearBox = styled(Box)`
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+`;
+
+const ResponsiveTextBox = styled(Box)`
+  @media (max-width: 576px) {
+    padding: 0;
+    margin-top: 20px;
+  }
+`;

@@ -1,9 +1,10 @@
 import { Box, Button } from "@chakra-ui/react";
-import { EpicInfoEquip, EpicItems, EpicConcept } from "../../public/epic";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import useSWR from "swr";
+import styled from "@emotion/styled";
 
+import { EpicInfoEquip, EpicItems, EpicConcept } from "../../public/epic";
 import EpicItemToolTip from "../Others/EpicItemToolTip";
 import { SERVER_LIST } from "../../interface/characterSearch";
 import EquipEpicConcept from "../Concept/EquipEpicConcept";
@@ -111,8 +112,8 @@ export default function WearItem({
     });
 
   return (
-    <Box display="flex">
-      <Box
+    <ResponsiveBox display="flex">
+      <ResponsiveWearBox
         display="flex"
         flexDirection="column"
         position="relative"
@@ -122,19 +123,21 @@ export default function WearItem({
         padding="55px 20px"
         minHeight="30px"
       >
-        <Box
-          as="span"
-          position="absolute"
-          top="10px"
-          left="10px"
-          fontSize="16px"
-          borderRadius="5px"
-          border="1px solid #ffffff"
-          padding="1px 5px"
-          textAlign="center"
-        >
-          {SERVER_LIST[server as keyof typeof SERVER_LIST]}
-        </Box>
+        {data ? (
+          <Box
+            as="span"
+            position="absolute"
+            top="10px"
+            left="10px"
+            fontSize="16px"
+            borderRadius="5px"
+            border="1px solid #ffffff"
+            padding="1px 5px"
+            textAlign="center"
+          >
+            {SERVER_LIST[server as keyof typeof SERVER_LIST]}
+          </Box>
+        ) : null}
         <Button
           position="absolute"
           onClick={resetWearItem}
@@ -251,15 +254,15 @@ export default function WearItem({
             </Box>
           )}
         </Box>
-      </Box>
-      {data ? (
-        <Box
-          display="flex"
-          flexDirection="column"
-          justifyContent="space-between"
-          flex="1"
-          padding="4px 25px"
-        >
+      </ResponsiveWearBox>
+      <ResponsiveTextBox
+        display="flex"
+        flexDirection="column"
+        justifyContent="space-between"
+        flex="1"
+        padding="4px 25px"
+      >
+        {data ? (
           <Box>
             <Box
               color="#000000"
@@ -294,9 +297,34 @@ export default function WearItem({
               {data.jobGrowName}
             </Box>
           </Box>
-          <EquipEpicConcept wearItem={wearItem} hoverWearItem={hoverWearItem} />
-        </Box>
-      ) : null}
-    </Box>
+        ) : (
+          <Box wordBreak="keep-all">
+            캐릭터명을 검색해서 접근하지 않았으므로 득템현황은 확인이
+            불가합니다.
+          </Box>
+        )}
+        <EquipEpicConcept wearItem={wearItem} hoverWearItem={hoverWearItem} />
+      </ResponsiveTextBox>
+    </ResponsiveBox>
   );
 }
+
+const ResponsiveBox = styled(Box)`
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const ResponsiveWearBox = styled(Box)`
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+`;
+
+const ResponsiveTextBox = styled(Box)`
+  @media (max-width: 576px) {
+    padding: 0;
+    margin-top: 20px;
+  }
+`;

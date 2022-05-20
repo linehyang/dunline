@@ -13,7 +13,6 @@ import { useRouter } from "next/router";
 import SearchIcon from "../../public/images/ic_search.svg";
 
 import { SERVER_LIST } from "../../interface/characterSearch";
-import { setValues } from "framer-motion/types/render/utils/setters";
 
 const initialSearchFormValue = {
   serverName: "all",
@@ -31,13 +30,30 @@ interface Props {
 
 export default function SearchForm({ handleSubmit, search }: Props) {
   const router = useRouter();
-  const { register, handleSubmit: handleFormSubmit } = useForm<SearchFormValue>(
-    {
-      defaultValues: search
-        ? (search as SearchFormValue)
-        : initialSearchFormValue,
-    }
-  );
+  const { serverName, characterName } = router.query;
+
+  const {
+    register,
+    reset,
+    handleSubmit: handleFormSubmit,
+  } = useForm<SearchFormValue>({
+    defaultValues: search
+      ? (search as SearchFormValue)
+      : initialSearchFormValue,
+  });
+
+  useEffect(() => {
+    reset({
+      serverName: serverName as string,
+      characterName: characterName as string,
+    });
+
+    handleSubmit(
+      `/api/search?serverName=${
+        serverName as string
+      }&characterName=${encodeURIComponent(characterName as string)}`
+    );
+  }, [router.query]);
 
   const onSubmit = ({ serverName, characterName }: SearchFormValue) => {
     handleSubmit(
