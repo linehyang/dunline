@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { Box, AspectRatio } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import styled from "@emotion/styled";
+
 import { EpicInfoEquip } from "../../public/epic";
 
 type EquipmentType = {
@@ -117,9 +119,9 @@ export default function UserEquipDetail({ data }: Props) {
                 layout="fill"
               />
             </Box>
-            <Box flex="0 0 80px" margin="0 30px" textAlign="center">
+            <SlotNameStyled flex="0 0 80px" margin="0 30px" textAlign="center">
               {equipt.slotName}
-            </Box>
+            </SlotNameStyled>
             <Box flex="1">{equipt.itemName}</Box>
             <Box color={equipt?.amplificationName ? "#DB00DB" : "#ffffff"}>
               {equipt.reinforce
@@ -134,3 +136,10 @@ export default function UserEquipDetail({ data }: Props) {
     </Box>
   );
 }
+
+const SlotNameStyled = styled(Box)`
+  @media (max-width: 576px) {
+    flex: 0 0 35px;
+    margin: 0 10px;
+  }
+`;

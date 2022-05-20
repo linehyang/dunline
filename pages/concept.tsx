@@ -46,12 +46,11 @@ function Concept() {
         <title>DUNLINE</title>
       </Head>
       <Box display="flex" flexDirection="column" height="100%">
-        <Header server={server} characterid={characterid} LogoHandler={true} />
+        <Header server={server} characterid={characterid} showLogo />
         <Box
           as="main"
           flex="1"
           width="100%"
-          minWidth="320px"
           maxWidth="800px"
           margin="120px auto"
           padding="0 20px"
@@ -84,7 +83,6 @@ function Concept() {
               setConceptSelect(concept);
             }}
           />
-
           <ConceptSelect onChange={setSelectedConcept} />
           <AcquireEpicConcept
             server={server}
