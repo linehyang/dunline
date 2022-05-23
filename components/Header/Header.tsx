@@ -5,7 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 import NavigationItems from "./NavigationItems";
-
+import { GiHamburgerMenu } from "react-icons/gi";
+import { GrClose } from "react-icons/gr";
 import KakaoLogo from "../../public/images/ic_kakao.svg";
 
 type Props = {
@@ -87,7 +88,15 @@ function Header({ server, characterid, showLogo }: Props) {
                 </a>
               </Link>
             ) : (
-              <>문의하기</>
+              <Link
+                href="https://open.kakao.com/o/s3Dh8Afe"
+                passHref
+                prefetch={false}
+              >
+                <a>
+                  <>문의하기</>
+                </a>
+              </Link>
             )
           }
           ParentComponent={
@@ -100,9 +109,12 @@ function Header({ server, characterid, showLogo }: Props) {
         />
       </HeaderBody>
       <MenuButton
+        icon={!isToggle ? <GiHamburgerMenu color="#000000" /> : <GrClose />}
         type="button"
-        aria-label="반응형 헤더 햄버거 "
+        aria-label="반응형 헤더 햄버거"
         onClick={() => setIsToggle(!isToggle)}
+        fontSize="30px"
+        padding="0 5px"
       />
     </Box>
   );

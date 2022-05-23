@@ -18,6 +18,7 @@ const StyledBox = styled(Box)`
     flex-direction: column;
     width: 100%;
     height: 100%;
+    margin-top: 30px;
 
     & > :not(:last-child) {
       margin: 0;
