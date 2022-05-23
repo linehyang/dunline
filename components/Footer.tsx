@@ -1,10 +1,11 @@
 import { Box } from "@chakra-ui/react";
 import Link from "next/link";
 import Image from "next/image";
+import styled from "@emotion/styled";
 
 export default function Footer() {
   return (
-    <Box
+    <StyledFooter
       as="footer"
       display="flex"
       justifyContent="space-between"
@@ -27,6 +28,13 @@ export default function Footer() {
           </a>
         </Link>
       </Box>
-    </Box>
+    </StyledFooter>
   );
 }
+
+const StyledFooter = styled(Box)`
+  @media (max-width: 576px) {
+    flex-direction: column;
+    padding: 20px 30px;
+  }
+`;
