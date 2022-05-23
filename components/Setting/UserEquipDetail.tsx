@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { Box } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 import { EpicInfoEquip } from "../../public/epic";
+import { ITEM_RARITY } from "../../interface/itemRarityInfo";
 
 type EquipmentType = {
   amplificationName: string;
@@ -122,7 +123,31 @@ export default function UserEquipDetail({ data }: Props) {
             <SlotNameStyled flex="0 0 80px" margin="0 30px" textAlign="center">
               {equipt.slotName}
             </SlotNameStyled>
-            <Box flex="1">{equipt.itemName}</Box>
+            {equipt.itemRarity !== "신화" ? (
+              <Box
+                flex="1"
+                color={
+                  ITEM_RARITY[equipt.itemRarity as keyof typeof ITEM_RARITY]
+                }
+              >
+                {equipt.itemName}
+              </Box>
+            ) : (
+              <Text
+                flex="1"
+                color={
+                  ITEM_RARITY[equipt.itemRarity as keyof typeof ITEM_RARITY]
+                }
+                bgGradient={[
+                  "linear(to-t,#ff9600, #a52fc8)",
+                  "linear(to-b, rgb(255, 150, 0), rgb(165, 47, 200))",
+                ]}
+                bgClip="text"
+              >
+                {equipt.itemName}
+              </Text>
+            )}
+
             <Box color={equipt?.amplificationName ? "#DB00DB" : "#ffffff"}>
               {equipt.reinforce
                 ? `+${equipt.reinforce}${

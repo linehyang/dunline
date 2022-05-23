@@ -71,7 +71,7 @@ export default function CharacterList({ url }: Props) {
                       width="100%"
                       height="300px"
                       ratio={1 / 1}
-                      transform="scale(1.4)"
+                      transform="scale(1.2)"
                       bottom="60px"
                       pointerEvents="none"
                     >

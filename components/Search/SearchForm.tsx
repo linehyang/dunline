@@ -72,7 +72,7 @@ export default function SearchForm({ handleSubmit, search }: Props) {
       as="form"
       justifyContent="center"
       spacing="2px"
-      marginBottom="80px"
+      marginBottom="60px"
       onSubmit={handleFormSubmit(onSubmit)}
       position="relative"
     >
@@ -96,7 +96,7 @@ export default function SearchForm({ handleSubmit, search }: Props) {
           flex="1"
           border="1px solid #ffffff"
           borderRadius="25px"
-          paddingLeft="25px"
+          paddingLeft="20px"
           {...register("characterName")}
         />
         <InputRightElement>
