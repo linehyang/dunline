@@ -107,7 +107,7 @@ export default function CharacterList({ url }: Props) {
 
 const StyledBox = styled(Box)`
   @media (hover: hover) {
-    & :hover {
+    hover {
       transform: none;
     }
   }
