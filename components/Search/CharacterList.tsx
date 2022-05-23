@@ -7,6 +7,7 @@ import Image from "next/image";
 import useSWR from "swr";
 
 import { CharacterSearch, SERVER_LIST } from "../../interface/characterSearch";
+import { scaleCorrectors } from "framer-motion/types/projection/styles/scale-correction";
 
 interface Props {
   url: string | null;
@@ -44,10 +45,10 @@ export default function CharacterList({ url }: Props) {
               display="flex"
               flexDirection="column"
               padding="15px 10px"
-              _hover={{
-                transform: "scale(1.1)",
-              }}
               position="relative"
+              // _hover={{
+              //   transform: "scale(1.1)",
+              // }}
             >
               <Link
                 href={`/setting?server=${serverId}&characterid=${characterId}`}
@@ -107,8 +108,8 @@ export default function CharacterList({ url }: Props) {
 
 const StyledBox = styled(Box)`
   @media (hover: hover) {
-    & :hover {
-      transform: "scale(1)";
+    a: hover {
+      transform: scale(1.1);
     }
   }
 `;
