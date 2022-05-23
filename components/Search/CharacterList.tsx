@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Box, AspectRatio } from "@chakra-ui/react";
+import styled from "@emotion/styled";
 
 import Image from "next/image";
 import useSWR from "swr";
@@ -37,7 +38,7 @@ export default function CharacterList({ url }: Props) {
       {data &&
         data.map(
           ({ characterId, jobGrowName, serverId, characterName, level }) => (
-            <Box
+            <StyledBox
               key={characterId}
               as="li"
               display="flex"
@@ -97,9 +98,17 @@ export default function CharacterList({ url }: Props) {
                   </Box>
                 </Box>
               </Link>
-            </Box>
+            </StyledBox>
           )
         )}
     </Box>
   );
 }
+
+const StyledBox = styled(Box)`
+  @media (hover: hover) {
+    & :hover {
+      transform: none;
+    }
+  }
+`;
