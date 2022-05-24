@@ -69,20 +69,22 @@ export default function CharacterList({ url }: Props) {
                     >
                       {SERVER_LIST[serverId]}
                     </Box>
-                    <AspectRatio
-                      width="100%"
-                      height="300px"
-                      ratio={1 / 1}
-                      transform="scale(1.2)"
-                      bottom="60px"
-                      pointerEvents="none"
-                    >
-                      <Image
-                        src={`https://img-api.neople.co.kr/df/servers/${serverId}/characters/${characterId}?zoom=3`}
-                        layout="fill"
-                        alt={`${characterName}의 정보`}
-                      />
-                    </AspectRatio>
+                    <Box overflow="hidden">
+                      <AspectRatio
+                        width="100%"
+                        height="300px"
+                        ratio={1 / 1}
+                        transform="scale(1.5)"
+                        bottom="60px"
+                        pointerEvents="none"
+                      >
+                        <Image
+                          src={`https://img-api.neople.co.kr/df/servers/${serverId}/characters/${characterId}?zoom=3`}
+                          layout="fill"
+                          alt={`${characterName}의 정보`}
+                        />
+                      </AspectRatio>
+                    </Box>
                   </Box>
                   <Box padding="15px 0">
                     <Box display="flex" justifyContent="space-between">
