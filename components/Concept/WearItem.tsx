@@ -1,8 +1,9 @@
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, useToast, IconButton } from "@chakra-ui/react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import useSWR from "swr";
 import styled from "@emotion/styled";
+import { GrPowerReset } from "react-icons/gr";
 
 import { EpicInfoEquip, EpicItems, EpicConcept } from "../../public/epic";
 import EpicItemToolTip from "../Others/EpicItemToolTip";
@@ -94,6 +95,7 @@ export default function WearItem({
 }: Props) {
   const router = useRouter();
   const { server, characterid } = router.query;
+  const toast = useToast();
 
   const url = `api/userEquipInfo?server=${server}&characterid=${characterid}`;
 
@@ -138,15 +140,25 @@ export default function WearItem({
             {SERVER_LIST[server as keyof typeof SERVER_LIST]}
           </Box>
         ) : null}
-        <Button
+        <IconButton
+          icon={<GrPowerReset />}
+          aria-label="컨셉 에픽 초기화 버튼"
           position="absolute"
-          onClick={resetWearItem}
-          colorScheme="red"
+          onClick={() => {
+            resetWearItem();
+            toast({
+              title: `추가된 모든 장비를 초기화 하였습니다.`,
+              status: "success",
+              duration: 1000,
+            });
+          }}
+          colorScheme="gray"
           right="10px"
           top="5px"
+          fontSize="20px"
         >
           초기화 버튼
-        </Button>
+        </IconButton>
         {data && (
           <Box
             position="absolute"
@@ -183,6 +195,15 @@ export default function WearItem({
                     position="relative"
                     onClick={() => {
                       toggleWearItem(slotId);
+                      toast({
+                        title: itemId
+                          ? `${itemIdChangeHandler(
+                              itemId
+                            )}을/를 삭제 하였습니다.`
+                          : `추가하신 아이템이 없습니다.`,
+                        status: itemId ? "success" : "warning",
+                        duration: 1000,
+                      });
                     }}
                     border={
                       hoveredConcept.findIndex((c) => c.itemId === itemId) > -1
@@ -228,6 +249,15 @@ export default function WearItem({
                     position="relative"
                     onClick={() => {
                       toggleWearItem(slotId);
+                      toast({
+                        title: itemId
+                          ? `${itemIdChangeHandler(
+                              itemId
+                            )}을/를 삭제 하였습니다.`
+                          : `추가하신 아이템이 없습니다.`,
+                        status: itemId ? "success" : "warning",
+                        duration: 1000,
+                      });
                     }}
                     border={
                       hoveredConcept.findIndex((c) => c.itemId === itemId) > -1

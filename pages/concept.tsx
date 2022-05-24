@@ -52,7 +52,7 @@ function Concept() {
           flex="1"
           width="100%"
           maxWidth="800px"
-          margin="120px auto"
+          margin="60px auto"
           padding="0 20px"
         >
           <WearItem
