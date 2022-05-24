@@ -1,7 +1,7 @@
 import { SetStateAction, useState } from "react";
 import useSWR from "swr";
 import Image from "next/image";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, useToast } from "@chakra-ui/react";
 
 import { EpicConcept, EpicItems, EpicInfoEquip } from "../../public/epic";
 
@@ -28,6 +28,7 @@ export default function AcquireEpicConcept({
   wearItem,
   setWearItem,
 }: Props) {
+  const toast = useToast();
   const { data } = useSWR<string[]>(
     () =>
       server &&
@@ -84,6 +85,11 @@ export default function AcquireEpicConcept({
                         setWearItem({
                           ...wearItem,
                           [parts]: itemId,
+                        });
+                        toast({
+                          title: `${itemName}을/를 추가 하였습니다.`,
+                          status: "info",
+                          duration: 1000,
                         });
                       }}
                     />
