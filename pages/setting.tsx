@@ -75,7 +75,7 @@ function Setting() {
   return (
     <>
       <Head>
-        <title>DUNLINE</title>
+        <title>DUNLINE - 캐릭터 인게임 정보</title>
       </Head>
       <Box display="flex" flexDirection="column" height="100%">
         <Header server={server} characterid={characterid} showLogo />

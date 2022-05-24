@@ -15,20 +15,6 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>DUNLINE</title>
-        <meta
-          name="description"
-          content="DunLine - 던전앤파이터 105레벨 에픽장비 득템여부 확인, 컨셉별 아이템 세팅 가이드 "
-        />
-        <meta property="og:title" content="DunLine" />
-        {/* <meta property="og:url" content="https://www.naver.com/" /> */}
-        <meta
-          property="og:image"
-          content="/images/dunline_logo/dunline_logo_box@2x.png"
-        />
-        <meta
-          property="og:description"
-          content="DunLine - 던전앤파이터 105레벨 에픽장비 득템여부 확인, 컨셉별 아이템 세팅 가이드 "
-        ></meta>
       </Head>
       <Box display="flex" flexDirection="column" height="100%">
         <Header />

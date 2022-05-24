@@ -43,7 +43,7 @@ function Concept() {
   return (
     <>
       <Head>
-        <title>DUNLINE</title>
+        <title>DUNLINE - 득템 여부 및 컨셉 확인</title>
       </Head>
       <Box display="flex" flexDirection="column" height="100%">
         <Header server={server} characterid={characterid} showLogo />
