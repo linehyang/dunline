@@ -5,6 +5,14 @@ import styled from "@emotion/styled";
 import { EpicInfoEquip } from "../../public/epic";
 import { ITEM_RARITY } from "../../interface/itemRarityInfo";
 
+type GrowInfoType = {
+  level: number;
+  expRate: number;
+  explain: string;
+  explainDetail: string;
+  damage: number;
+};
+
 type EquipmentType = {
   amplificationName: string;
   enchant: {
@@ -12,6 +20,13 @@ type EquipmentType = {
     status?: {
       name: string;
       value: number;
+    };
+  };
+  growInfo?: {
+    options?: GrowInfoType[];
+    total?: {
+      damage: number;
+      buff: number;
     };
   };
   itemAvailableLevel: number;
@@ -95,6 +110,18 @@ export default function UserEquipDetail({ data }: Props) {
     }
   }, [] as EquipmentType[]);
 
+  const growInfoExchange = (options: GrowInfoType[]) => {
+    if (!options) {
+      return;
+    }
+    return options.map(({ level }, idx) => {
+      if (idx === 3) {
+        return ` ${level}`;
+      }
+      return ` ${level} /`;
+    });
+  };
+
   return (
     <Box>
       {inGameData.map((equipt, idx) => {
@@ -124,13 +151,21 @@ export default function UserEquipDetail({ data }: Props) {
               {equipt.slotName}
             </SlotNameStyled>
             {equipt.itemRarity !== "신화" ? (
-              <Box
-                flex="1"
-                color={
-                  ITEM_RARITY[equipt.itemRarity as keyof typeof ITEM_RARITY]
-                }
-              >
-                {equipt.itemName}
+              <Box flex="1">
+                <Box
+                  color={
+                    ITEM_RARITY[equipt.itemRarity as keyof typeof ITEM_RARITY]
+                  }
+                >
+                  {equipt.itemName}
+                </Box>
+                <Box fontSize="13px">
+                  {equipt.growInfo
+                    ? growInfoExchange(
+                        equipt.growInfo?.options as GrowInfoType[]
+                      )
+                    : null}
+                </Box>
               </Box>
             ) : (
               <Text
