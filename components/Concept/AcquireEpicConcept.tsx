@@ -1,4 +1,4 @@
-import { SetStateAction, useState } from "react";
+import { SetStateAction } from "react";
 import useSWR from "swr";
 import Image from "next/image";
 import { Box, Text, useToast } from "@chakra-ui/react";

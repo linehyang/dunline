@@ -2887,14 +2887,12 @@ export const EpicItems = [
     itemId: "918428f7d8708735caa0e85a83a7e46c",
     itemName: "딥 다이버 슈트",
     options: [null, null, null, null],
-    concepts: [],
     parts: "JACKET",
   },
   {
     itemId: "15d61884914660b8d42575144cfe1355",
     itemName: "딥 다이버 에어팩",
     options: [null, null, null, null],
-    concepts: [],
     parts: "SHOULDER",
   },
   {
@@ -2913,7 +2911,6 @@ export const EpicItems = [
     itemId: "df8f8a5155992477604353fbd7f8db89",
     itemName: "딥 다이버 팬츠",
     options: [null, null, null, null],
-    concepts: [],
     parts: "PANTS",
   },
   {
@@ -2932,7 +2929,6 @@ export const EpicItems = [
     itemId: "56707ed3b983ca8678139002578194db",
     itemName: "딥 다이버 슈즈",
     options: [null, null, null, null],
-    concepts: [],
     parts: "SHOES",
   },
   {
@@ -2973,7 +2969,7 @@ export const EpicItems = [
     itemId: "894a396a5fd25b43790be007a737debc",
     itemName: "딥 다이버 벨트",
     options: [null, null, null, null],
-    concepts: [],
+
     parts: "WAIST",
   },
   {
@@ -3004,7 +3000,6 @@ export const EpicItems = [
     itemId: "7d0175039686c0a3e06665f95cdb3184",
     itemName: "딥 다이버 네클레스",
     options: [null, null, null, null],
-    concepts: [],
     parts: "AMULET",
   },
   {
@@ -3023,7 +3018,6 @@ export const EpicItems = [
     itemId: "d48cae439d3d23c1d60885b45c7ff15b",
     itemName: "딥 다이버 네비게이션 링",
     options: [null, null, null, null],
-    concepts: [],
     parts: "RING",
   },
   {
@@ -3042,7 +3036,6 @@ export const EpicItems = [
     itemId: "c7629a5b062cf8131e4c3bfe6ca8d5ef",
     itemName: "딥 다이버 워치",
     options: [null, null, null, null],
-    concepts: [],
     parts: "WRIST",
   },
   {
@@ -3061,7 +3054,6 @@ export const EpicItems = [
     itemId: "93aacfaa1296200fc022bababcb68d5d",
     itemName: "딥 다이버 이어링",
     options: [null, null, null, null],
-    concepts: [],
     parts: "EARRING",
   },
   {
@@ -3080,7 +3072,6 @@ export const EpicItems = [
     itemId: "289a755f5262c80cc04b20d58756ee45",
     itemName: "딥 다이버 오리발",
     options: [null, null, null, null],
-    concepts: [],
     parts: "SUPPORT",
   },
   {
@@ -3104,7 +3095,6 @@ export const EpicItems = [
     itemId: "05c7d8fece7ee8469c76fa0e0cbf935e",
     itemName: "딥 다이버 마스크",
     options: [null, null, null, null],
-    concepts: [],
     parts: "MAGIC_STON",
   },
 ];
