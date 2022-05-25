@@ -70,8 +70,6 @@ function Setting() {
     return null;
   }
 
-  console.log(data);
-
   return (
     <>
       <Head>
