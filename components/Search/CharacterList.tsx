@@ -2,12 +2,10 @@ import React from "react";
 import Link from "next/link";
 import { Box, AspectRatio } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-
 import Image from "next/image";
 import useSWR from "swr";
 
 import { CharacterSearch, SERVER_LIST } from "../../interface/characterSearch";
-import { scaleCorrectors } from "framer-motion/types/projection/styles/scale-correction";
 
 interface Props {
   url: string | null;

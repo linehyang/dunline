@@ -1,4 +1,4 @@
-import { generateSearchParams } from "./sum";
+import { generateSearchParams } from "./test";
 
 /* test('테스트 코드명', () => {
   expect(실행값).toBe(기댓값);
