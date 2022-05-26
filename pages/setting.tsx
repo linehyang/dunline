@@ -9,42 +9,7 @@ import UserEquipDetail from "../components/Setting/UserEquipDetail";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer";
 import ErrorModal from "../components/Others/ErrorModal";
-
-type EquipmentType = {
-  amplificationName: string;
-  enchant: {
-    explain?: string;
-    status?: {
-      name: string;
-      value: number;
-    };
-  };
-  itemAvailableLevel: number;
-  itemGradeName: string;
-  itemId: string;
-  itemName: string;
-  itemRarity: string;
-  itemType: string;
-  itemTypeDetail: string;
-  refine: number;
-  reinforce: number;
-  slotId: string;
-  slotName: string;
-};
-
-type UserEquipInfoType = {
-  adventureName: string;
-  characterId: string;
-  characterName: string;
-  equipment: EquipmentType[];
-  guildId: string;
-  guildName: string;
-  jobGrowId: string;
-  jobGrowName: string;
-  jobId: string;
-  jobName: string;
-  level: number;
-};
+import { UserEquipInfoType } from "../interface/equipInfo";
 
 function Setting() {
   const router = useRouter();

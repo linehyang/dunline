@@ -1,71 +1,21 @@
-import { Box, Button, useToast, IconButton } from "@chakra-ui/react";
+import { Box, useToast, IconButton } from "@chakra-ui/react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import useSWR from "swr";
 import styled from "@emotion/styled";
 import { GrPowerReset } from "react-icons/gr";
 
-import { EpicInfoEquip, EpicItems, EpicConcept } from "../../public/epic";
-import EpicItemToolTip from "../Others/EpicItemToolTip";
+import { EpicInfoEquip } from "../../public/epic";
 import { SERVER_LIST } from "../../interface/characterSearch";
 import EquipEpicConcept from "../Concept/EquipEpicConcept";
+import { UserEquipInfoType } from "../../interface/equipInfo";
+
+import ConceptWearItems from "./ConceptWearItems";
 
 type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;
-type EpicConceptKeyType = keyof typeof EpicConcept;
-type EquipTpye = { slotId: string; itemId: string };
-type wearItemType = {
-  AMULET: string;
-  EARRING: string;
-  JACKET: string;
-  MAGIC_STON: string;
-  PANTS: string;
-  RING: string;
-  SHOES: string;
-  SHOULDER: string;
-  SUPPORT: string;
-  WAIST: string;
-  WRIST: string;
-};
-
-type EquipmentType = {
-  amplificationName: string;
-  enchant: {
-    explain?: string;
-    status?: {
-      name: string;
-      value: number;
-    };
-  };
-  itemAvailableLevel: number;
-  itemGradeName: string;
-  itemId: string;
-  itemName: string;
-  itemRarity: string;
-  itemType: string;
-  itemTypeDetail: string;
-  refine: number;
-  reinforce: number;
-  slotId: string;
-  slotName: string;
-};
-
-type UserEquipInfoType = {
-  adventureName: string;
-  characterId: string;
-  characterName: string;
-  equipment: EquipmentType[];
-  guildId: string;
-  guildName: string;
-  jobGrowId: string;
-  jobGrowName: string;
-  jobId: string;
-  jobName: string;
-  level: number;
-};
 
 interface Props {
   wearItem: Record<EpicInfoEquipKeyType, string>;
-  // onClick: () => void;
   resetWearItem: () => void;
   toggleWearItem: (slotId: string) => void;
   hoveredConcept: { itemId: string; itemName: string }[];
@@ -81,10 +31,6 @@ const RIGHT_EQUIP_SLOT_IDS = [
   "EARRING",
   "MAGIC_STON",
 ];
-
-function itemIdChangeHandler(itemId: string) {
-  return EpicItems.find((v) => v.itemId === itemId)?.itemName;
-}
 
 export default function WearItem({
   wearItem,
@@ -176,112 +122,20 @@ export default function WearItem({
         )}
         <Box display="flex" justifyContent="space-between">
           {leftEquip && (
-            <Box
-              display="flex"
-              width="90px"
-              flexWrap="wrap"
-              alignContent="flex-start"
-            >
-              {leftEquip.map(({ slotId, itemId }, idx) => (
-                <EpicItemToolTip
-                  key={
-                    slotId
-                      ? `leftEquip ${itemId} ${idx}`
-                      : `leftEquip ${LEFT_EQUIP_SLOT_IDS[idx]}`
-                  }
-                  itemName={itemIdChangeHandler(itemId)}
-                >
-                  <Box
-                    position="relative"
-                    onClick={() => {
-                      toggleWearItem(slotId);
-                      toast({
-                        title: itemId
-                          ? `${itemIdChangeHandler(
-                              itemId
-                            )}을/를 삭제 하였습니다.`
-                          : `추가하신 아이템이 없습니다.`,
-                        status: itemId ? "success" : "warning",
-                        duration: 1000,
-                      });
-                    }}
-                    border={
-                      hoveredConcept.findIndex((c) => c.itemId === itemId) > -1
-                        ? "2px solid #FFD065"
-                        : ""
-                    }
-                    width="40px"
-                    height="40px"
-                    marginBottom="2px"
-                    marginRight="2px"
-                  >
-                    <Image
-                      src={
-                        itemId
-                          ? `https://img-api.neople.co.kr/df/items/${itemId}`
-                          : `/images/emptySlot/${LEFT_EQUIP_SLOT_IDS[idx]}.png`
-                      }
-                      alt={`에픽아이템 ${slotId}`}
-                      layout="fill"
-                    />
-                  </Box>
-                </EpicItemToolTip>
-              ))}
-            </Box>
+            <ConceptWearItems
+              wearItem={wearItem}
+              toggleWearItem={toggleWearItem}
+              hoveredConcept={hoveredConcept}
+              equipSlot={LEFT_EQUIP_SLOT_IDS}
+            />
           )}
           {rightEquip && (
-            <Box
-              display="flex"
-              width="90px"
-              flexWrap="wrap"
-              alignContent="flex-start"
-            >
-              {rightEquip.map(({ slotId, itemId }, idx) => (
-                <EpicItemToolTip
-                  key={
-                    slotId
-                      ? `rightEquip ${itemId} ${idx}`
-                      : `rightEquip ${RIGHT_EQUIP_SLOT_IDS[idx]} `
-                  }
-                  itemName={itemIdChangeHandler(itemId)}
-                >
-                  <Box
-                    position="relative"
-                    onClick={() => {
-                      toggleWearItem(slotId);
-                      toast({
-                        title: itemId
-                          ? `${itemIdChangeHandler(
-                              itemId
-                            )}을/를 삭제 하였습니다.`
-                          : `추가하신 아이템이 없습니다.`,
-                        status: itemId ? "success" : "warning",
-                        duration: 1000,
-                      });
-                    }}
-                    border={
-                      hoveredConcept.findIndex((c) => c.itemId === itemId) > -1
-                        ? "2px solid #FFD065"
-                        : ""
-                    }
-                    width="40px"
-                    height="40px"
-                    marginBottom="2px"
-                    marginRight="2px"
-                  >
-                    <Image
-                      src={
-                        itemId
-                          ? `https://img-api.neople.co.kr/df/items/${itemId}`
-                          : `/images/emptySlot/${RIGHT_EQUIP_SLOT_IDS[idx]}.png`
-                      }
-                      alt={`에픽아이템 ${itemId}`}
-                      layout="fill"
-                    />
-                  </Box>
-                </EpicItemToolTip>
-              ))}
-            </Box>
+            <ConceptWearItems
+              wearItem={wearItem}
+              toggleWearItem={toggleWearItem}
+              hoveredConcept={hoveredConcept}
+              equipSlot={RIGHT_EQUIP_SLOT_IDS}
+            />
           )}
         </Box>
       </ResponsiveWearBox>

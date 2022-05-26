@@ -11,7 +11,6 @@ import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 
 import SearchIcon from "../../public/images/ic_search.svg";
-
 import { SERVER_LIST } from "../../interface/characterSearch";
 
 const initialSearchFormValue = {
