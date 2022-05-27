@@ -1,4 +1,4 @@
-import { SetStateAction, useState } from "react";
+import { SetStateAction } from "react";
 import useSWR from "swr";
 import Image from "next/image";
 import { Box, Text, useToast } from "@chakra-ui/react";
@@ -11,7 +11,7 @@ type EpicConceptKeyType = keyof typeof EpicConcept;
 type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;
 type OptionValue = { value: EpicConceptKeyType; label: string };
 
-type Props = {
+interface Props {
   server: string | string[] | undefined;
   characterid: string | string[] | undefined;
   selectedConcept: OptionValue[];
@@ -19,7 +19,7 @@ type Props = {
   setWearItem: (
     value: SetStateAction<Record<EpicInfoEquipKeyType, string>>
   ) => void;
-};
+}
 
 export default function AcquireEpicConcept({
   server,

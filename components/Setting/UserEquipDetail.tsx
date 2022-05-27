@@ -4,46 +4,15 @@ import styled from "@emotion/styled";
 
 import { EpicInfoEquip } from "../../public/epic";
 import { ITEM_RARITY } from "../../interface/itemRarityInfo";
+import {
+  EquipmentType,
+  UserEquipInfoType,
+  GrowInfoType,
+} from "../../interface/equipInfo";
 
-type EquipmentType = {
-  amplificationName: string;
-  enchant: {
-    explain?: string;
-    status?: {
-      name: string;
-      value: number;
-    };
-  };
-  itemAvailableLevel: number;
-  itemGradeName: string;
-  itemId: string;
-  itemName: string;
-  itemRarity: string;
-  itemType: string;
-  itemTypeDetail: string;
-  refine: number;
-  reinforce: number;
-  slotId: string;
-  slotName: string;
-};
-
-type UserEquipInfoType = {
-  adventureName: string;
-  characterId: string;
-  characterName: string;
-  equipment: EquipmentType[];
-  guildId: string;
-  guildName: string;
-  jobGrowId: string;
-  jobGrowName: string;
-  jobId: string;
-  jobName: string;
-  level: number;
-};
-
-type Props = {
+interface Props {
   data: UserEquipInfoType;
-};
+}
 
 const EQUIP_SLOT_IDS = [
   "WEAPON",
@@ -95,6 +64,15 @@ export default function UserEquipDetail({ data }: Props) {
     }
   }, [] as EquipmentType[]);
 
+  const growInfoExchange = (options: GrowInfoType[]) => {
+    if (!options) {
+      return;
+    }
+    return options.map(({ level }, idx) => {
+      return level;
+    });
+  };
+
   return (
     <Box>
       {inGameData.map((equipt, idx) => {
@@ -124,13 +102,30 @@ export default function UserEquipDetail({ data }: Props) {
               {equipt.slotName}
             </SlotNameStyled>
             {equipt.itemRarity !== "신화" ? (
-              <Box
-                flex="1"
-                color={
-                  ITEM_RARITY[equipt.itemRarity as keyof typeof ITEM_RARITY]
-                }
-              >
-                {equipt.itemName}
+              <Box flex="1">
+                <Box
+                  color={
+                    ITEM_RARITY[equipt.itemRarity as keyof typeof ITEM_RARITY]
+                  }
+                >
+                  {equipt.itemName}
+                </Box>
+                {equipt.growInfo ? (
+                  <Box fontSize="14px" display="flex">
+                    {growInfoExchange(
+                      equipt.growInfo?.options as GrowInfoType[]
+                    )?.map((level, idx) => {
+                      return (
+                        <LevelStyled
+                          key={`InGame GrowInfo ${equipt.itemName} ${idx}`}
+                          level={level}
+                        >
+                          {level}
+                        </LevelStyled>
+                      );
+                    })}
+                  </Box>
+                ) : null}
               </Box>
             ) : (
               <Text
@@ -167,4 +162,17 @@ const SlotNameStyled = styled(Box)`
     flex: 0 0 35px;
     margin: 0 10px;
   }
+`;
+
+const LevelStyled = styled(Box)`
+  margin-right: 6px;
+  color: ${(props) => {
+    if (props.level < 20) {
+      return "#ffffff";
+    } else if (props.level > 20 && props.level < 51) {
+      return "#68D5ED";
+    } else {
+      return "#B36BFF";
+    }
+  }};
 `;

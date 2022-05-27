@@ -7,7 +7,6 @@ import Header from "../components/Header/Header";
 import AcquireEpicConcept from "../components/Concept/AcquireEpicConcept";
 import ConceptSelect from "../components/Concept/ConceptSelect";
 import WearItem from "../components/Concept/WearItem";
-import EquipEpicConcept from "../components/Concept/EquipEpicConcept";
 import Footer from "../components/Footer";
 
 import { EpicConcept, EpicInfoEquip } from "../public/epic";

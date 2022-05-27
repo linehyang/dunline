@@ -2,6 +2,20 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { format } from "date-fns";
 
+type TimeLineType = {
+  code: number;
+  name: string;
+  date: string;
+  data: {
+    itemId: string;
+    itemName: string;
+    itemRarity: string;
+    channelName: string;
+    channelNo: number;
+    dungeonName: string;
+  };
+};
+
 const API_KEY = process.env.NEXT_PUBLIC_DF_APIKEY;
 const ENDPOINT = "https://api.neople.co.kr/df";
 const TIMELINE_LIMIT = 100;
@@ -73,13 +87,13 @@ export default async function handler(
     }
 
     //획득한 에픽 itemId만 가져오기
-    const array = acquire.map((el: any) => {
-      return `${el.data.itemId}`;
+    const array = acquire.map((timeLine: TimeLineType) => {
+      return `${timeLine.data.itemId}`;
     });
 
     // 중복에픽 체크
-    const result = array.filter((el: string, idx: number) => {
-      return array.indexOf(el) === idx;
+    const result = array.filter((item: string, idx: number) => {
+      return array.indexOf(item) === idx;
     });
 
     return res.status(200).json(result);

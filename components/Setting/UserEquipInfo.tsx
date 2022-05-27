@@ -3,46 +3,10 @@ import { Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import styled from "@emotion/styled";
 
-import EpicItemToolTip from "../Others/EpicItemToolTip";
 import InGameEpicConcept from "./InGameEpicConcept";
-
 import { SERVER_LIST } from "../../interface/characterSearch";
-
-type EquipmentType = {
-  amplificationName: string;
-  enchant: {
-    explain?: string;
-    status?: {
-      name: string;
-      value: number;
-    };
-  };
-  itemAvailableLevel: number;
-  itemGradeName: string;
-  itemId: string;
-  itemName: string;
-  itemRarity: string;
-  itemType: string;
-  itemTypeDetail: string;
-  refine: number;
-  reinforce: number;
-  slotId: string;
-  slotName: string;
-};
-
-type UserEquipInfoType = {
-  adventureName: string;
-  characterId: string;
-  characterName: string;
-  equipment: EquipmentType[];
-  guildId: string;
-  guildName: string;
-  jobGrowId: string;
-  jobGrowName: string;
-  jobId: string;
-  jobName: string;
-  level: number;
-};
+import { UserEquipInfoType } from "../../interface/equipInfo";
+import UserWearEquip from "./UserWearEquip";
 
 const LEFT_EQUIP_SLOT_IDS = ["SHOULDER", "JACKET", "PANTS", "WAIST", "SHOES"];
 const RIGHT_EQUIP_SLOT_IDS = [
@@ -56,11 +20,11 @@ const RIGHT_EQUIP_SLOT_IDS = [
   "MAGIC_STON",
 ];
 
-type Props = {
+interface Props {
   data: UserEquipInfoType;
   conceptSelect: string[];
   hoverWearItem: (concept: string[]) => void;
-};
+}
 
 //server와 characterid를 받아와 해당 캐릭터 장착 장비를 확인하는 컴포넌트
 export default function UserEquipInfo({
@@ -122,118 +86,18 @@ export default function UserEquipInfo({
         </Box>
         <Box display="flex" justifyContent="space-between">
           {leftEquip && (
-            <Box
-              display="flex"
-              width="90px"
-              flexWrap="wrap"
-              alignContent="flex-start"
-            >
-              {leftEquip.map((equipItemInfo, idx) =>
-                equipItemInfo ? (
-                  <EpicItemToolTip
-                    key={
-                      equipItemInfo
-                        ? `left ${equipItemInfo!.itemId}`
-                        : `left ${LEFT_EQUIP_SLOT_IDS[idx]} ${idx}}`
-                    }
-                    itemName={equipItemInfo!.itemName}
-                  >
-                    <Box
-                      position="relative"
-                      border={
-                        conceptSelect.includes(equipItemInfo.itemName)
-                          ? "2px solid #FFD065"
-                          : ""
-                      }
-                      width="40px"
-                      height="40px"
-                      marginBottom="2px"
-                      marginRight="2px"
-                    >
-                      <Image
-                        src={`https://img-api.neople.co.kr/df/items/${
-                          equipItemInfo!.itemId
-                        }`}
-                        alt={`에픽아이템 ${equipItemInfo!.slotId}`}
-                        layout="fill"
-                      />
-                    </Box>
-                  </EpicItemToolTip>
-                ) : (
-                  <Box
-                    key={`${LEFT_EQUIP_SLOT_IDS[idx]} ${idx}}`}
-                    position="relative"
-                    width="40px"
-                    height="40px"
-                    marginBottom="2px"
-                    marginRight="2px"
-                  >
-                    <Image
-                      src={`/images/emptySlot/${LEFT_EQUIP_SLOT_IDS[idx]}.png`}
-                      alt=""
-                      layout="fill"
-                    />
-                  </Box>
-                )
-              )}
-            </Box>
+            <UserWearEquip
+              data={data}
+              equipSlot={LEFT_EQUIP_SLOT_IDS}
+              conceptSelect={conceptSelect}
+            />
           )}
           {rightEquip && (
-            <Box
-              display="flex"
-              width="90px"
-              flexWrap="wrap"
-              alignContent="flex-start"
-            >
-              {rightEquip.map((equipItemInfo, idx) =>
-                equipItemInfo ? (
-                  <EpicItemToolTip
-                    key={
-                      equipItemInfo
-                        ? `right ${equipItemInfo!.itemId}`
-                        : `right ${RIGHT_EQUIP_SLOT_IDS[idx]} `
-                    }
-                    itemName={equipItemInfo!.itemName}
-                  >
-                    <Box
-                      position="relative"
-                      border={
-                        conceptSelect.includes(equipItemInfo.itemName)
-                          ? "2px solid #FFD065"
-                          : ""
-                      }
-                      width="40px"
-                      height="40px"
-                      marginBottom="2px"
-                      marginRight="2px"
-                    >
-                      <Image
-                        src={`https://img-api.neople.co.kr/df/items/${
-                          equipItemInfo!.itemId
-                        }`}
-                        alt={`에픽아이템 ${equipItemInfo!.slotId}`}
-                        layout="fill"
-                      />
-                    </Box>
-                  </EpicItemToolTip>
-                ) : (
-                  <Box
-                    key={`${RIGHT_EQUIP_SLOT_IDS[idx]} ${idx}}`}
-                    position="relative"
-                    width="40px"
-                    height="40px"
-                    marginBottom="2px"
-                    marginRight="2px"
-                  >
-                    <Image
-                      src={`/images/emptySlot/${RIGHT_EQUIP_SLOT_IDS[idx]}.png`}
-                      alt=""
-                      layout="fill"
-                    />
-                  </Box>
-                )
-              )}
-            </Box>
+            <UserWearEquip
+              data={data}
+              equipSlot={RIGHT_EQUIP_SLOT_IDS}
+              conceptSelect={conceptSelect}
+            />
           )}
         </Box>
       </ResponsiveWearBox>

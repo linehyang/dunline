@@ -11,9 +11,9 @@ export type ConceptSelectOptionValue = {
   label: string;
 };
 
-type Props = {
+interface Props {
   onChange: (concept: ConceptSelectOptionValue[]) => void;
-};
+}
 
 export default function ConceptSelect({ onChange }: Props) {
   const selectCustomStyles: StylesConfig = {
