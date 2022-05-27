@@ -10,9 +10,9 @@ import {
   Box,
 } from "@chakra-ui/react";
 
-type Props = {
+interface Props {
   onClose: () => void;
-};
+}
 
 export default function ErrorModal({ onClose }: Props) {
   return (
