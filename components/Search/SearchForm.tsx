@@ -17,6 +17,7 @@ const initialSearchFormValue = {
   serverName: "all",
   characterName: "",
 };
+
 type SearchFormValue = typeof initialSearchFormValue;
 
 interface Props {

@@ -9,10 +9,11 @@ import {
   UserEquipInfoType,
   GrowInfoType,
 } from "../../interface/equipInfo";
+import { Options } from "react-select";
 
-type Props = {
+interface Props {
   data: UserEquipInfoType;
-};
+}
 
 const EQUIP_SLOT_IDS = [
   "WEAPON",
@@ -68,12 +69,21 @@ export default function UserEquipDetail({ data }: Props) {
     if (!options) {
       return;
     }
-    return options.map(({ level }, idx) => {
-      if (idx === 3) {
-        return ` ${level}`;
-      }
-      return ` ${level} /`;
+
+    return options.map(({ level }) => {
+      return level;
     });
+  };
+
+  const growInfoTotalLevel = (options: GrowInfoType[]) => {
+    if (!options) {
+      return;
+    }
+    let result = 0;
+
+    options.forEach(({ level }) => (result += level));
+
+    return result;
   };
 
   return (
@@ -113,13 +123,29 @@ export default function UserEquipDetail({ data }: Props) {
                 >
                   {equipt.itemName}
                 </Box>
-                <Box fontSize="13px">
-                  {equipt.growInfo
-                    ? growInfoExchange(
-                        equipt.growInfo?.options as GrowInfoType[]
-                      )
-                    : null}
-                </Box>
+                {equipt.growInfo ? (
+                  <Box fontSize="14px" display="flex">
+                    {growInfoExchange(
+                      equipt.growInfo?.options as GrowInfoType[]
+                    )?.map((level, idx) => {
+                      return (
+                        <LevelStyled
+                          key={`InGame GrowInfo ${equipt.itemName} ${idx}`}
+                          level={level}
+                        >
+                          {level}
+                        </LevelStyled>
+                      );
+                    })}
+                    {equipt.growInfo ? (
+                      <Box>
+                        {growInfoTotalLevel(
+                          equipt.growInfo?.options as GrowInfoType[]
+                        )}
+                      </Box>
+                    ) : null}
+                  </Box>
+                ) : null}
               </Box>
             ) : (
               <Text
@@ -156,4 +182,17 @@ const SlotNameStyled = styled(Box)`
     flex: 0 0 35px;
     margin: 0 10px;
   }
+`;
+
+const LevelStyled = styled(Box)`
+  margin-right: 6px;
+  color: ${(props) => {
+    if (props.level < 20) {
+      return "#ffffff";
+    } else if (props.level > 20 && props.level < 51) {
+      return "#68D5ED";
+    } else {
+      return "#B36BFF";
+    }
+  }};
 `;

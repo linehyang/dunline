@@ -3,7 +3,6 @@ import { Box } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import styled from "@emotion/styled";
 
-import EpicItemToolTip from "../Others/EpicItemToolTip";
 import InGameEpicConcept from "./InGameEpicConcept";
 import { SERVER_LIST } from "../../interface/characterSearch";
 import { UserEquipInfoType } from "../../interface/equipInfo";
@@ -21,11 +20,11 @@ const RIGHT_EQUIP_SLOT_IDS = [
   "MAGIC_STON",
 ];
 
-type Props = {
+interface Props {
   data: UserEquipInfoType;
   conceptSelect: string[];
   hoverWearItem: (concept: string[]) => void;
-};
+}
 
 //server와 characterid를 받아와 해당 캐릭터 장착 장비를 확인하는 컴포넌트
 export default function UserEquipInfo({

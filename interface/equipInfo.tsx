@@ -1,4 +1,4 @@
-export type EquipmentType = {
+export interface EquipmentType {
   amplificationName: string;
   enchant: {
     explain?: string;
@@ -25,9 +25,9 @@ export type EquipmentType = {
   reinforce: number;
   slotId: string;
   slotName: string;
-};
+}
 
-export type UserEquipInfoType = {
+export interface UserEquipInfoType {
   adventureName: string;
   characterId: string;
   characterName: string;
@@ -39,12 +39,11 @@ export type UserEquipInfoType = {
   jobId: string;
   jobName: string;
   level: number;
-};
-
-export type GrowInfoType = {
+}
+export interface GrowInfoType {
   level: number;
   expRate: number;
   explain: string;
   explainDetail: string;
   damage: number;
-};
+}
