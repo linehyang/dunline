@@ -9,6 +9,7 @@ import {
   UserEquipInfoType,
   GrowInfoType,
 } from "../../interface/equipInfo";
+import { Options } from "react-select";
 
 interface Props {
   data: UserEquipInfoType;
@@ -68,9 +69,21 @@ export default function UserEquipDetail({ data }: Props) {
     if (!options) {
       return;
     }
-    return options.map(({ level }, idx) => {
+
+    return options.map(({ level }) => {
       return level;
     });
+  };
+
+  const growInfoTotalLevel = (options: GrowInfoType[]) => {
+    if (!options) {
+      return;
+    }
+    let result = 0;
+
+    options.forEach(({ level }) => (result += level));
+
+    return result;
   };
 
   return (
@@ -124,6 +137,13 @@ export default function UserEquipDetail({ data }: Props) {
                         </LevelStyled>
                       );
                     })}
+                    {equipt.growInfo ? (
+                      <Box>
+                        {growInfoTotalLevel(
+                          equipt.growInfo?.options as GrowInfoType[]
+                        )}
+                      </Box>
+                    ) : null}
                   </Box>
                 ) : null}
               </Box>

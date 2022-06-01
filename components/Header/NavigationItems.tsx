@@ -1,7 +1,8 @@
 import type { ReactNode, ReactElement } from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, useDisclosure } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import Link from "next/link";
+import UserGuide from "./UserGuide";
 
 const StyledBox = styled(Box)`
   display: flex;
@@ -67,6 +68,8 @@ export default function NavigationItems({
   QuestionElement,
   ParentComponent = <></>,
 }: Props) {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <ParentComponent.type {...ParentComponent.props}>
       <StyledBox as="ul" fontSize="14px" fontWeight="500">
@@ -93,10 +96,19 @@ export default function NavigationItems({
             passHref
             prefetch={false}
           >
-            <a>컨셉별 득템 현황</a>
+            <a>컨셉 커스텀</a>
           </Link>
         </Box>
-        <Box as="li">사용 가이드</Box>
+        <Box
+          as="li"
+          onClick={onOpen}
+          _hover={{
+            cursor: "pointer",
+          }}
+        >
+          사용 가이드
+          <UserGuide isOpen={isOpen} onClose={onClose} />
+        </Box>
         <Box as="li">{QuestionElement}</Box>
       </StyledBox>
     </ParentComponent.type>
