@@ -45,6 +45,7 @@ const Home: NextPage = () => {
             }}
           />
         </Box>
+
         <Footer />
       </Box>
     </>
