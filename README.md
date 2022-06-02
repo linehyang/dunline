@@ -15,4 +15,4 @@
 
 
 ## 배포 링크
-https://dunline.vercel.app/
+https://dunline.kr
