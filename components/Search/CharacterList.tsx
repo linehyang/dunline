@@ -80,6 +80,8 @@ export default function CharacterList({ url }: Props) {
                           src={`https://img-api.neople.co.kr/df/servers/${serverId}/characters/${characterId}?zoom=3`}
                           layout="fill"
                           alt={`${characterName}의 정보`}
+                          placeholder="blur"
+                          blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
                         />
                       </AspectRatio>
                     </Box>

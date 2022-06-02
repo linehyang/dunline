@@ -81,6 +81,8 @@ export default function AcquireEpicConcept({
                       alt={"에픽아이템"}
                       width={"30px"}
                       height={"30px"}
+                      placeholder="blur"
+                      blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
                       onClick={() => {
                         setWearItem({
                           ...wearItem,

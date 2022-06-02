@@ -48,6 +48,8 @@ export default function UserWearEquip({
                 }`}
                 alt={`에픽아이템 ${equipItemInfo!.slotId}`}
                 layout="fill"
+                placeholder="blur"
+                blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
               />
             </Box>
           </EpicItemToolTip>
@@ -64,6 +66,8 @@ export default function UserWearEquip({
               src={`/images/emptySlot/${equipSlot[idx]}.png`}
               alt=""
               layout="fill"
+              placeholder="blur"
+              blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
             />
           </Box>
         )
