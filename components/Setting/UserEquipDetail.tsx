@@ -9,7 +9,6 @@ import {
   UserEquipInfoType,
   GrowInfoType,
 } from "../../interface/equipInfo";
-import { Options } from "react-select";
 
 interface Props {
   data: UserEquipInfoType;
