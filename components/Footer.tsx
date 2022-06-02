@@ -14,11 +14,7 @@ export default function Footer() {
     >
       <Box fontSize="sm">© DUNLINE. All rights reserved.</Box>
       <Box position="relative" width="190px" height="18px">
-        <Link
-          href="https://open.kakao.com/o/s3Dh8Afe"
-          passHref
-          prefetch={false}
-        >
+        <Link href="https://developers.neople.co.kr/" passHref prefetch={false}>
           <a>
             <Image
               src="/images/footer_neople/footer_neople@2x.png"
