@@ -68,6 +68,8 @@ function Header({ server, characterid, showLogo }: Props) {
                   src="/images/dunline_logo/dunline_logo@2x.png"
                   alt="홈으로 이동"
                   layout="fill"
+                  placeholder="blur"
+                  blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
                 />
               </a>
             </Link>

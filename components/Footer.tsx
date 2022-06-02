@@ -24,6 +24,8 @@ export default function Footer() {
               src="/images/footer_neople/footer_neople@2x.png"
               alt="footer API Link"
               layout="fill"
+              placeholder="blur"
+              blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
             />
           </a>
         </Link>

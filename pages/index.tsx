@@ -35,6 +35,8 @@ const Home: NextPage = () => {
               src="/images/dunline_logo/dunline_logo_box@2x.png"
               alt="dunline hearder logo"
               layout="fill"
+              placeholder="blur"
+              blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
             />
           </AspectRatio>
           <SearchForm
