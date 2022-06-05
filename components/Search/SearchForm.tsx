@@ -22,13 +22,9 @@ type SearchFormValue = typeof initialSearchFormValue;
 
 interface Props {
   handleSubmit: (url: string) => void;
-  search?: {
-    serverName: string | undefined;
-    characterName: string | undefined;
-  };
 }
 
-export default function SearchForm({ handleSubmit, search }: Props) {
+export default function SearchForm({ handleSubmit }: Props) {
   const router = useRouter();
   const { serverName, characterName } = router.query;
 
@@ -37,9 +33,13 @@ export default function SearchForm({ handleSubmit, search }: Props) {
     reset,
     handleSubmit: handleFormSubmit,
   } = useForm<SearchFormValue>({
-    defaultValues: search
-      ? (search as SearchFormValue)
-      : initialSearchFormValue,
+    defaultValues:
+      serverName && characterName
+        ? {
+            serverName: serverName as string,
+            characterName: characterName as string,
+          }
+        : initialSearchFormValue,
   });
 
   useEffect(() => {

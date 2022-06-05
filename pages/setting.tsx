@@ -1,8 +1,8 @@
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import useSWR from "swr";
 import { Box, VisuallyHidden, Heading } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import { useState } from "react";
 
 import UserEquipInfo from "../components/Setting/UserEquipInfo";
 import UserEquipDetail from "../components/Setting/UserEquipDetail";
@@ -15,13 +15,24 @@ function Setting() {
   const router = useRouter();
   const { server, characterid } = router.query;
 
-  const [conceptSelect, setConceptSelect] = useState<string[]>([]);
-
-  const url = `api/userEquipInfo?server=${server}&characterid=${characterid}`;
-
+  const [invalidParamsError, setInvalidParamsError] = useState(false);
+  const [url, setUrl] = useState<string | null>(null);
   const { data } = useSWR<UserEquipInfoType>(url);
 
-  if (server === undefined || characterid === undefined) {
+  const [conceptSelect, setConceptSelect] = useState<string[]>([]);
+
+  useEffect(() => {
+    if (router.isReady) {
+      if (server === undefined || characterid === undefined) {
+        setInvalidParamsError(true);
+        return;
+      }
+
+      setUrl(`api/userEquipInfo?server=${server}&characterid=${characterid}`);
+    }
+  }, [router.isReady]);
+
+  if (invalidParamsError) {
     return (
       <ErrorModal
         onClose={() => {

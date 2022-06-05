@@ -7,27 +7,14 @@ import Image from "next/image";
 import NavigationItems from "./NavigationItems";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
+
+import { generateSearchParams } from "../../util/characterSearchUtil";
 import KakaoLogo from "../../public/images/ic_kakao.svg";
 
 type Props = {
   server?: string | string[];
   characterid?: string | string[];
   showLogo?: boolean;
-};
-
-const generateSearchParams = ({
-  pathname,
-  server,
-  characterid,
-}: {
-  pathname: string;
-  server?: string | string[];
-  characterid?: string | string[];
-}) => {
-  if (server && characterid) {
-    return `${pathname}?server=${server}&characterid=${characterid}`;
-  }
-  return pathname;
 };
 
 function Header({ server, characterid, showLogo }: Props) {
@@ -54,15 +41,7 @@ function Header({ server, characterid, showLogo }: Props) {
       <HeaderBody>
         <Box position="relative" width="120px" height="38px">
           {showLogo && (
-            <Link
-              href={generateSearchParams({
-                pathname: "/",
-                server,
-                characterid,
-              })}
-              passHref
-              prefetch={false}
-            >
+            <Link href="/" passHref prefetch={false}>
               <a>
                 <Image
                   src="/images/dunline_logo/dunline_logo.png"
@@ -136,7 +115,7 @@ const HeaderBody = styled(Box)`
     flex-direction: column;
     padding: 20px;
 
-    & > :first-child {
+    & > :first-of-type {
       margin-left: -12px;
     }
   }
