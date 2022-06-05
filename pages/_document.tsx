@@ -41,17 +41,17 @@ export default class MyDocument extends Document {
           <link rel="icon" href="images/dunline_logo/dunline_logo.png" />
           <meta
             name="description"
-            content="DunLine - 던전앤파이터 105레벨 에픽장비 득템여부 확인, 컨셉별 아이템 세팅 가이드 "
+            content="던라인 - 던전앤파이터 105레벨 에픽장비 득템여부 확인, 컨셉별 아이템 세팅 가이드 "
           />
           <meta property="og:title" content="DunLine" />
-          {/* <meta property="og:url" content="https://www.naver.com/" /> */}
+          <meta property="og:url" content="https://dunline.kr/" />
           <meta
             property="og:image"
             content="/images/dunline_logo/dunline_logo.png"
           />
           <meta
             property="og:description"
-            content="DunLine - 던전앤파이터 105레벨 에픽장비 득템여부 확인, 컨셉별 아이템 세팅 가이드 "
+            content="던라인 - 던전앤파이터 105레벨 에픽장비 득템여부 확인, 컨셉별 아이템 세팅 가이드 "
           />
         </Head>
         <body>

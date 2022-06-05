@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
-import { AspectRatio, Box } from "@chakra-ui/react";
+import { AspectRatio, Box, VisuallyHidden, Heading } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Image from "next/image";
 
@@ -17,6 +17,9 @@ const Home: NextPage = () => {
         <title>DUNLINE</title>
       </Head>
       <Box display="flex" flexDirection="column" height="100%">
+        <VisuallyHidden>
+          <Heading as="h1">DUNLINE - 던라인</Heading>
+        </VisuallyHidden>
         <Header />
         <Box
           as="main"
