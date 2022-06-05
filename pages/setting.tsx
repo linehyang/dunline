@@ -1,6 +1,6 @@
 import Head from "next/head";
 import useSWR from "swr";
-import { Box } from "@chakra-ui/react";
+import { Box, VisuallyHidden, Heading } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
@@ -40,6 +40,9 @@ function Setting() {
       <Head>
         <title>DUNLINE - 캐릭터 인게임 정보</title>
       </Head>
+      <VisuallyHidden>
+        <Heading as="h1">던라인 - 인게임 세팅</Heading>
+      </VisuallyHidden>
       <Box display="flex" flexDirection="column" height="100%">
         <Header server={server} characterid={characterid} showLogo />
         <Box
