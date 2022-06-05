@@ -38,7 +38,7 @@ export default class MyDocument extends Document {
             href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"
             crossOrigin="anonymous"
           />
-          <link rel="icon" href="images/dunline_logo/dunline_logo_box@2x.png" />
+          <link rel="icon" href="images/dunline_logo/dunline_logo.png" />
           <meta
             name="description"
             content="DunLine - 던전앤파이터 105레벨 에픽장비 득템여부 확인, 컨셉별 아이템 세팅 가이드 "
@@ -47,7 +47,7 @@ export default class MyDocument extends Document {
           {/* <meta property="og:url" content="https://www.naver.com/" /> */}
           <meta
             property="og:image"
-            content="/images/dunline_logo/dunline_logo_box@2x.png"
+            content="/images/dunline_logo/dunline_logo.png"
           />
           <meta
             property="og:description"
