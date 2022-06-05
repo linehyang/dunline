@@ -17,7 +17,7 @@ interface Props {
 
 export default function UserGuide({ isOpen, onClose }: Props) {
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <Modal isOpen={isOpen} onClose={onClose} scrollBehavior="inside">
       <ModalOverlay background="#000000" />
       <ModalContent>
         <ModalHeader color="#000000" fontSize="17px" fontWeight="700">

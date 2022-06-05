@@ -2,7 +2,10 @@ import type { ReactNode, ReactElement } from "react";
 import { Box, useDisclosure } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
 import UserGuide from "./UserGuide";
+import { generateSearchParams } from "../../util/characterSearchUtil";
 
 const StyledBox = styled(Box)`
   display: flex;
@@ -40,21 +43,6 @@ const StyledBox = styled(Box)`
   }
 `;
 
-const generateSearchParams = ({
-  pathname,
-  server,
-  characterid,
-}: {
-  pathname: string;
-  server?: string | string[];
-  characterid?: string | string[];
-}) => {
-  if (server && characterid) {
-    return `${pathname}?server=${server}&characterid=${characterid}`;
-  }
-  return pathname;
-};
-
 interface Props {
   server: string;
   characterid: string;
@@ -68,12 +56,16 @@ export default function NavigationItems({
   QuestionElement,
   ParentComponent = <></>,
 }: Props) {
+  const route = useRouter();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <ParentComponent.type {...ParentComponent.props}>
       <StyledBox as="ul" fontSize="14px" fontWeight="500">
-        <Box as="li">
+        <Box
+          as="li"
+          color={route.pathname === "/setting" ? "#e93325" : "inherit"}
+        >
           <Link
             href={generateSearchParams({
               pathname: "/setting",
@@ -86,7 +78,10 @@ export default function NavigationItems({
             <a>인게임 정보</a>
           </Link>
         </Box>
-        <Box as="li">
+        <Box
+          as="li"
+          color={route.pathname === "/concept" ? "#e93325" : "inherit"}
+        >
           <Link
             href={generateSearchParams({
               pathname: "/concept",

@@ -9,7 +9,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
-  const [url, setUrl] = useState<string | null>(null);
+  const [_, setUrl] = useState<string | null>(null);
 
   return (
     <>

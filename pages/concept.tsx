@@ -15,6 +15,20 @@ type EpicConceptKeyType = keyof typeof EpicConcept;
 type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;
 type OptionValue = { value: EpicConceptKeyType; label: string };
 
+const DEFAULT_WEARITEMS = {
+  SHOULDER: "",
+  JACKET: "",
+  PANTS: "",
+  WAIST: "",
+  SHOES: "",
+  WRIST: "",
+  AMULET: "",
+  SUPPORT: "",
+  RING: "",
+  EARRING: "",
+  MAGIC_STON: "",
+};
+
 function Concept() {
   const router = useRouter();
   const { server, characterid } = router.query;
@@ -23,21 +37,8 @@ function Concept() {
   const [conceptSelect, setConceptSelect] = useState<
     { itemId: string; itemName: string }[]
   >([]);
-  const [wearItem, setWearItem] = useState<
-    Record<EpicInfoEquipKeyType, string>
-  >({
-    SHOULDER: "",
-    JACKET: "",
-    PANTS: "",
-    WAIST: "",
-    SHOES: "",
-    WRIST: "",
-    AMULET: "",
-    SUPPORT: "",
-    RING: "",
-    EARRING: "",
-    MAGIC_STON: "",
-  });
+  const [wearItem, setWearItem] =
+    useState<Record<EpicInfoEquipKeyType, string>>(DEFAULT_WEARITEMS);
 
   return (
     <>
@@ -59,21 +60,9 @@ function Concept() {
         >
           <WearItem
             wearItem={wearItem}
-            resetWearItem={() =>
-              setWearItem({
-                SHOULDER: "",
-                JACKET: "",
-                PANTS: "",
-                WAIST: "",
-                SHOES: "",
-                WRIST: "",
-                AMULET: "",
-                SUPPORT: "",
-                RING: "",
-                EARRING: "",
-                MAGIC_STON: "",
-              })
-            }
+            resetWearItem={() => {
+              setWearItem(DEFAULT_WEARITEMS);
+            }}
             toggleWearItem={(slotId) => {
               setWearItem({
                 ...wearItem,
