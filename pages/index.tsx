@@ -27,16 +27,14 @@ const Home: NextPage = () => {
           padding="0 20px"
         >
           <AspectRatio
-            ratio={454 / 142}
+            ratio={227 / 71}
             maxWidth="454px"
             margin="43px auto 50px"
           >
             <Image
-              src="/images/dunline_logo/dunline_logo_box@2x.png"
+              src="/images/dunline_logo/dunline_logo_box.webp"
               alt="dunline hearder logo"
               layout="fill"
-              placeholder="blur"
-              blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
             />
           </AspectRatio>
           <SearchForm
