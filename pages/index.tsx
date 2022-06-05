@@ -38,6 +38,7 @@ const Home: NextPage = () => {
               src="/images/dunline_logo/dunline_logo_box.webp"
               alt="dunline hearder logo"
               layout="fill"
+              priority
             />
           </AspectRatio>
           <SearchForm

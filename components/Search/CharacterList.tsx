@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Link from "next/link";
 import { Box, AspectRatio } from "@chakra-ui/react";
 import styled from "@emotion/styled";
@@ -44,9 +44,6 @@ export default function CharacterList({ url }: Props) {
               flexDirection="column"
               padding="15px 10px"
               position="relative"
-              // _hover={{
-              //   transform: "scale(1.1)",
-              // }}
             >
               <Link
                 href={`/setting?server=${serverId}&characterid=${characterId}`}
@@ -80,8 +77,6 @@ export default function CharacterList({ url }: Props) {
                           src={`https://img-api.neople.co.kr/df/servers/${serverId}/characters/${characterId}?zoom=3`}
                           layout="fill"
                           alt={`${characterName}의 정보`}
-                          placeholder="blur"
-                          blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
                         />
                       </AspectRatio>
                     </Box>
