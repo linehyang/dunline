@@ -68,6 +68,7 @@ function Header({ server, characterid, showLogo }: Props) {
                   src="/images/dunline_logo/dunline_logo.png"
                   alt="홈으로 이동"
                   layout="fill"
+                  priority
                 />
               </a>
             </Link>
