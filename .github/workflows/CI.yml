@@ -1,23 +1,16 @@
-name: CI (Test,lint,TSC)
+name: CI - Test
 on: push
 jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Install Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16
-        cache: 'yarn'
-    - name: Install dependencies
-      run: yarn install --frozen-lockfile
-    - name: Build app
-      run: yarn build
-    - name: Run tsc
-      run: tsc --noEmit
-    - name: Run eslint
-      run: yarn lint --silent
-    - name: Run tests
-      run: yarn test --silent
-
+      - uses: actions/checkout@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: "yarn"
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Run tests
+        run: yarn test --silent
