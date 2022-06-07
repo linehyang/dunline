@@ -53,6 +53,10 @@ export default class MyDocument extends Document {
             property="og:description"
             content="던라인 - 던전앤파이터 105레벨 에픽장비 득템여부 확인, 컨셉별 아이템 세팅 가이드 "
           />
+          <meta
+            name="google-site-verification"
+            content="_8VLTExsiIaXorCRPcs6E0VBkJVnsyY4n21LCdG1aEc"
+          />
         </Head>
         <body>
           <Main />
