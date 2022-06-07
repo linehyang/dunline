@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dunline.kr/
+
+# Sitemaps
+Sitemap: https://dunline.kr/sitemap.xml
