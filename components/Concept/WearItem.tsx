@@ -1,7 +1,7 @@
 import { Box, useToast, IconButton } from "@chakra-ui/react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import useSWR from "swr";
+
 import styled from "@emotion/styled";
 import { GrPowerReset } from "react-icons/gr";
 
@@ -20,6 +20,7 @@ interface Props {
   toggleWearItem: (slotId: string) => void;
   hoveredConcept: { itemId: string; itemName: string }[];
   hoverWearItem: (concept: { itemId: string; itemName: string }[]) => void;
+  data: UserEquipInfoType;
 }
 
 const LEFT_EQUIP_SLOT_IDS = ["SHOULDER", "JACKET", "PANTS", "WAIST", "SHOES"];
@@ -38,14 +39,11 @@ export default function WearItem({
   toggleWearItem,
   hoveredConcept,
   hoverWearItem,
+  data,
 }: Props) {
   const router = useRouter();
   const { server, characterid } = router.query;
   const toast = useToast();
-
-  const url = `api/userEquipInfo?server=${server}&characterid=${characterid}`;
-
-  const { data } = useSWR<UserEquipInfoType>(url);
 
   const leftEquip = Object.entries(wearItem)
     .filter(([key]) => LEFT_EQUIP_SLOT_IDS.includes(key))

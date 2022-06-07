@@ -1,13 +1,15 @@
 import Head from "next/head";
 import { Box, Heading, VisuallyHidden } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import useSWR from "swr";
 
 import Header from "../components/Header/Header";
 import AcquireEpicConcept from "../components/Concept/AcquireEpicConcept";
 import ConceptSelect from "../components/Concept/ConceptSelect";
 import WearItem from "../components/Concept/WearItem";
 import Footer from "../components/Footer";
+import { UserEquipInfoType } from "../interface/equipInfo";
 
 import { EpicConcept, EpicInfoEquip } from "../public/epic";
 
@@ -33,12 +35,31 @@ function Concept() {
   const router = useRouter();
   const { server, characterid } = router.query;
 
+  const url = `api/userEquipInfo?server=${server}&characterid=${characterid}`;
+
+  const { data } = useSWR<UserEquipInfoType>(url);
+
   const [selectedConcept, setSelectedConcept] = useState<OptionValue[]>([]);
   const [conceptSelect, setConceptSelect] = useState<
     { itemId: string; itemName: string }[]
   >([]);
   const [wearItem, setWearItem] =
     useState<Record<EpicInfoEquipKeyType, string>>(DEFAULT_WEARITEMS);
+
+  useEffect(() => {
+    const initailWearItem = data?.equipment
+      .map(({ slotId, itemId }) => {
+        if (Object.keys(wearItem).includes(slotId)) {
+          return { [slotId]: itemId };
+        }
+      })
+      .filter(Boolean)
+      .reduce((_, wearitem) => {
+        return { ..._, ...wearitem };
+      }, {});
+
+    setWearItem({ ...wearItem, ...initailWearItem });
+  }, [data]);
 
   return (
     <>
@@ -73,6 +94,7 @@ function Concept() {
             hoverWearItem={(concept) => {
               setConceptSelect(concept);
             }}
+            data={data as UserEquipInfoType}
           />
           <ConceptSelect onChange={setSelectedConcept} />
           <AcquireEpicConcept
