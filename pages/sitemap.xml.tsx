@@ -13,7 +13,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       // priority
     },
     {
-      loc: `${process.env.SITE_URL}/example` || "https://dunline.lr/example", // Absolute url
+      loc: `${process.env.SITE_URL}example` || "https://dunline.lr/example", // Absolute url
       lastmod: new Date().toISOString(),
       // changefreq
       // priority
