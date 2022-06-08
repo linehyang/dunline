@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
 import { Box, VisuallyHidden, Heading } from "@chakra-ui/react";
-import { useRouter } from "next/router";
 
 import SearchForm from "../components/Search/SearchForm";
 import CharacterList from "../components/Search/CharacterList";
@@ -9,22 +8,6 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer";
 
 function Search() {
-  // const router = useRouter();
-  // const { serverName, characterName } = router.query;
-
-  // const search = {
-  //   serverName: serverName as string,
-  //   characterName: characterName as string,
-  // };
-
-  // const [url, setUrl] = useState<string | null>(
-  //   search
-  //     ? `/api/search?serverName=${
-  //         search.serverName
-  //       }&characterName=${encodeURIComponent(search.characterName as string)}`
-  //     : null
-  // );
-
   const [url, setUrl] = useState<string | null>(null);
 
   return (
@@ -50,7 +33,6 @@ function Search() {
             handleSubmit={(url) => {
               setUrl(url);
             }}
-            // search={search}
           />
           <CharacterList url={url} />
         </Box>

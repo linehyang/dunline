@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Box, useToast } from "@chakra-ui/react";
 import Image from "next/image";
 
@@ -23,16 +24,34 @@ export default function ConceptWearItems({
   const toast = useToast();
 
   const equipItem = filterEquipItem(wearItem, equipSlot);
+  const [notSelectedConcept, setNotSelectedConcept] = useState([
+    {
+      slotId: "",
+      itemId: "",
+    },
+  ]);
+
+  useEffect(() => {
+    if (hoveredConcept) {
+      const notSelected = equipItem.filter(({ itemId }) => {
+        const filter = hoveredConcept.map((itemid) => {
+          return itemid.itemId;
+        });
+
+        return !filter.includes(itemId);
+      });
+
+      setNotSelectedConcept(notSelected);
+    } else {
+      return;
+    }
+  }, [hoveredConcept]);
 
   return (
     <Box display="flex" width="90px" flexWrap="wrap" alignContent="flex-start">
       {equipItem.map(({ slotId, itemId }, idx) => (
         <EpicItemToolTip
-          key={
-            slotId
-              ? `leftEquip ${itemId} ${idx}`
-              : `leftEquip ${equipSlot[idx]}`
-          }
+          key={slotId ? `Equip ${itemId} ${idx}` : `Equip ${equipSlot[idx]}`}
           itemName={convertItemName(itemId)}
         >
           <Box
@@ -51,6 +70,20 @@ export default function ConceptWearItems({
               hoveredConcept.findIndex((c) => c.itemId === itemId) > -1
                 ? "2px solid #FFD065"
                 : ""
+            }
+            opacity={
+              notSelectedConcept.length - hoveredConcept.length ===
+              notSelectedConcept.length
+                ? "1"
+                : notSelectedConcept
+                    .map((notselected) => {
+                      if (notselected.itemId === itemId) {
+                        return notselected.itemId;
+                      }
+                    })
+                    .includes(itemId)
+                ? "0.5"
+                : "1"
             }
             width="40px"
             height="40px"

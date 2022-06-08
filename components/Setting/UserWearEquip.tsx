@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Box } from "@chakra-ui/react";
 import Image from "next/image";
 
@@ -17,6 +18,22 @@ export default function UserWearEquip({
   conceptSelect,
 }: Props) {
   const userEquipEpic = filterInGameEquipItem(equipSlot, data);
+  const [notConceptSelect, setNotConceptSelect] = useState<string[]>([]);
+
+  useEffect(() => {
+    if (conceptSelect) {
+      const notSelected = data?.equipment
+        .map(({ itemName }) => {
+          if (!conceptSelect.includes(itemName)) {
+            return itemName;
+          }
+        })
+        .filter(Boolean);
+      setNotConceptSelect(notSelected as string[]);
+    } else {
+      return;
+    }
+  }, [conceptSelect]);
 
   return (
     <Box display="flex" width="90px" flexWrap="wrap" alignContent="flex-start">
@@ -36,6 +53,14 @@ export default function UserWearEquip({
                 conceptSelect.includes(equipItemInfo.itemName)
                   ? "2px solid #FFD065"
                   : ""
+              }
+              opacity={
+                notConceptSelect.length - conceptSelect.length ===
+                notConceptSelect.length
+                  ? "1"
+                  : notConceptSelect.includes(equipItemInfo.itemName)
+                  ? "0.5"
+                  : "1"
               }
               width="40px"
               height="40px"
