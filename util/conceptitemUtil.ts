@@ -16,3 +16,7 @@ export function filterEquipItem(
 export function convertItemName(itemId: string) {
   return EpicItems.find((v) => v.itemId === itemId)?.itemName;
 }
+
+export function convertItemId(itemName: string) {
+  return EpicItems.find((v) => v.itemName === itemName)?.itemId;
+}

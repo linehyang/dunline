@@ -10,6 +10,7 @@ import ConceptSelect from "../components/Concept/ConceptSelect";
 import WearItem from "../components/Concept/WearItem";
 import Footer from "../components/Footer";
 import { UserEquipInfoType } from "../interface/equipInfo";
+import { convertItemId } from "../util/conceptitemUtil";
 
 import { EpicConcept, EpicInfoEquip } from "../public/epic";
 
@@ -48,9 +49,14 @@ function Concept() {
 
   useEffect(() => {
     const initailWearItem = data?.equipment
-      .map(({ slotId, itemId }) => {
-        if (Object.keys(wearItem).includes(slotId)) {
+      .map(({ slotId, itemName, itemId }) => {
+        const converItemId = convertItemId(itemName);
+
+        if (!converItemId) {
           return { [slotId]: itemId };
+        }
+        if (Object.keys(wearItem).includes(slotId)) {
+          return { [slotId]: converItemId };
         }
       })
       .filter(Boolean)

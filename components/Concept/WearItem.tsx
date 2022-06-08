@@ -158,7 +158,7 @@ export default function WearItem({
               textAlign="center"
               fontSize="16px"
             >
-              {data.characterName}
+              {data.adventureName}
             </Box>
             <Box
               color="#F96539"
