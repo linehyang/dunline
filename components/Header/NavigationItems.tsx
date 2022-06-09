@@ -1,10 +1,9 @@
 import type { ReactNode, ReactElement } from "react";
-import { Box, useDisclosure } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import UserGuide from "./UserGuide";
 import { generateSearchParams } from "../../util/characterSearchUtil";
 
 const StyledBox = styled(Box)`
@@ -57,7 +56,6 @@ export default function NavigationItems({
   ParentComponent = <></>,
 }: Props) {
   const route = useRouter();
-  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <ParentComponent.type {...ParentComponent.props}>
@@ -96,13 +94,11 @@ export default function NavigationItems({
         </Box>
         <Box
           as="li"
-          onClick={onOpen}
-          _hover={{
-            cursor: "pointer",
-          }}
+          color={route.pathname === "/userGuide" ? "#e93325" : "inherit"}
         >
-          사용 가이드
-          <UserGuide isOpen={isOpen} onClose={onClose} />
+          <Link href="/userGuide" passHref prefetch={false}>
+            <a>사용 가이드</a>
+          </Link>
         </Box>
         <Box as="li">{QuestionElement}</Box>
       </StyledBox>

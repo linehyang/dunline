@@ -7,3 +7,4 @@ Host: https://dunline.kr/
 
 # Sitemaps
 Sitemap: https://dunline.kr/sitemap.xml
+Sitemap: https://dunline.kr/server-sitemap.xml
