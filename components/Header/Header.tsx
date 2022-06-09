@@ -8,7 +8,6 @@ import NavigationItems from "./NavigationItems";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 
-import { generateSearchParams } from "../../util/characterSearchUtil";
 import KakaoLogo from "../../public/images/ic_kakao.svg";
 
 type Props = {
