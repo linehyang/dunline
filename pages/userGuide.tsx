@@ -9,7 +9,8 @@ function UserGuide() {
   return (
     <>
       <Head>
-        <title>DUNLINE - 이용 가이드</title>
+        <title>던라인 - 사용 가이드</title>
+        <meta name="description" content="사용 가이드 " />
       </Head>
       <VisuallyHidden>
         <Heading as="h1">던라인 - 이용가이드</Heading>

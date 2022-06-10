@@ -70,7 +70,8 @@ function Concept() {
   return (
     <>
       <Head>
-        <title>DUNLINE - 득템 여부 및 컨셉 확인</title>
+        <title>던라인 - 득템 여부 및 컨셉 커스텀</title>
+        <meta name="description" content="컨셉별 득템 여부 및 컨셉 커스텀 " />
       </Head>
       <VisuallyHidden>
         <Heading as="h1">던라인 - 컨셉 커스텀</Heading>

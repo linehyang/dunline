@@ -14,7 +14,15 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>DUNLINE</title>
+        <title>던라인</title>
+        <meta
+          name="description"
+          content="던라인 - 던전앤파이터 105레벨 에픽장비 득템여부 확인, 컨셉별 아이템 세팅 가이드 "
+        />
+        <meta
+          name="keywords"
+          content="던파, 던전앤파이터, 105레벨,애팍세팅, 컨셉, 커스텀"
+        />
       </Head>
       <Box display="flex" flexDirection="column" height="100%">
         <VisuallyHidden>
