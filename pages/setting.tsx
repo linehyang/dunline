@@ -49,7 +49,8 @@ function Setting() {
   return (
     <>
       <Head>
-        <title>DUNLINE - 캐릭터 인게임 정보</title>
+        <title>던라인 - 캐릭터 인게임 정보</title>{" "}
+        <meta name="description" content="캐릭터 인게임 정보 제공 " />
       </Head>
       <VisuallyHidden>
         <Heading as="h1">던라인 - 인게임 세팅</Heading>
