@@ -82,6 +82,7 @@ export default function UserEquipInfo({
             src={`https://img-api.neople.co.kr/df/servers/${server}/characters/${characterid}?zoom=3`}
             alt="epicinfo characterImage"
             layout="fill"
+            unoptimized={true}
             placeholder="blur"
             blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
           />

@@ -65,6 +65,7 @@ function UserGuide() {
                   src="/images/userGuide/home_search.png"
                   alt="userGuide home_search"
                   layout="fill"
+                  unoptimized={true}
                   priority
                 />
               </Box>
@@ -91,6 +92,7 @@ function UserGuide() {
                   src="/images/userGuide/search_character.png"
                   alt="userGuide search_character"
                   layout="fill"
+                  unoptimized={true}
                   priority
                 />
               </Box>
@@ -117,6 +119,7 @@ function UserGuide() {
                   src="/images/userGuide/setting_main.png"
                   alt="userGuide setting_user"
                   layout="fill"
+                  unoptimized={true}
                   priority
                 />
               </Box>
@@ -135,6 +138,7 @@ function UserGuide() {
                   src="/images/userGuide/setting_concept.png"
                   alt="userGuide setting_concept"
                   layout="fill"
+                  unoptimized={true}
                   priority
                 />
               </Box>
@@ -153,6 +157,7 @@ function UserGuide() {
                   src="/images/userGuide/setting_iteminfo.png"
                   alt="userGuide setting_concept"
                   layout="fill"
+                  unoptimized={true}
                   priority
                 />
               </Box>
@@ -179,6 +184,7 @@ function UserGuide() {
                   src="/images/userGuide/concept_character.png"
                   alt="userGuide setting_concept"
                   layout="fill"
+                  unoptimized={true}
                   priority
                 />
               </Box>
@@ -197,6 +203,7 @@ function UserGuide() {
                   src="/images/userGuide/concept_select.png"
                   alt="userGuide setting_concept"
                   layout="fill"
+                  unoptimized={true}
                   priority
                 />
               </Box>
@@ -216,6 +223,7 @@ function UserGuide() {
                   src="/images/userGuide/concept_notcharacter.png"
                   alt="userGuide setting_concept"
                   layout="fill"
+                  unoptimized={true}
                   priority
                 />
               </Box>

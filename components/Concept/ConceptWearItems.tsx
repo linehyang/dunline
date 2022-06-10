@@ -98,6 +98,7 @@ export default function ConceptWearItems({
               }
               alt={`에픽아이템 ${slotId}`}
               layout="fill"
+              unoptimized={true}
               placeholder="blur"
               blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
             />

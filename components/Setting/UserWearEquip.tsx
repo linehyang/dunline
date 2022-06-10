@@ -73,6 +73,7 @@ export default function UserWearEquip({
                 }`}
                 alt={`에픽아이템 ${equipItemInfo!.slotId}`}
                 layout="fill"
+                unoptimized={true}
                 placeholder="blur"
                 blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
               />
@@ -91,6 +92,7 @@ export default function UserWearEquip({
               src={`/images/emptySlot/${equipSlot[idx]}.png`}
               alt=""
               layout="fill"
+              unoptimized={true}
               placeholder="blur"
               blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
             />

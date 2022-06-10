@@ -76,6 +76,7 @@ export default function CharacterList({ url }: Props) {
                         <Image
                           src={`https://img-api.neople.co.kr/df/servers/${serverId}/characters/${characterId}?zoom=3`}
                           layout="fill"
+                          unoptimized={true}
                           alt={`${characterName}의 정보`}
                         />
                       </AspectRatio>

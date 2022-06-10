@@ -78,7 +78,8 @@ export default function AcquireEpicConcept({
                     </Box>
                     <Image
                       src={`https://img-api.neople.co.kr/df/items/${itemId}`}
-                      alt={"에픽아이템"}
+                      alt={`${itemName}에픽아이템`}
+                      unoptimized={true}
                       width={"30px"}
                       height={"30px"}
                       placeholder="blur"
