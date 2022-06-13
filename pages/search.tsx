@@ -16,7 +16,7 @@ function Search() {
         <title>던라인 - 캐릭터 검색</title>
         <meta
           name="description"
-          content="확인하고자 하는 캐릭터를 찾을 수 있습니다."
+          content="컨셉을 확인하고자 하는 캐릭터를 찾을 수 있습니다."
         />
       </Head>
       <VisuallyHidden>
