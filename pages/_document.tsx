@@ -39,14 +39,6 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <link rel="icon" href="images/dunline_logo/dunline_logo.png" />
-          <meta
-            name="description"
-            content="던라인 - 던전앤파이터 105레벨 에픽장비 득템여부 확인, 컨셉별 아이템 세팅 가이드 "
-          />
-          <meta
-            name="keywords"
-            content="던파, 던전앤파이터, 105레벨,화상, 감전 , 과소모, 애팍세팅, 컨셉"
-          />
           <meta property="og:site_name" content="던라인(Dunline)" />
           <meta property="og:title" content="던라인(Dunline)" />
           <meta property="og:url" content="https://dunline.kr/" />
