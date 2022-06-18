@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import { format } from "date-fns";
+import { format, sub } from "date-fns";
 
 type TimeLineType = {
   code: number;
@@ -20,9 +20,14 @@ const API_KEY = process.env.NEXT_PUBLIC_DF_APIKEY;
 const ENDPOINT = "https://api.neople.co.kr/df";
 const TIMELINE_LIMIT = 100;
 const TIMELINE_CODE = `504,505,509,515`;
-const START_DATA = "20220317T0000";
+// const START_DATA = "20220317T0000";
 const END_DATA = format(new Date(), "yyyyMMdd'T'HHmm");
-
+const START_DATA = format(
+  sub(new Date(), {
+    days: 90,
+  }),
+  "yyyyMMdd'T'HHmm"
+);
 //df api req timeline info url function
 const reqUrl = ({
   server,
