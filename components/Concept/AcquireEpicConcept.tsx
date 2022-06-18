@@ -41,9 +41,23 @@ export default function AcquireEpicConcept({
 
   if (!selectedConcept.length) {
     return (
-      <Box marginTop="50px" fontSize="25px">
-        컨셉이 설정되지 않았습니다.
-      </Box>
+      <>
+        <Box marginTop="50px" fontSize="25px">
+          컨셉이 설정되지 않았습니다.
+        </Box>
+        <Box fontSize="11px" marginTop="10px" color="gray">
+          * 공지 사항
+          <Box>
+            던전앤파이터 API 타임라인 조회는 한 번에 가져올 수 있는 데이터가
+            최대 90일로 제한되어 있습니다.
+          </Box>
+          <Box>
+            추후 DB 연결 전까지는 3월 17일부터 획득한 에픽 아이템을 확인하는
+            것이 아닌, 오늘을 기준으로 90일 전까지만 획득 아이템을 확인하게끔
+            변경해두었습니다.
+          </Box>
+        </Box>
+      </>
     );
   }
 
@@ -61,9 +75,9 @@ export default function AcquireEpicConcept({
             <Box display={"flex"} flexWrap={"wrap"}>
               {EpicItems.filter((epicItem) =>
                 epicItem.concepts?.includes(value)
-              ).map(({ itemId, itemName, parts }) => (
+              ).map(({ itemId, itemName, parts }, idx) => (
                 <EpicItemToolTip
-                  key={`${EpicConcept[value]}${itemName}`}
+                  key={`${EpicConcept[value]}${itemName} ${idx}`}
                   itemName={itemName}
                 >
                   <Box
