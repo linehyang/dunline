@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Box, useToast } from "@chakra-ui/react";
 import Image from "next/image";
 
-import { EpicInfoEquip } from "../../public/epic";
+import { EpicInfoEquip } from "../../data/epic";
 import { filterEquipItem, convertItemName } from "../../util/conceptitemUtil";
 import EpicItemToolTip from "../Others/EpicItemToolTip";
 

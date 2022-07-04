@@ -1,4 +1,4 @@
-import { EpicInfoEquip, EpicItems } from "../public/epic";
+import { EpicInfoEquip, EpicItems } from "../data/epic";
 
 type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;
 

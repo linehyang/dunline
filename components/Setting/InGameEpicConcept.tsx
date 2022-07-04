@@ -1,6 +1,6 @@
 import { Box, Tooltip } from "@chakra-ui/react";
 
-import { EpicItems, EpicConcept } from "../../public/epic";
+import { EpicItems, EpicConcept } from "../../data/epic";
 import styled from "@emotion/styled";
 
 type EquipmentType = {

@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 import { UserEquipInfoType } from "../interface/equipInfo";
 import { convertItemId } from "../util/conceptitemUtil";
 
-import { EpicConcept, EpicInfoEquip } from "../public/epic";
+import { EpicConcept, EpicInfoEquip } from "../data/epic";
 
 type EpicConceptKeyType = keyof typeof EpicConcept;
 type EpicInfoEquipKeyType = keyof typeof EpicInfoEquip;

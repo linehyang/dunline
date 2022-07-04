@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import styled from "@emotion/styled";
 import { GrPowerReset } from "react-icons/gr";
 
-import { EpicInfoEquip } from "../../public/epic";
+import { EpicInfoEquip } from "../../data/epic";
 import { SERVER_LIST } from "../../interface/characterSearch";
 import EquipEpicConcept from "../Concept/EquipEpicConcept";
 import { UserEquipInfoType } from "../../interface/equipInfo";

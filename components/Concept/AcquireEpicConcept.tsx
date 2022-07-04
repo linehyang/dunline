@@ -3,7 +3,7 @@ import useSWR from "swr";
 import Image from "next/image";
 import { Box, Text, useToast } from "@chakra-ui/react";
 
-import { EpicConcept, EpicItems, EpicInfoEquip } from "../../public/epic";
+import { EpicConcept, EpicItems, EpicInfoEquip } from "../../data/epic";
 
 import EpicItemToolTip from "../Others/EpicItemToolTip";
 

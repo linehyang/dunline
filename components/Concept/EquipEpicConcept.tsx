@@ -1,7 +1,7 @@
 import { Box, Tooltip } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
-import { EpicInfoEquip, EpicItems, EpicConcept } from "../../public/epic";
+import { EpicInfoEquip, EpicItems, EpicConcept } from "../../data/epic";
 
 interface Props {
   wearItem: Record<EpicInfoEquipKeyType, string>;

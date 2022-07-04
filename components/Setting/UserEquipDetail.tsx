@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Box, Text } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
-import { EpicInfoEquip } from "../../public/epic";
+import { EpicInfoEquip } from "../../data/epic";
 import { ITEM_RARITY } from "../../interface/itemRarityInfo";
 import {
   EquipmentType,

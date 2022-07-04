@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import Select from "react-select";
 
-import { EpicConcept } from "../../public/epic";
+import { EpicConcept } from "../../data/epic";
 
 import type { StylesConfig } from "react-select";
 

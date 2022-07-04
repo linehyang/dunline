@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 
-import { EpicItems } from "../../public/epic";
+import { EpicItems } from "../../data/epic";
 
 interface Props {
   itemName: string | undefined;
